@@ -5,6 +5,13 @@
   var MAX_IMAGE = 8 * 1024 * 1024;
   var TYPES = ["image/png", "image/jpeg", "image/webp", "image/gif"];
 
+  var jump = document.getElementById("nav-jump");
+  if (jump) jump.addEventListener("change", function () {
+    var target = jump.value && document.getElementById(jump.value);
+    if (target) target.scrollIntoView();
+    jump.value = "";
+  });
+
   var form = document.getElementById("feedback-form");
   if (!form) return;
   var status = document.getElementById("fb-status");
