@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 16 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 16 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
+    <h1>Playtest 16<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>16</div>
+    <p class="lede">Cavalry ride at the wire, tanks have glowing weak spots you can shoot, you get a commendation reroll, and the HQ menus have been rebuilt. Plus a round of fixes from your playtest 15 notes.</p>
+    <div class="glance">
+      <div><b>1</b><span>New enemy</span></div>
+      <div><b>9</b><span>Weak spots</span></div>
+      <div><b>2</b><span>New keys</span></div>
+      <div><b>10</b><span>Fixes</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Bugs, ideas, screenshots: it goes straight to the team on Discord.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#cavalry">Cavalry</a>
+      <a href="#weakspots">Weak spots</a>
+      <a href="#cards">Cards</a>
+      <a href="#keys">Keys</a>
+      <a href="#field">Field</a>
+      <a href="#hq">HQ</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="cavalry">Cavalry</option>
+        <option value="weakspots">Weak spots</option>
+        <option value="cards">Cards</option>
+        <option value="keys">Keys</option>
+        <option value="field">Field</option>
+        <option value="hq">HQ</option>
+        <option value="fixes">Fixes</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="cavalry">
+    <div class="head"><h2>Cavalry</h2><span class="tag new">New enemy</span></div>
+    <p class="short">Mounted troops now ride in on both factions&rsquo; fronts. Catch them in the saddle.</p>
+    <div class="cards">
+      <div class="card"><span class="label">From wave 3&ndash;6, by front</span><h3>Dismounting troops</h3><p>A troop gallops in, gets down 42&ndash;50 m out, ideally in cover, and fights on foot with carbines while the horses bolt.</p></div>
+      <div class="card"><span class="label">Later waves &amp; an event</span><h3>The sabre charge</h3><p>A bugle and thundering hooves, then a line of sabres rides at the defenders, cuts as it passes, wheels and comes again.</p></div>
+      <div class="card"><span class="label">How to fight them</span><h3>Horse or rider</h3><p>Shoot the horse and the rider is thrown. Shoot the rider and the horse bolts. Either way pays a bonus. Kneel as a sabre passes and the blade may go over you.</p></div>
+    </div>
+  </section>
+
+  <section id="weakspots">
+    <div class="head"><h2>Vehicle weak spots</h2><span class="tag new">New</span></div>
+    <p class="short">Every vehicle has small orange-red glowing spots. Bullets there damage the hull, so you can kill a tank without a bazooka.</p>
+    <div class="cards">
+      <div class="card"><span class="label">Panzer IV &middot; Chi-Ha</span><h3>Tanks</h3><p>Driver&rsquo;s slit <b>&times;2.5</b>, engine grille and fuel drums <b>&times;2</b>, turret ring and exhaust <b>&times;1.5</b>.</p></div>
+      <div class="card"><span class="label">Armoured car &middot; Ha-Go</span><h3>Light vehicles</h3><p>Vision slit <b>&times;1.5</b>, radiator grille <b>&times;1.25</b>, tyres or sprockets <b>&times;1</b>.</p></div>
+      <div class="card"><span class="label">Half-track</span><h3>Carriers</h3><p>Radiator grille on the nose <b>&times;1.25</b>, or shoot the gunner.</p></div>
+    </div>
+    <p class="note">Roughly: one Thompson empties about two magazines into a solo Panzer&rsquo;s grille, and three rifles take about 9 seconds. The bazooka is still much faster. Hits on a weak spot show an orange hit marker with a metal clang; hits anywhere else on the plate just clank off. Steel-Core, Incendiary and Explosive Rounds add extra weak-spot damage.</p>
+  </section>
+
+  <section id="cards">
+    <div class="head"><h2>Commendation cards</h2><span class="tag new">New</span></div>
+    <div class="cards">
+      <div class="card"><span class="label">Key <kbd>U</kbd></span><h3>Reroll</h3><p>Don&rsquo;t like the offer? Swap all three cards for a fresh set. You hold one reroll. Used, it comes back after wave 3, 6, 9&hellip; It doesn&rsquo;t work on Quartermaster&rsquo;s Issue cards.</p></div>
+      <div class="card"><span class="label">Hold <kbd>Tab</kbd></span><h3>What you&rsquo;ve picked</h3><p>Your commendations appear as small cards next to the roll call, with stacks, gun marks, a completed Legendary pair and your supply cards. Each teammate&rsquo;s line shows a short summary.</p></div>
+      <div class="card"><span class="label">Fewer accidents</span><h3>Deliberate picks</h3><p>New cards take 0.6 s to become pickable (a brass line fills under them). A number key you were already pressing to switch weapons won&rsquo;t pick one by accident.</p></div>
+    </div>
+  </section>
+
+  <section id="keys">
+    <div class="head"><h2>New default keys</h2><span class="tag chg">Changed</span></div>
+    <p class="short">Weapon keys now follow what the weapon is, not which slot it landed in.</p>
+    <div class="multi"><span><kbd>1</kbd> <kbd>2</kbd> your guns</span><span><kbd>3</kbd> trench shovel</span><span><kbd>4</kbd> bazooka</span><span><kbd>5</kbd> <kbd>6</kbd> picked-up / extra</span><span><kbd>F</kbd> throw back a grenade</span><span><kbd>U</kbd> reroll cards</span></div>
+    <ul class="points">
+      <li><b>Throwing back grenades is now on <kbd>F</kbd></b>, the use key. <kbd>G</kbd> always throws your own, so you&rsquo;ll no longer cook your own grenade while trying to grab theirs.</li>
+      <li>If you&rsquo;re on the old default keys you get the new ones automatically. Any keys you rebound yourself are kept.</li>
+    </ul>
+  </section>
+
+  <section id="field">
+    <div class="head"><h2>In the field</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Enemy weapon drops stay through the wave break.</b> Grab them between waves. They&rsquo;re cleared when the next wave starts.</li>
+      <li><b>Getting yourself up from last stand reloads every weapon</b>, bazooka included. A teammate&rsquo;s revive is unchanged.</li>
+      <li><b>The results screen adds up.</b> There&rsquo;s a new &ldquo;Bounties, wave pay, teamwork&rdquo; line, and the relief bonus says when it&rsquo;s doubled for your first time securing that front.</li>
+    </ul>
+  </section>
+
+  <section id="hq">
+    <div class="head"><h2>HQ menus rebuilt</h2><span class="tag chg">Changed</span></div>
+    <p class="short">Plainer words, clearer buttons and less clutter.</p>
+    <ul class="points">
+      <li><b>A new BRIEFING page</b> shows your kit at a glance, what to hold to win, and a NEXT UP list of the best thing to spend on.</li>
+      <li><b>Playing with friends is simpler:</b> HOST A GAME, or paste a friend&rsquo;s code and JOIN. Your team of up to 6 is listed with a copyable code.</li>
+      <li><b>Buttons say what they do</b> (BUY, EQUIP, SELECT, HIRE), and each page has one solid main button.</li>
+      <li><b>UPGRADES &rsaquo; SQUAD</b> is now one page for hiring, issue and training. Pages you haven&rsquo;t unlocked stay hidden instead of greyed out.</li>
+      <li><b>Nothing under 14 pt,</b> so the menus are readable at 720p.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li>Long card text (Hot Potato, Shoulder Charge, the Lee-Enfield cards) no longer overlaps.</li>
+      <li>&ldquo;Artillery ready&rdquo; no longer sits on top of the weapon list, however many weapons you carry.</li>
+      <li>The black box with a pale circle drifting across the sky is gone.</li>
+      <li>Off-screen pings slide clear of the roster, compass and weapon list.</li>
+      <li>Picking up an enemy weapon no longer deletes your AT crate bazooka.</li>
+      <li>Drum Magazine isn&rsquo;t offered when your Thompson already has the Type L Drum.</li>
+      <li>A switch-weapons key press can&rsquo;t pick a card you didn&rsquo;t want.</li>
+      <li>The results screen&rsquo;s RP lines now add up to the total.</li>
+      <li>A full Field Manual scrolls instead of hiding every note&rsquo;s text.</li>
+      <li>Joining by direct IP with a non-default port now connects.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li>Cavalry: do the dismounting troops and the sabre charge feel fair? Can you read them coming?</li>
+      <li>Weak spots: can you see the glow at range, in fog and at night? Does killing a tank with bullets feel right, too easy or too hard?</li>
+      <li>Did the reroll and the Tab card list help you build what you wanted?</li>
+      <li>Do the new keys feel natural? Any clashes with your own bindings?</li>
+      <li>The new HQ menus: is anything harder to find than before?</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 16">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map and wave."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
