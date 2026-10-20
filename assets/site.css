@@ -1,41 +1,34 @@
-/* Layout: an olive field-dispatch band up top, a sticky contents strip, then order sheets in one 52rem column. */
+/* Layout: an olive field-dispatch band up top, a sticky contents strip, then order sheets in one 52rem column.
+   One dark theme for everyone, like most game news pages: a warm olive-black ground, soft off-white body text
+   (never pure white), brighter only for headings. */
 :root {
-  --paper: #E4E7DE;
-  --sheet: #F1F3EC;
-  --ink: #1D2218;
-  --muted: #555C4A;
-  --rule: #C4C9B8;
-  --olive: #4E5A2B;
-  --band: #353D1C;
-  --band-ink: #EEF0E2;
-  --band-muted: #C3C9A8;
-  --brass: #8A6812;
-  --brass-bg: #F3E8C8;
-  --stamp: #F08A7F;
-  --fix: #2F5D6B;
+  --paper: #171A12;
+  --sheet: #1F2318;
+  --ink: #CDD1BF;
+  --head: #E6E8DA;
+  --muted: #949985;
+  --rule: #33382A;
+  --olive: #A7B46C;
+  --band: #222816;
+  --band-ink: #E2E4D3;
+  --band-muted: #A9AF92;
+  --brass: #D2AE58;
+  --brass-bg: #29231A;
+  --stamp: #D97A6F;
+  --fix: #86B6C4;
   --display: "Stardos Stencil", "Arial Black", Impact, sans-serif;
   --body: "Barlow", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --label: "Barlow Condensed", "Arial Narrow", "Segoe UI", sans-serif;
-  color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper: #13160F; --sheet: #1B1F16; --ink: #E3E5D8; --muted: #A4AA96; --rule: #343A2B;
-    --olive: #AEBC70; --band: #262C14; --band-ink: #EEF0E2; --band-muted: #B5BC98;
-    --brass: #DDB65A; --brass-bg: #2D2613; --stamp: #F08A7F; --fix: #8EC3D2; color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-  --paper: #13160F; --sheet: #1B1F16; --ink: #E3E5D8; --muted: #A4AA96; --rule: #343A2B;
-  --olive: #AEBC70; --band: #262C14; --band-ink: #EEF0E2; --band-muted: #B5BC98;
-  --brass: #DDB65A; --brass-bg: #2D2613; --stamp: #F08A7F; --fix: #8EC3D2; color-scheme: dark;
+  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+h1, h2, h3, b, strong { color: var(--head); }
+.hero h1 { color: var(--band-ink); }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
-  font-family: var(--body); font-size: 1.0625rem; line-height: 1.65;
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.7;
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 .gutter { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
