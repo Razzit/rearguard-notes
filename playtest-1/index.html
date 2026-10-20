@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 1 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 1 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Archived dispatch &middot; 12 October 2026</span>
+    <h1>Playtest 1<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>1</div>
+    <p class="lede">The first build out to friends. Hold a command post against wave after wave, earn requisition, spend it at HQ and push deeper next time. Four fronts, five period guns, a squad to hire and online co-op.</p>
+    <div class="glance">
+      <div><b>4</b><span>Fronts</span></div>
+      <div><b>5</b><span>Guns</span></div>
+      <div><b>10</b><span>Enemy types</span></div>
+      <div><b>4</b><span>Co-op players</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="../playtest-17/">Latest notes</a><span>This build has been retired. Notes written up afterwards from the build history, so details may be a little off.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#loop">The loop</a>
+      <a href="#arsenal">Arsenal</a>
+      <a href="#enemy">Enemy</a>
+      <a href="#post">Your post</a>
+      <a href="#run">Runs</a>
+      <a href="#fronts">Fronts</a>
+      <a href="#coop">Co-op</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="loop">The loop</option>
+        <option value="arsenal">Arsenal</option>
+        <option value="enemy">Enemy</option>
+        <option value="post">Your post</option>
+        <option value="run">Runs</option>
+        <option value="fronts">Fronts</option>
+        <option value="coop">Co-op</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="../playtest-17/">Latest notes</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="loop">
+    <div class="head"><h2>How a deployment works</h2><span class="tag new">New</span></div>
+    <p class="short">Pick a front at HQ, deploy, and hold the command post until the relief arrives.</p>
+    <div class="cards">
+      <div class="card"><span class="label">Each wave</span><h3>Hold the post</h3><p>Enemies cross the field from the treeline. If the command post falls, or everyone is down, the deployment ends.</p></div>
+      <div class="card"><span class="label">Between waves</span><h3>Commendations</h3><p>After each wave held you pick one of three commendation cards that boost you for the rest of the run. Some are tied to the gun you carry.</p></div>
+      <div class="card"><span class="label">Wave 10 / 12 / 15</span><h3>The relief</h3><p>Each front has a relief wave. Hold its heavier final assault to secure the front: citation, bugle call, and a relief bonus that’s doubled the first time.</p></div>
+    </div>
+  </section>
+
+  <section id="arsenal">
+    <div class="head"><h2>The arsenal</h2><span class="tag new">New</span></div>
+    <p class="short">Two guns at a time, chosen in the Armoury. Every gun has working iron sights.</p>
+    <div class="cards">
+      <div class="card"><span class="label">Bolt-action</span><h3>Kar98k</h3><p>The headshot rifle. Slow, loud, decisive.</p></div>
+      <div class="card"><span class="label">Semi-auto</span><h3>M1 Garand</h3><p>Eight rounds and that ping.</p></div>
+      <div class="card"><span class="label">Automatic</span><h3>Thompson &middot; B.A.R.</h3><p>The Thompson for close work, the B.A.R. for holding a lane.</p></div>
+      <div class="card"><span class="label">Close range</span><h3>Trench Gun</h3><p>For when they reach the sandbags.</p></div>
+      <div class="card"><span class="label">Always</span><h3>Grenades and bayonet</h3><p>Hold <kbd>G</kbd> to cook a frag. <kbd>V</kbd> or middle mouse for a bayonet thrust.</p></div>
+      <div class="card"><span class="label">On the ground</span><h3>Enemy weapons</h3><p>Fallen enemies can leave an MP40, StG 44, Panzerfaust or scoped Kar98k behind. Hold <kbd>F</kbd> to take it.</p></div>
+    </div>
+  </section>
+
+  <section id="enemy">
+    <div class="head"><h2>The enemy</h2><span class="tag new">New</span></div>
+    <p class="short">Riflemen are the backbone. Everything else is there to break your rhythm.</p>
+    <ul class="points">
+      <li><b>Shock troopers and sappers.</b> Shock troopers rush; sappers go for the wall. From wave 4, bayonet charges come in packs from one announced direction.</li>
+      <li><b>Heavy Gunner</b> every 5th wave: a burst-fire MG and a helmet that shrugs off the first headshot.</li>
+      <li><b>Flamethrower troopers and officers.</b> Officers rally their men; drop them first.</li>
+      <li><b>MG42 team.</b> A gunner and loader dig in mid-field and sweep the wall.</li>
+      <li><b>Armoured car</b> on later waves, and a <b>Panzer IV</b> leads the final assault. The M1A1 bazooka is how you answer it.</li>
+    </ul>
+  </section>
+
+  <section id="post">
+    <div class="head"><h2>Your post and your squad</h2><span class="tag new">New</span></div>
+    <div class="cards">
+      <div class="card"><span class="label"><kbd>F</kbd> to man</span><h3>M1919 nests</h3><p>Two sandbagged .30 cal nests on the ring. They overheat rather than run dry.</p></div>
+      <div class="card"><span class="label">Hold <kbd>B</kbd></span><h3>Artillery</h3><p>Kills fill a fire-mission meter. Raise the binoculars, click a target, and an eight-shell barrage follows the red smoke.</p></div>
+      <div class="card"><span class="label">Hired at HQ</span><h3>Squadmates</h3><p>Up to three riflemen man the ring, shift toward the pressure and shoot sappers first. The fallen are replaced after each wave held.</p></div>
+      <div class="card"><span class="label">Wave break</span><h3>Quartermaster’s wagon</h3><p>Spend this run’s requisition on grenades, a field dressing, sandbags, a fire mission or a borrowed gun.</p></div>
+    </div>
+  </section>
+
+  <section id="run">
+    <div class="head"><h2>Every run is different</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Wave events</b> from wave 3: Creeping Barrage, Blitz, Sniper Nest, Supply Drop, Smoke Screen and Counter-Battery. Hold the wave for a bonus.</li>
+      <li><b>Standing orders.</b> Once a front is secured, opt into hardships like Alone, Ammunition Shortage or Hold At All Costs for more requisition.</li>
+      <li><b>Decorations.</b> One-off medals for feats in a single deployment.</li>
+      <li><b>Specialists.</b> Pick a role at HQ before you deploy: Rifleman, Machine Gunner, Medic, Engineer or Radioman.</li>
+    </ul>
+  </section>
+
+  <section id="fronts">
+    <div class="head"><h2>Four fronts</h2><span class="tag new">New</span></div>
+    <div class="cards">
+      <div class="card"><span class="label">Countryside</span><h3>Hedgerow Farm</h3><p>Late summer fields. Where everyone starts.</p></div>
+      <div class="card"><span class="label">Winter</span><h3>Ardennes Bunker</h3><p>Frozen forest and a bunker in the snow.</p></div>
+      <div class="card"><span class="label">Eastern Front</span><h3>Factory District</h3><p>A shattered city, street by street.</p></div>
+      <div class="card"><span class="label">New</span><h3>Monte Lungo</h3><p>An Italian hilltop village on dry-stone terraces.</p></div>
+    </div>
+  </section>
+
+  <section id="coop">
+    <div class="head"><h2>Co-op</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li>Host a game and share the join code, or join a friend’s. Up to four soldiers per section.</li>
+      <li>Each player shops at the wagon with their own requisition. Commendations are picked in the wave break.</li>
+      <li>The host’s squad can deploy with you or stay home (toggle on the Platoon Roster).</li>
+      <li>A Field Manual explains things the first time they happen, and the Options sheet covers audio, FOV, look and graphics.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we asked you to test</h2>
+    <ul class="points">
+      <li>Does the rifle still feel like the star? Do the Thompson, B.A.R. and Trench Gun earn a slot?</li>
+      <li>How far did you get on each front before it fell?</li>
+      <li>Co-op: did joining work first time? Anything out of sync between players?</li>
+      <li>Was anything on the HUD or at HQ confusing?</li>
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; archived test build notes &middot; reconstructed after the fact, not final balance.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>

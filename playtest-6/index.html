@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 6 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 6 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Archived dispatch &middot; 15 October 2026</span>
+    <h1>Playtest 6<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>6</div>
+    <p class="lede">The big one from your playtest 5 notes: commendation tiers, a player rank, weapon levels and a gunsmith, an enterable command post, accolades, a gentler difficulty curve and a new HQ layout.</p>
+    <div class="glance">
+      <div><b>50</b><span>Ranks</span></div>
+      <div><b>55</b><span>Attachments</span></div>
+      <div><b>23</b><span>New commendations</span></div>
+      <div><b>4</b><span>Card tiers</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="../playtest-17/">Latest notes</a><span>This build has been retired. Notes written up afterwards from the build history, so details may be a little off.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#tiers">Cards</a>
+      <a href="#rank">Rank</a>
+      <a href="#post">The post</a>
+      <a href="#accolades">Accolades</a>
+      <a href="#difficulty">Difficulty</a>
+      <a href="#hq">HQ</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="tiers">Cards</option>
+        <option value="rank">Rank</option>
+        <option value="post">The post</option>
+        <option value="accolades">Accolades</option>
+        <option value="difficulty">Difficulty</option>
+        <option value="hq">HQ</option>
+        <option value="fixes">Fixes</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="../playtest-17/">Latest notes</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="tiers">
+    <div class="head"><h2>Commendation tiers</h2><span class="tag new">New</span></div>
+    <p class="short">Cards now come as Basic, Rare, Epic or Legendary. Better odds as the waves climb, and a pity timer so you’re never starved.</p>
+    <ul class="points">
+      <li><b>23 new action commendations</b> that change how you play (Stripper Clips and friends), not just numbers.</li>
+      <li>Stronger tier colours and a Legendary gleam you can spot at a glance.</li>
+    </ul>
+  </section>
+
+  <section id="rank">
+    <div class="head"><h2>Rank, weapon levels and specialists</h2><span class="tag new">New</span></div>
+    <div class="cards">
+      <div class="card"><span class="label">Rank 1&ndash;50</span><h3>Player rank</h3><p>XP from kills, waves and fronts. Ranks open weapons, fronts, specialists and squadmates. Insignia on the roll call and over your head. Field commission at 50.</p></div>
+      <div class="card"><span class="label">Per gun</span><h3>Weapon mastery</h3><p>Each gun levels from the kills it makes. Levels open attachments in the new gunsmith: 55 of them over 7 slots, with plain pros and cons.</p></div>
+      <div class="card"><span class="label">Per class</span><h3>Specialist levels</h3><p>Your specialist levels too, with a choice row at each step: smoke that blocks the line of fire, strafing runs, triage and more.</p></div>
+    </div>
+  </section>
+
+  <section id="post">
+    <div class="head"><h2>Command post and MGs</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The command post is a room you can fall back into.</b> Enemies on the roof are a threat; deal with them.</li>
+      <li><b>Squad crews free guns</b> and you can shift the nests to prepared pits between waves.</li>
+      <li>The enemy’s main thrust is announced before it lands.</li>
+      <li>Mortar teams set up in sight of the wall, 60&ndash;75 m out, and are easier to find.</li>
+    </ul>
+  </section>
+
+  <section id="accolades">
+    <div class="head"><h2>Accolades</h2><span class="tag new">New</span></div>
+    <p class="short">Banners for impressive play, a feed of your teammates’ best moments and live section points. Recognition, not a leaderboard.</p>
+  </section>
+
+  <section id="difficulty">
+    <div class="head"><h2>Difficulty retune</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>A gentler wave curve, with each front getting its own threat schedule.</li>
+      <li>An AT crate on the field before the Panzer arrives, shown on the HUD.</li>
+      <li><b>The bazooka carries five rockets</b> instead of three.</li>
+      <li>Wave-held resupply loads your magazines a second after the hold.</li>
+    </ul>
+  </section>
+
+  <section id="hq">
+    <div class="head"><h2>HQ and menus</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>HQ is now a tabbed sheet that opens on a briefing, with a deploy slip and the lobby strip.</li>
+      <li>Menus hold 60 FPS (no more 100% GPU at HQ); new saves cap at 144.</li>
+      <li>A full text pass. Some names changed: Work Party, Battery on Call, Hot Barrel, Hand-Loaded Rounds, Hardened Troops, Steady Breath.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li>The B.A.R. attachment typo.</li>
+      <li>Long callsigns on the roll call shrink or cut short to stay in their column.</li>
+      <li>An error when an MG42 crew’s nest was cleared away.</li>
+      <li>Late waves no longer leave the MGs useless.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we asked you to test</h2>
+    <ul class="points">
+      <li>Does ranking up feel paced right, or too fast again?</li>
+      <li>The gunsmith: is it clear what each attachment does?</li>
+      <li>Can you get past wave 9 on the Farm now?</li>
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; archived test build notes &middot; reconstructed after the fact, not final balance.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>

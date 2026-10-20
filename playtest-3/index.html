@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 3 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 3 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Archived dispatch &middot; 12 October 2026</span>
+    <h1>Playtest 3<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>3</div>
+    <p class="lede">Co-op comms: ping the enemy, see the roll call on Tab, and gather in an HQ lobby before you deploy. Plus your own key bindings.</p>
+    <div class="glance">
+      <div><b>2</b><span>Ping keys</span></div>
+      <div><b>1</b><span>Lobby</span></div>
+      <div><b>1</b><span>Roll call</span></div>
+      <div><b>All</b><span>Keys rebindable</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="../playtest-17/">Latest notes</a><span>This build has been retired. Notes written up afterwards from the build history, so details may be a little off.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#pings">Pings</a>
+      <a href="#rollcall">Roll call</a>
+      <a href="#lobby">Lobby</a>
+      <a href="#keys">Keys</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="pings">Pings</option>
+        <option value="rollcall">Roll call</option>
+        <option value="lobby">Lobby</option>
+        <option value="keys">Keys</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="../playtest-17/">Latest notes</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="pings">
+    <div class="head"><h2>Pings</h2><span class="tag new">New</span></div>
+    <div class="cards">
+      <div class="card"><span class="label"><kbd>Q</kbd></span><h3>Mark it</h3><p>Ping what you’re looking at: an enemy, a gun, a crate. Your team sees it on screen and the compass.</p></div>
+      <div class="card"><span class="label"><kbd>Z</kbd></span><h3>Here</h3><p>Call your team to where you stand.</p></div>
+      <div class="card"><span class="label">Stacked</span><h3>Busy spots</h3><p>Labels of side-by-side pings stack instead of overlapping.</p></div>
+    </div>
+  </section>
+
+  <section id="rollcall">
+    <div class="head"><h2>Roll call</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li>Hold <kbd>Tab</kbd> for the roll call: every soldier’s kills, downs, revives and requisition this run.</li>
+      <li>The after-action telegram gets a roll call section too.</li>
+    </ul>
+  </section>
+
+  <section id="lobby">
+    <div class="head"><h2>HQ lobby</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li>Everyone gathers at HQ before the host deploys. The host can kick a player.</li>
+      <li>Online sessions won’t deploy while the session is still opening.</li>
+    </ul>
+  </section>
+
+  <section id="keys">
+    <div class="head"><h2>Key rebinding</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li>Options &rsaquo; CONTROLS lists every action. Click one and press a key.</li>
+      <li>A key that’s already in use swaps with the old binding. <kbd>Esc</kbd> stays the pause key.</li>
+      <li>On-screen prompts now name the key you actually bound.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we asked you to test</h2>
+    <ul class="points">
+      <li>Pings: are they readable mid-fight? Too many, too few?</li>
+      <li>Rebinding: anything you couldn’t rebind that you wanted to?</li>
+    </ul>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; archived test build notes &middot; reconstructed after the fact, not final balance.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
