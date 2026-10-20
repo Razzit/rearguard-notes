@@ -41,7 +41,7 @@ h3 { font-family: var(--body); font-weight: 600; font-size: 1.1rem; line-height:
 p { margin: 0; }
 a { color: var(--olive); }
 :focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
-.label, .tag, .eyebrow, .back, .nav a { font-family: var(--label); text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
+.label, .tag, .eyebrow, .back, .nav-links a { font-family: var(--label); text-transform: uppercase; letter-spacing: .09em; font-weight: 600; }
 
 /* Hero band */
 .hero { background: var(--band); color: var(--band-ink); padding-top: env(safe-area-inset-top, 0px); }
@@ -63,9 +63,19 @@ a { color: var(--olive); }
 
 /* Contents strip */
 .nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); border-bottom: 1px solid var(--rule); }
-.nav .col { display: flex; gap: .4rem; overflow-x: auto; padding-block: .6rem; scrollbar-width: none; }
-.nav a { flex: none; font-size: .85rem; text-decoration: none; color: var(--muted); padding: .25rem .7rem; border: 1px solid var(--rule); background: var(--sheet); }
-.nav a:hover { color: var(--ink); border-color: var(--olive); }
+.nav-row { display: flex; align-items: center; gap: .6rem; padding-block: .6rem; }
+.nav-links { flex: 1; min-width: 0; display: flex; gap: .4rem; overflow-x: auto; scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-links a { flex: none; font-size: .85rem; text-decoration: none; color: var(--muted); padding: .25rem .7rem; border: 1px solid var(--rule); background: var(--sheet); }
+.nav-links a:hover { color: var(--head); border-color: var(--olive); }
+.nav-cta, .btn { flex: none; font-family: var(--label); text-transform: uppercase; letter-spacing: .09em; font-weight: 600; text-decoration: none;
+  background: var(--olive); color: var(--paper); padding: .3rem .85rem; border: 1px solid var(--olive); }
+.nav-cta { font-size: .85rem; }
+.nav-cta:hover, .btn:hover { filter: brightness(1.12); }
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1rem; margin-top: .4rem; }
+.hero-cta .btn { font-size: .95rem; padding: .55rem 1.2rem; }
+.hero-cta span { color: var(--band-muted); font-size: .98rem; }
 
 /* Sections */
 main .col { display: flex; flex-direction: column; gap: 3rem; padding-block: 2.5rem 3rem; }
