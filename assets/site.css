@@ -86,7 +86,7 @@ section { display: flex; flex-direction: column; gap: 1.1rem; }
 .note { font-size: .98rem; color: var(--muted); max-width: 42rem; }
 .sub { font-family: var(--label); text-transform: uppercase; letter-spacing: .09em; font-weight: 600; font-size: .9rem; color: var(--muted); margin-top: .5rem; }
 
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr)); gap: 1rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(14.5rem, 100%), 1fr)); gap: 1rem; }
 .card { min-width: 0; background: var(--sheet); border: 1px solid var(--rule); padding: 1.1rem 1.2rem; display: flex; flex-direction: column; gap: .45rem; }
 .card .label { font-size: .78rem; color: var(--olive); }
 .card p { font-size: 1rem; }
@@ -97,7 +97,7 @@ ul.points li::before { content: ""; position: absolute; left: 0; top: .62em; wid
 kbd { font-family: var(--label); font-weight: 600; font-size: .92em; padding: .02rem .45rem; border: 1px solid var(--rule); border-bottom-width: 3px; background: var(--sheet); white-space: nowrap; }
 
 /* Legendary pairs */
-.guns { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1rem; }
+.guns { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr)); gap: 1rem; }
 .gun { min-width: 0; background: var(--sheet); border: 1px solid var(--rule); display: flex; flex-direction: column; }
 .gun > h3 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; padding: .85rem 1.1rem .35rem; }
 .half { padding: .35rem 1.1rem; font-size: .98rem; }
@@ -107,7 +107,7 @@ kbd { font-family: var(--label); font-weight: 600; font-size: .92em; padding: .0
 .gun .half:last-of-type { padding-bottom: .9rem; }
 .pair .label { display: block; color: var(--brass); font-size: 1rem; letter-spacing: .12em; }
 
-.ammo { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: .75rem; }
+.ammo { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(11rem, 100%), 1fr)); gap: .75rem; }
 .round { min-width: 0; background: var(--sheet); border: 1px solid var(--rule); padding: .8rem 1rem; display: flex; flex-direction: column; gap: .3rem; }
 .tracer { height: 4px; width: 100%; border-radius: 2px; }
 .tracer.orange { background: linear-gradient(90deg, transparent, #E8862A); }
@@ -130,7 +130,7 @@ kbd { font-family: var(--label); font-weight: 600; font-size: .92em; padding: .0
 .multi span { font-family: var(--label); font-weight: 600; font-size: .95rem; padding: .2rem .7rem; border: 1px solid var(--rule); background: var(--sheet); }
 .multi b { font-family: var(--display); color: var(--olive); }
 
-.fixes { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: .6rem 1.5rem; }
+.fixes { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(19rem, 100%), 1fr)); gap: .6rem 1.5rem; }
 .fixes li { position: relative; padding-left: 1.7rem; font-size: 1rem; min-width: 0; }
 .fixes li::before { content: "\2713"; position: absolute; left: 0; top: 0; font-weight: 700; color: var(--fix); }
 
