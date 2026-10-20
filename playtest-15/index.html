@@ -12,126 +12,192 @@
 <link rel="stylesheet" href="../assets/site.css">
 </head>
 <body>
-<div class="wrap">
-  <a class="back" href="../">&larr; All patch notes</a>
-  <header>
-    <span class="eyebrow">Rearguard · Field dispatch to all testers</span>
-    <h1>Playtest 15 Patch Notes</h1>
-    <p class="lede">Thanks for every note from playtest 14. This build acts on almost all of it: the wagon is gone, every gun has a Legendary pair to chase, there's a shovel, a slide, and a lot of fixes.</p>
-    <div class="meta"><span><b>Build:</b> playtest 15 test build</span><span><b>Co-op:</b> 1–6 soldiers</span><span><b>Saves:</b> carried over automatically</span></div>
-  </header>
 
-  <!-- Headline change -->
-  <section class="sheet lead">
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
+    <h1>Playtest 15<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>15</div>
+    <p class="lede">Built from your playtest 14 notes. The wagon is gone, every gun has a Legendary pair to chase, and there&rsquo;s a shovel, a slide and a pile of fixes.</p>
+    <div class="glance">
+      <div><b>9</b><span>Legendary pairs</span></div>
+      <div><b>4</b><span>Ammo types</span></div>
+      <div><b>2</b><span>New guns</span></div>
+      <div><b>11</b><span>Fixes</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col">
+    <a href="#supplies">Supplies</a>
+    <a href="#legendaries">Legendaries</a>
+    <a href="#armoury">Armoury</a>
+    <a href="#melee">Shovel &amp; slide</a>
+    <a href="#explosives">Explosives</a>
+    <a href="#hq">HQ &amp; co-op</a>
+    <a href="#fixes">Fixes</a>
+    <a href="#test">What to test</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="supplies">
     <div class="head"><h2>The wagon is gone</h2><span class="tag chg">Changed</span></div>
-    <p>No more running back to the quartermaster each break, and no shop menu. Supplies now come to you.</p>
-    <div class="grid">
-      <div><h3>Quartermaster's Issue</h3><p>After waves 3, 6, 9 and so on, each soldier picks 1 of 3 supply cards. It appears right after that break's commendation and uses the same keys. You can pick it mid-wave.</p></div>
-      <div><h3>Team supply crates</h3><p>A crate parachutes in mid-wave on waves 2, 5, 8 and so on. Whoever opens it, the whole section gets what's inside.</p></div>
-      <div><h3>AT crate</h3><p>Before every armour wave a crate drops with a bazooka for each soldier, or a rocket refill if you already have one. No racing for it.</p></div>
-      <div><h3>All your RP banks</h3><p>Nothing is bought during a deployment, so every point of requisition goes home with you for gun levels, HQ and fronts.</p></div>
+    <p class="short">No more running back to the quartermaster, and no shop menu. Supplies now come to you.</p>
+    <div class="cards">
+      <div class="card"><span class="label">After waves 3, 6, 9&hellip;</span><h3>Quartermaster&rsquo;s Issue</h3><p>Pick 1 of 3 supply cards. It comes right after that break&rsquo;s commendation, on the same keys, and you can pick it mid-wave.</p></div>
+      <div class="card"><span class="label">Mid-wave on 2, 5, 8&hellip;</span><h3>Team supply crate</h3><p>A crate parachutes in. Whoever opens it, the whole section gets what&rsquo;s inside.</p></div>
+      <div class="card"><span class="label">Before armour waves</span><h3>AT crate</h3><p>A bazooka for every soldier, or a rocket refill if you already have one. No racing for it.</p></div>
+      <div class="card"><span class="label">Every deployment</span><h3>All your RP banks</h3><p>Nothing is bought mid-run, so every point of requisition goes home with you.</p></div>
     </div>
     <p class="note">Supply cards: Field Dressing (+15 max HP, no heal), Hand-Loaded Rounds (+20% damage), Grenade Belt (+1 grenade and a refill), Fire Mission, Sandbag Detail and Replacement Riflemen.</p>
   </section>
 
-  <!-- Gun legendaries -->
-  <section class="sheet">
-    <div class="head"><h2>Legendary pairs for every gun</h2><span class="tag new">New</span></div>
-    <p>Every gun now has two Legendary commendations. Each is strong on its own. Hold both and you complete a named pair with an extra effect, announced to the whole section. Once you hold one half, its partner turns up far more often.</p>
-    <div class="table-scroll">
-      <table>
-        <thead><tr><th>Gun</th><th>Legendary A</th><th>Legendary B</th><th>Pair bonus</th></tr></thead>
-        <tbody>
-          <tr><td>Kar98k</td><td>Headhunter: a headshot kill carries on into the nearest head</td><td>Thunderbolt: a headshot kill calls lightning into 3 men</td><td><span class="pair">Storm of Steel</span><br>the round keeps going through up to 4 heads, each throwing lightning</td></tr>
-          <tr><td>M1 Garand</td><td>Last Word: the last round of each clip is high explosive</td><td>Rolling Thunder: each hit adds +8% damage to the rest of the clip</td><td><span class="pair">Full Clip</span><br>the blast grows with every hit; a 2-man blast slaps the next clip in</td></tr>
-          <tr><td>Thompson</td><td>Chicago Typewriter: sustained fire sets men alight</td><td>Drum Roll: kills refund rounds and raise fire rate</td><td><span class="pair">Firestorm</span><br>burning men explode into fireballs that spread the fire</td></tr>
-          <tr><td>B.A.R.</td><td>Walking Fire: rounds pass through 2 men</td><td>Molten Barrel: after 1.5 s of fire every round bursts</td><td><span class="pair">Iron Curtain</span><br>bigger bursts that set men alight, kills refund rounds</td></tr>
-          <tr><td>Trench Gun</td><td>Dragon's Breath: shells set everyone hit alight</td><td>Thunderclap: a heavy hit knocks down everyone near the target</td><td><span class="pair">Hellfire</span><br>the shockwave burns, and burning kills reload a shell</td></tr>
-          <tr><td>M1 Carbine</td><td>Blitz: kills give a burst of speed and fire rate</td><td>Live Wire: every 4th round arcs lightning</td><td><span class="pair">Lightning War</span><br>every round is a shock round while Blitz runs</td></tr>
-          <tr><td>M3 Grease Gun</td><td>Pinpoint: the first 10 rounds fly dead straight and hit harder</td><td>Greased Lightning: headshots refund the round and raise fire rate</td><td><span class="pair">Hot Grease</span><br>Pinpoint lasts the whole magazine while every round hits</td></tr>
-          <tr><td>M1903A4</td><td>Danger Close: a headshot kill blows the man apart</td><td>Eagle Eye: hits mark a group to take +35% damage from everyone</td><td><span class="pair">Kill Zone</span><br>bigger blasts that mark everyone caught; marked kills refund the round</td></tr>
-          <tr><td>Lee-Enfield</td><td>Cock on Closing: hits in a row work the bolt faster</td><td>Charger Loading: kills put rounds back</td><td><span class="pair">Rapid Fire</span><br>kills count double to the streak; at full speed every hit refunds</td></tr>
-        </tbody>
-      </table>
+  <section id="legendaries">
+    <div class="head"><h2>A Legendary pair for every gun</h2><span class="tag new">New</span></div>
+    <p class="short">Every gun has two Legendary commendations. Each is strong alone. Hold both and you complete a named pair with a bonus, announced to the whole section.</p>
+    <p class="note">Once you hold one half, its partner turns up far more often.</p>
+    <div class="guns">
+      <article class="gun"><h3>Kar98k</h3>
+        <div class="half"><b>Headhunter</b>A headshot kill carries on into the nearest head.</div><div class="plus">+</div>
+        <div class="half"><b>Thunderbolt</b>A headshot kill calls lightning into 3 men.</div>
+        <div class="pair"><span class="label">= Storm of Steel</span>The round goes through up to 4 heads, each one throwing lightning.</div></article>
+      <article class="gun"><h3>M1 Garand</h3>
+        <div class="half"><b>Last Word</b>The last round of every clip is high explosive.</div><div class="plus">+</div>
+        <div class="half"><b>Rolling Thunder</b>Each hit adds +8% damage to the rest of the clip.</div>
+        <div class="pair"><span class="label">= Full Clip</span>The blast grows with every hit. A blast that kills 2 slaps the next clip in.</div></article>
+      <article class="gun"><h3>Thompson</h3>
+        <div class="half"><b>Chicago Typewriter</b>Sustained fire sets men alight.</div><div class="plus">+</div>
+        <div class="half"><b>Drum Roll</b>Kills refund rounds and raise your fire rate.</div>
+        <div class="pair"><span class="label">= Firestorm</span>Burning men explode into fireballs that spread the fire.</div></article>
+      <article class="gun"><h3>B.A.R.</h3>
+        <div class="half"><b>Walking Fire</b>Rounds pass through 2 men.</div><div class="plus">+</div>
+        <div class="half"><b>Molten Barrel</b>After 1.5 s of fire, every round bursts.</div>
+        <div class="pair"><span class="label">= Iron Curtain</span>Bigger bursts that set men alight. Kills refund rounds.</div></article>
+      <article class="gun"><h3>Trench Gun</h3>
+        <div class="half"><b>Dragon&rsquo;s Breath</b>Shells set everyone hit alight.</div><div class="plus">+</div>
+        <div class="half"><b>Thunderclap</b>A heavy hit knocks down everyone near the target.</div>
+        <div class="pair"><span class="label">= Hellfire</span>The shockwave burns, and burning kills reload a shell.</div></article>
+      <article class="gun"><h3>M1 Carbine</h3>
+        <div class="half"><b>Blitz</b>Kills give a burst of speed and fire rate.</div><div class="plus">+</div>
+        <div class="half"><b>Live Wire</b>Every 4th round arcs lightning.</div>
+        <div class="pair"><span class="label">= Lightning War</span>Every round is a shock round while Blitz runs.</div></article>
+      <article class="gun"><h3>M3 Grease Gun</h3>
+        <div class="half"><b>Pinpoint</b>The first 10 rounds fly dead straight and hit harder.</div><div class="plus">+</div>
+        <div class="half"><b>Greased Lightning</b>Headshots refund the round and raise fire rate.</div>
+        <div class="pair"><span class="label">= Hot Grease</span>Pinpoint lasts the whole magazine while every round hits.</div></article>
+      <article class="gun"><h3>M1903A4</h3>
+        <div class="half"><b>Danger Close</b>A headshot kill blows the man apart.</div><div class="plus">+</div>
+        <div class="half"><b>Eagle Eye</b>Hits mark a group to take +35% damage from everyone.</div>
+        <div class="pair"><span class="label">= Kill Zone</span>Bigger blasts that mark everyone caught. Marked kills refund the round.</div></article>
+      <article class="gun"><h3>Lee-Enfield</h3>
+        <div class="half"><b>Cock on Closing</b>Hits in a row work the bolt faster.</div><div class="plus">+</div>
+        <div class="half"><b>Charger Loading</b>Kills put rounds back.</div>
+        <div class="pair"><span class="label">= Rapid Fire</span>Kills count double to the streak. At full speed every hit refunds.</div></article>
     </div>
-    <div class="legend"><b>Ammo mutators</b> work on any gun you fire, including pickups: Incendiary Rounds and Steel-Core Rounds (Rare), Shock Rounds (Epic) and <b>Explosive Rounds</b> (Legendary). Tracer colour shows your ammo. Explosive Rounds takes one of your two Legendary slots, so choose: the gun pair or the universal boom.</div>
-    <p class="note">Enemy weapons: <b>Spoils of War</b> (Rare) makes picked-up enemy weapons hit harder, reload faster and come with more rounds. <b>Captured Arsenal</b> (Epic) makes enemies drop weapons more often. None of these blasts hurt teammates.</p>
+
+    <p class="sub">Ammo types &middot; work on any gun, pickups included</p>
+    <div class="ammo">
+      <div class="round"><div class="tracer orange"></div><span class="tier">Rare</span><h3>Incendiary</h3><p>Every hit sets the man alight.</p></div>
+      <div class="round"><div class="tracer plain"></div><span class="tier">Rare</span><h3>Steel-Core</h3><p>Rounds go through into the man behind.</p></div>
+      <div class="round"><div class="tracer blue"></div><span class="tier">Epic</span><h3>Shock</h3><p>Shots arc lightning into 2 more men.</p></div>
+      <div class="round"><div class="tracer red"></div><span class="tier leg">Legendary</span><h3>Explosive</h3><p>Every hit bursts into the men around him.</p></div>
+    </div>
+    <p class="note">The tracer colour shows your ammo. Explosive Rounds takes one of your two Legendary slots, so you choose between a gun pair and the universal boom. Enemy weapons get perks too: <b>Spoils of War</b> makes pickups hit harder, reload faster and carry more rounds, and <b>Captured Arsenal</b> makes enemies drop weapons more often. None of these blasts hurt teammates.</p>
   </section>
 
-  <!-- Armoury -->
-  <section class="sheet">
+  <section id="armoury">
     <div class="head"><h2>Armoury: gun levels and two new guns</h2><span class="tag new">New</span></div>
-    <ul>
-      <li><b>Gun levels.</b> Spend RP at the Armoury to raise a gun from level 1 to 10. Each level gives +5% damage and +3% reload speed. Cheaper guns level up cheaper.</li>
-      <li><b>Capped by Battle Honours.</b> The level that counts in a run is capped by the Honours tier you're playing, from level 4 on Standard up to 10 on Honours X. The HUD shows when your gun is capped.</li>
-      <li><b>M1911A1 pistol</b> is the new free starter. Level it up, then move on to a rifle. The Kar98k now costs 400 RP to unlock. <i>If you already have the Kar98k, you keep it.</i></li>
-      <li><b>Lee-Enfield No. 4.</b> A fast-bolt .303 rifle with 10 rounds. Unlocks at rank 6 for 1,600 RP.</li>
-    </ul>
+    <p class="short">Spend RP to level a gun from 1 to 10. Each level is +5% damage and +3% reload speed. Cheaper guns level cheaper.</p>
+    <p class="sub">The level that counts is capped by your Battle Honours tier</p>
+    <div class="scale" role="table" aria-label="Gun level cap by Battle Honours tier">
+      <div role="row"><b>4</b><span>Standard</span></div>
+      <div role="row"><b>5</b><span>I&ndash;II</span></div>
+      <div role="row"><b>6</b><span>III&ndash;IV</span></div>
+      <div role="row"><b>7</b><span>V&ndash;VI</span></div>
+      <div role="row"><b>8</b><span>VII&ndash;VIII</span></div>
+      <div role="row"><b>9</b><span>IX</span></div>
+      <div role="row"><b>10</b><span>X</span></div>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="label">New free starter</span><h3>M1911A1 pistol</h3><p>Level it up, then move on to a rifle. The Kar98k now costs 400 RP. If you already own it, you keep it.</p></div>
+      <div class="card"><span class="label">Rank 6 &middot; 1,600 RP</span><h3>Lee-Enfield No. 4</h3><p>A fast-bolt .303 rifle with a 10-round magazine and its own Legendary pair.</p></div>
+    </div>
   </section>
 
-  <!-- Movement & melee -->
-  <section class="sheet">
+  <section id="melee">
     <div class="head"><h2>Shovel, slide and walking soldiers</h2><span class="tag new">New</span></div>
-    <ul>
-      <li><b>Trench shovel.</b> Press <kbd>5</kbd> (rebindable) to draw it. You move 15% faster with it out. Fire swings it. The quick bayonet on <kbd>V</kbd> / middle mouse still works.</li>
-      <li><b>Melee commendations:</b> Lunge (dash onto a man up to 7 m away), Bloodlust (melee kills heal), Cleave (hit everyone in a wide arc), Ground Pound (swing in mid-air to slam) and Berserker (melee kills stack speed).</li>
-      <li><b>Slide.</b> Crouch while sprinting to slide. You can steer a little, shoot, and jump out of it keeping your speed.</li>
+    <ul class="points">
+      <li><b>Trench shovel.</b> Press <kbd>5</kbd> to draw it (you can rebind it). You move 15% faster with it out, and fire swings it. The quick bayonet on <kbd>V</kbd> still works.</li>
+      <li><b>Slide.</b> Crouch while sprinting. You can steer a little, shoot, and jump out keeping your speed.</li>
       <li><b>Walk cycles.</b> Enemies, squadmates and other players now walk and run with their legs instead of gliding.</li>
     </ul>
+    <p class="sub">Melee commendations</p>
+    <div class="cards">
+      <div class="card"><h3>Lunge</h3><p>Dash onto a man up to 7 m away.</p></div>
+      <div class="card"><h3>Bloodlust</h3><p>Melee kills heal you.</p></div>
+      <div class="card"><h3>Cleave</h3><p>Hit everyone in a wide arc.</p></div>
+      <div class="card"><h3>Ground Pound</h3><p>Swing in mid-air to slam the ground.</p></div>
+      <div class="card"><h3>Berserker</h3><p>Melee kills stack move and swing speed.</p></div>
+    </div>
   </section>
 
-  <!-- Explosives -->
-  <section class="sheet">
+  <section id="explosives">
     <div class="head"><h2>Explosives and grenades</h2><span class="tag chg">Changed</span></div>
-    <ul>
-      <li><b>Booby Traps</b> replace Tripwire Charges. This Rare commendation plants charges on the enemy's approach routes at the start of every wave. They never hurt your side, and you get credit and a callout for every kill.</li>
-      <li><b>Throw grenades back.</b> Anyone can grab a live enemy grenade close by with the grenade key, if you're quick. The <b>Hot Potato</b> commendation makes it easy: longer reach, instant grab, harder throw.</li>
-      <li><b>Enemy grenades</b> are much less accurate in early waves and tighten up as the waves go on.</li>
+    <ul class="points">
+      <li><b>Booby Traps</b> replace Tripwire Charges. This commendation plants charges on the enemy&rsquo;s routes at the start of every wave. They never hurt your side, and every kill gets you a callout.</li>
+      <li><b>Throw grenades back.</b> Grab a live enemy grenade near you with the grenade key, if you&rsquo;re quick. The <b>Hot Potato</b> commendation makes it easy: longer reach, instant grab and a harder throw.</li>
+      <li><b>Enemy grenades</b> are much less accurate early on and tighten up as the waves go on.</li>
     </ul>
   </section>
 
-  <!-- HQ & co-op -->
-  <section class="sheet">
+  <section id="hq">
     <div class="head"><h2>Battalion HQ and co-op</h2><span class="tag new">New</span></div>
-    <ul>
-      <li><b>Pioneer Platoon</b>, a new Battalion facility, digs extra MG pits on every front. The host's level decides.</li>
-      <li><b>Enemy strength readout.</b> Waves have always grown with the number of soldiers. Now each co-op wave tells you by how much, e.g. "Enemy strength for 6 soldiers: +275% men, +50% tougher".</li>
-      <li><b>Faster revives.</b> More hands revive faster: ×1.5 for two, ×2 for three, ×2.5 for four or more.</li>
+    <ul class="points">
+      <li><b>Pioneer Platoon</b> is a new Battalion facility that digs extra MG pits on every front. The host&rsquo;s level decides.</li>
+      <li><b>Enemy strength readout.</b> Waves always grew with the number of soldiers. Now each co-op wave tells you by how much, for example &ldquo;Enemy strength for 6 soldiers: +275% men, +50% tougher&rdquo;.</li>
+      <li><b>Faster revives.</b> The more of you revive someone, the faster it goes:</li>
     </ul>
+    <div class="multi"><span>2 soldiers <b>&times;1.5</b></span><span>3 soldiers <b>&times;2</b></span><span>4 or more <b>&times;2.5</b></span></div>
   </section>
 
-  <!-- Fixes -->
-  <section class="sheet">
+  <section id="fixes">
     <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
-    <ul>
-      <li>Enemies no longer spawn inside bushes, hedges or other cover (0 in 2,800 test spawns).</li>
-      <li>Enemies on the first map no longer get stuck on the tank or in the burnt cottage.</li>
-      <li>Bodies in tight rooms like the command post settle down instead of jittering and flying about.</li>
-      <li>The host's name no longer resets to "Host" after a round.</li>
-      <li>If you disconnect and rejoin the same deployment, you keep your commendations and supply cards.</li>
+    <ul class="fixes">
+      <li>Enemies no longer spawn inside bushes, hedges or cover.</li>
+      <li>Enemies on the first map no longer get stuck on the tank or in the cottage.</li>
+      <li>Bodies in tight rooms settle instead of jittering and flying about.</li>
+      <li>The host&rsquo;s name no longer resets to &ldquo;Host&rdquo; after a round.</li>
+      <li>Rejoin the same deployment and you keep your commendations and supply cards.</li>
       <li>Gunfire no longer keeps playing on the results page.</li>
-      <li>The bazooka reloads when you switch back to it, for example after calling artillery.</li>
+      <li>The bazooka reloads when you switch back to it.</li>
       <li>Magazine upgrades fill your gun to the new size straight away.</li>
-      <li>Scopes keep the game's colour grade instead of losing it.</li>
+      <li>Scopes keep the game&rsquo;s colour grade.</li>
       <li>Field Manual text no longer overlaps the close button.</li>
-      <li>Enemy health bars are capped at three and kept out of the centre of the screen.</li>
+      <li>At most three enemy health bars show, kept out of the centre of the screen.</li>
     </ul>
   </section>
 
-  <section class="ask">
-    <h2>What we'd like you to test</h2>
-    <ul>
-      <li>Do the Legendary pairs feel worth chasing? Which pair did you complete, and was it too strong or too weak?</li>
-      <li>Is a supply card every 3rd wave the right pace? Did you miss buying things from the wagon?</li>
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li>Do the Legendary pairs feel worth chasing? Which did you complete, and was it too strong or too weak?</li>
+      <li>Is a supply card every 3rd wave the right pace? Did you miss the wagon?</li>
       <li>How do the shovel, slide and melee commendations feel?</li>
-      <li>Do gun level prices feel fair for the RP you're banking?</li>
-      <li>Any enemy still in a bush, stuck on scenery, or a wrong name after a round? Tell us the map and wave.</li>
+      <li>Do gun level prices feel fair for the RP you&rsquo;re banking?</li>
+      <li>Any enemy in a bush, stuck on scenery, or a wrong name after a round? Tell us the map and wave.</li>
       <li>Scope users: does the view look right now?</li>
     </ul>
   </section>
 
-  <footer>Rearguard · test build notes · not final balance, everything here may change after this playtest.</footer>
 </div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
 
 </body>
 </html>
