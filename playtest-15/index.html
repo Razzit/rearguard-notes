@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
-<link rel="stylesheet" href="../assets/site.css?v=4">
+<link rel="stylesheet" href="../assets/site.css?v=5">
 </head>
 <body>
 
@@ -39,6 +39,7 @@
     <a href="#hq">HQ &amp; co-op</a>
     <a href="#fixes">Fixes</a>
     <a href="#test">What to test</a>
+    <a href="#feedback">Send feedback</a>
   </div>
 </nav>
 
@@ -194,10 +195,46 @@
     </ul>
   </section>
 
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 15">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map and wave."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
 </div>
 </main>
 
 <footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
 
+<script src="../assets/feedback.js?v=1"></script>
 </body>
 </html>
