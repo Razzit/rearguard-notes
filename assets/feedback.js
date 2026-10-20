@@ -1,7 +1,7 @@
 // Feedback form: sends a comment and an optional screenshot to the RearGuard Discord through the relay.
 (function () {
   // The deployed relay's address (a Cloudflare Worker). Empty until it's set up; the form says so.
-  var ENDPOINT = "";
+  var ENDPOINT = "https://rearguard-feedback.brenton-kelly.workers.dev/";
   var MAX_IMAGE = 8 * 1024 * 1024;
   var TYPES = ["image/png", "image/jpeg", "image/webp", "image/gif"];
 
