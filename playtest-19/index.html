@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 19 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 19 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
+    <h1>Playtest 19<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>19</div>
+    <p class="lede">This one is all look and feel. Shade you can see into on a sunny day, sandbags laid bag by bag, smoke the sun shines through, helmets that fly off a headshot, explosions with weight, a gun that moves in your hands, weather that changes in front of you, and a battle that sounds like one. Plus the ear-splitting hiss at launch and the glowing dots on the walls are gone.</p>
+    <div class="glance">
+      <div><b>19</b><span>Areas reworked</span></div>
+      <div><b>2</b><span>New lorries</span></div>
+      <div><b>1,000</b><span>Maps audited</span></div>
+      <div><b>0</b><span>New rules to learn</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game: it sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#light">Light &amp; shade</a>
+      <a href="#impact">Impact</a>
+      <a href="#sound">Sound</a>
+      <a href="#hands">In your hands</a>
+      <a href="#men">Soldiers</a>
+      <a href="#weather">Weather</a>
+      <a href="#newsreel">Newsreel</a>
+      <a href="#camp">The camp</a>
+      <a href="#hq">HQ</a>
+      <a href="#changed">Changed</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="light">Light &amp; shade</option>
+        <option value="impact">Impact</option>
+        <option value="sound">Sound</option>
+        <option value="hands">In your hands</option>
+        <option value="men">Soldiers</option>
+        <option value="weather">Weather</option>
+        <option value="newsreel">Newsreel</option>
+        <option value="camp">The camp</option>
+        <option value="hq">HQ</option>
+        <option value="changed">Changed</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="light">
+    <div class="head"><h2>Light you can see by</h2><span class="tag chg">Changed</span></div>
+    <p class="short">The shady side of a wall used to go black on a sunny day. Now the sunlit ground throws light back into it, the way it does outside.</p>
+    <ul class="points">
+      <li><b>Shade reads as shade, not a hole.</b> Sandbag walls, crates and the command post facing away from the sun are lit by the ground in front of them. It is lighting, not a filter, so it holds on LOW graphics too.</li>
+      <li><b>A lighter, cleaner grade on every front.</b> Less sepia, softer contrast and a lighter vignette, with pale, dusty skies. Looking straight up no longer shows a pinwheel and rings in the sky.</li>
+      <li><b>Smoke the sun shines through.</b> Smoke is lit by the sun and glows at the edges toward it, haze picks up a warm glow facing the sun, and dust motes catch the light when a shell lands close.</li>
+      <li><b>Night has its own light.</b> Smoke is moonlit at night, nearby fires and lamps light the smoke round them, burning wrecks glow stronger after dark, and your muzzle flash briefly lights your gun and hands.</li>
+      <li><b>Sandbags laid as bags.</b> Every sandbag wall is drawn bag by bag, staggered like a real one, and a breached wall leaves a heap of burst bags. Cover is exactly where it was.</li>
+    </ul>
+  </section>
+
+  <section id="impact">
+    <div class="head"><h2>Every hit lands</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Helmets fly off on a headshot kill,</b> on every helmeted enemy and on your own squadmen.</li>
+      <li><b>Men fall the way they were hit:</b> a head, chest or leg shot each drops a man differently. A body hits the ground with a thud, and a long shot lands with a distant thwack.</li>
+      <li><b>Explosions with weight.</b> A flash, a fireball, a ring of dust, clods of earth that bounce, and a pall of smoke that hangs after. Shells close by kick your view with a directional shake. The <b>Screen shake</b> slider still scales it.</li>
+      <li>Petal-shaped muzzle flashes, a wisp of smoke from the barrel, impacts that look like what they hit, and no more pale halos round bullet holes.</li>
+      <li>Your own men are more careful with the dead: corpses lie flat when there&rsquo;s room, and heads no longer sink into the ground.</li>
+    </ul>
+  </section>
+
+  <section id="sound">
+    <div class="head"><h2>The sound of the fight</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>A close blast hits your ears.</b> Music and the battle&rsquo;s background dip for a moment when something goes off near you, then shrapnel and debris patter down after it.</li>
+      <li>Spent brass rattles where it lands, and distant guns blend into close ones without the dip there used to be in between.</li>
+      <li>The Sar&rsquo;nt-Major and the stings no longer pile on top of each other in a busy wave.</li>
+      <li><b>The wind no longer hisses.</b> The leaves now rustle softly instead of crackling, and a burning wreck sounds like fire: a roar with pops in it.</li>
+    </ul>
+  </section>
+
+  <section id="hands">
+    <div class="head"><h2>The gun in your hands</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Every gun rebuilt.</b> Rounded receivers, real trigger guards and triggers, sling swivels, magazine ribs and stripper clips, varnished wood and blued steel, enamel on the scopes. A new shovel too.</li>
+      <li><b>Hands</b> are tanned, and gloved in the Ardennes snow.</li>
+      <li><b>The gun moves with you.</b> It lags a touch when you turn, sways in a figure of eight as you walk, trails when you start and stop, and each class of gun kicks at the hip in its own way. Land from a jump and your view dips and rolls. Aiming down the sights feels exactly as before.</li>
+      <li>The slider is now called <b>Weapon sway and bob</b>, under OPTIONS. Set it to 0 to switch all of this off.</li>
+    </ul>
+  </section>
+
+  <section id="men">
+    <div class="head"><h2>Soldiers with faces</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Sculpted, painted faces</b> on every soldier, with a range of skin tones, and kit that reads at a glance: shelter halves, mess tins and webbing.</li>
+      <li>Soldiers are easier to make out close up, and enemies stay dark at a distance on purpose.</li>
+      <li><b>New vehicles:</b> GMC and Opel Blitz lorries, a proper Kübelwagen and a more detailed Goliath. The downed pilot on Henderson Field has a body to match, and the anti-tank gun&rsquo;s loader rams each round home.</li>
+    </ul>
+  </section>
+
+  <section id="weather">
+    <div class="head"><h2>Weather that changes in front of you</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Night Falls</b> now fades the sky to dark over about 26 seconds, instead of all at once.</li>
+      <li><b>Dawn Attack</b> starts in the blue hour and breaks into a gold sunrise.</li>
+      <li>Rain splashes on the ground, snow streaks past, and fog rolls in banks.</li>
+    </ul>
+  </section>
+
+  <section id="newsreel">
+    <div class="head"><h2>On the newsreel</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>The Last Round cam looks like old film:</b> a warm, washed-out grade with fine grain, a few scratches and a breath of projector flicker. It now lasts a little longer, so the man goes down on screen.</li>
+      <li><b>The shot of the run.</b> When a run ends, the best kills of it play back as a short reel on every soldier&rsquo;s screen before the results. Any key skips it.</li>
+      <li>Anti-tank gun kills and tank aces get their own captions, and WAVE HELD is called on the moment of impact.</li>
+      <li>Not for you? OPTIONS &rsaquo; <b>Newsreel film look</b> turns the film off; the Last round camera option still turns the cam off altogether.</li>
+    </ul>
+  </section>
+
+  <section id="camp">
+    <div class="head"><h2>The camp and the fronts</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The command post looks lived in:</b> detail round the post and the camp, and a flag that waves. It&rsquo;s all for looks; nothing new to trip over or hide behind.</li>
+      <li><b>New buildings:</b> a road and a forester&rsquo;s lodge in the Ardennes, and a tenement in the Factory District. Monte Lungo&rsquo;s far town has its colours back, and the Factory has a broken skyline.</li>
+      <li><b>We audited 1,000 maps for anything out of place.</b> Floating pieces went from 3,759 to 14, and about 1,900 misplaced items to none.</li>
+    </ul>
+  </section>
+
+  <section id="hq">
+    <div class="head"><h2>Back at HQ</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>Real paper, worn rubber stamps, buttons that press and ease when you hover them, and pages that fade between each other.</li>
+      <li>The command post rests behind the HQ papers, and the battlefield is much quieter while you&rsquo;re there.</li>
+      <li>Results captions are bigger and easier to read.</li>
+    </ul>
+  </section>
+
+  <section id="changed">
+    <div class="head"><h2>From your playtest 18 reports</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Crack Shot no longer slows the game.</b> You still get the CRACK SHOT banner and its bounty for a run of headshots, but the slow motion is gone for now: it broke the flow, especially in the quieter early waves.</li>
+      <li><b>Hand-to-hand kills</b> are now called COLD STEEL and say what did it (a shovel kill says so), instead of always saying BAYONET.</li>
+      <li><b>Veteran traits are upsides only.</b> No more drawbacks attached.</li>
+      <li><b>The anti-tank gun</b> sits on a raised platform so it fires over the camp&rsquo;s own walls, and it can aim 15&deg; down. It can now hit what&rsquo;s in front of it on Monte Lungo and Henderson Field.</li>
+      <li><b>Blow the MG Nest:</b> the satchel now waits on the ground outside the post, not on the roof.</li>
+      <li><b>Night flares no longer blind you</b> on top of the brighter nights.</li>
+      <li><b>The minimap:</b> paratroopers and snipers are no longer drawn green or blue, the colours of your own squad and your mates. All enemies are warm colours now; snipers have a pale dot in the middle.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li><b>The loud, static-like hiss when the game first launches</b> is gone. It was the wind&rsquo;s leaves crackling, and it could hurt at full volume.</li>
+      <li><b>Glowing white dots on walls and planks</b> when you stood close to them are gone. Thanks to everyone who sent screenshots.</li>
+      <li>The Last Round cam and the end-of-run reel move smoothly now, instead of stepping like old film. Each kill on the reel lasts a little longer, so the cuts between them aren&rsquo;t so jarring.</li>
+      <li>The radio line &ldquo;Movement on the tree line&rdquo; no longer says &ldquo;tree lean&rdquo;.</li>
+      <li>Fewer stutters: bodies, guns, vehicles and sounds are loaded during the opening break instead of the first time you meet them.</li>
+      <li>Dust motes stay as small specks instead of growing into blobs close to the camera.</li>
+      <li>A fallen man&rsquo;s head no longer ends up under the ground.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li>Bodies still don&rsquo;t ragdoll; a man falls and settles as one piece.</li>
+      <li>The Trench Gun&rsquo;s ejection port is a flat black panel up close, and the Garand&rsquo;s en-bloc clip is a fat cream cylinder.</li>
+      <li>The downed pilot walks about five metres behind his escort, out of view.</li>
+      <li>A squadmate&rsquo;s body can lie through the camp crates by the wall, and now and then a rifle points straight up from a body.</li>
+      <li>Monte Lungo&rsquo;s HQ backdrop shows half a house wall.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li>Press <kbd>F10</kbd> the moment something looks or sounds wrong; it sends the map code for you.</li>
+      <li><b>The sound of a heavy wave:</b> with mortars and artillery coming in, does the dip on close blasts feel punchy, or does it pump and grate?</li>
+      <li><b>The gun in your hands:</b> is the sway, bob and landing dip too much, too little, or right? Does aiming feel exactly as before?</li>
+      <li><b>The newsreel:</b> does the end-of-run reel earn its seconds, or is it too long?</li>
+      <li><b>Weather in motion:</b> any pop, flicker or blinding frame as Night Falls or the dawn comes up?</li>
+      <li><b>The Factory District facing the sun:</b> does it look milky or washed out?</li>
+      <li><b>Night, fog and snow:</b> can you read the weapon list and the section roster? Does the plate behind them look like a box?</li>
+      <li><b>Smoke at night:</b> does a smoke grenade still hide men in the moonlight?</li>
+      <li><b>In co-op:</b> do helmets and death reactions look the same on both screens, and does the end reel play for everyone?</li>
+      <li><b>Crack Shot without the slow motion:</b> do you miss it, or is the game better without it?</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 19">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
