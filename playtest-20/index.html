@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 20 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 20 build.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
+    <h1>Playtest 20<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>20</div>
+    <p class="lede">You told us the gunplay feels clean but your class was just a bigger number. This one changes that. Every specialist now carries kit of their own, picks a doctrine that changes how they fight, and draws cards only their class can get. Your guns branch as they level, and your RP now buys new ways to play, not just more damage.</p>
+    <div class="glance">
+      <div><b>15</b><span>Class kits</span></div>
+      <div><b>10</b><span>Doctrines</span></div>
+      <div><b>60</b><span>Gun-level picks</span></div>
+      <div><b>15</b><span>Class cards</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game: it sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#kits">Class kits</a>
+      <a href="#alternates">More kit</a>
+      <a href="#doctrines">Doctrines</a>
+      <a href="#guns">Gun branches</a>
+      <a href="#cards">Class cards</a>
+      <a href="#together">Fight together</a>
+      <a href="#keys">Keys</a>
+      <a href="#save">Your save</a>
+      <a href="#changed">Changed</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="kits">Class kits</option>
+        <option value="alternates">More kit</option>
+        <option value="doctrines">Doctrines</option>
+        <option value="guns">Gun branches</option>
+        <option value="cards">Class cards</option>
+        <option value="together">Fight together</option>
+        <option value="keys">Keys</option>
+        <option value="save">Your save</option>
+        <option value="changed">Changed</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="kits">
+    <div class="head"><h2>Every class carries kit</h2><span class="tag new">New</span></div>
+    <p class="short">Each specialist has a piece of kit on <kbd>E</kbd> during a wave. Its charges show over your weapons and as pips on the section roster, and they come back each wave you hold. Pick yours under LOADOUT &rsaquo; SPECIALIST.</p>
+    <ul class="points">
+      <li><b>Rifleman: Spotter&rsquo;s Scope</b> (from rifleman level 2). Mark the man in your sights for the whole section. His helmet won&rsquo;t save him from a headshot, and a headshot kill on him by anyone gives your charge back.</li>
+      <li><b>Machine Gunner: Ammunition Box.</b> Set a box down; any soldier holds <kbd>F</kbd> at it for full magazines and a grenade. Everyone gets their own share, so nobody races for it.</li>
+      <li><b>Medic: Syrettes.</b> A jab for the man in reach: health and a few seconds where hits don&rsquo;t knock his aim, or, on a downed mate, it holds his bleeding for 20 seconds so you can finish the fight first.</li>
+      <li><b>Engineer: Sandbag Pack.</b> Fill a blown gap in the sandbags at once, or throw up a short wall where you look, mid-fight. Your mates can hop it; the enemy has to go round.</li>
+      <li><b>Radioman: Signal Flares.</b> Fire a flare where you look: every man under it is marked for the section for a few seconds, and at night it lights the ground too.</li>
+    </ul>
+  </section>
+
+  <section id="alternates">
+    <div class="head"><h2>More kit to buy with RP</h2><span class="tag new">New</span></div>
+    <p class="short">Each class has two alternate kits, opening at class levels 6 and 9. You buy them once with RP, carry one at a time and swap free at HQ. Every kit also has upgrades that change how it works, not just how hard it hits.</p>
+    <ul class="points">
+      <li><b>Rifleman:</b> <b>Sniper&rsquo;s Veil</b>: crouch still and the enemy can&rsquo;t pick you out until they&rsquo;re close, and only a headshot keeps you hidden. <b>Dummy Head</b>: a helmet on a stick that makes men stop, turn and hold their fire.</li>
+      <li><b>Machine Gunner:</b> <b>Tripod Mount</b>: crouch at it with an automatic and the gun barely moves. <b>Captured Arms</b>: a captured StG 44 in your extra slot, and an upgrade to hand it to a mate.</li>
+      <li><b>Medic:</b> <b>Aid Post</b>: plant it and anyone resting in its ring heals. <b>Rescue Smoke</b>: a violet screen over a downed man that throws off the enemy&rsquo;s aim at whoever gets him up.</li>
+      <li><b>Engineer:</b> <b>Wire Party</b>: string a run of wire that slows and snags men; your mates walk straight through. <b>Bangalore Torpedo</b>: push a pipe out along your aim and blow a lane through them, armour included.</li>
+      <li><b>Radioman:</b> <b>Supply Drop Call</b>: a crate by parachute, a share for every soldier. <b>SOS Targets</b>: register a spot, and when men bunch up on it, shells land on them.</li>
+      <li>Upgrades include wired sandbag walls, a second ammo box, a belt feed on the tripod, ground flares that burn, a Bangalore you fire yourself, and a stabilised man who gets himself back up.</li>
+    </ul>
+  </section>
+
+  <section id="doctrines">
+    <div class="head"><h2>Doctrines: two ways to play each class</h2><span class="tag new">New</span></div>
+    <p class="short">Pick one from class level 1 on the SPECIALIST page and swap it free at HQ. It sits on top of your class; with none picked, your class plays exactly as before.</p>
+    <ul class="points">
+      <li><b>Rifleman:</b> <b>Deliberate Fire</b> (a headshot kill makes your next shot dead true; string three and it goes through two men) or <b>Skirmisher</b> (every kill gives you a burst of speed and hip fire as true as aimed).</li>
+      <li><b>Machine Gunner:</b> <b>Beaten Zone</b> (a held burst pins every man it hits and marks him for the section) or <b>Marching Fire</b> (fire on the move with no spread, and kills put rounds back).</li>
+      <li><b>Medic:</b> <b>Field Surgeon</b> (hold <kbd>F</kbd> on a man up to 15 m off to patch him or get him up at range) or <b>Combat Medic</b> (your kills heal you and everyone near you).</li>
+      <li><b>Engineer:</b> <b>Assault Pioneer</b> (a grenade close to armour hits like a bazooka rocket) or <b>Bulwark</b> (crouch still to dig in: you take less and your aim steadies).</li>
+      <li><b>Radioman:</b> <b>Fire Director</b> (men under your field glasses are spotted, and a spotted man killed by anyone charges your fire missions) or <b>Signaller</b> (a free precision shell every 45 seconds on its own clock).</li>
+    </ul>
+  </section>
+
+  <section id="guns">
+    <div class="head"><h2>Your guns branch as they level</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>At gun levels 3, 6 and 9</b> every gun offers a choice between two ways to fight, free to pick and swap at the Armoury. A Kar can put a round back on a headshot, or fly its first settled shot straight through a man; the pistol can fan the hammer; the Trench Gun can drill a slug.</li>
+      <li><b>Modifications.</b> From gun level 4 each gun can take one of two Modifications, bought once with RP: T20 select-fire, a straight-pull bolt, a belt-fed B.A.R. and more. Anything a mod costs you is printed in red.</li>
+      <li>The level bonus to damage and reload is the same as before. Your Battle Honours still cap the level a gun fights at, so the level-6 and level-9 picks open with the higher tiers.</li>
+      <li>A gun already past a milestone shows <b>NEW</b> at the Armoury until you choose.</li>
+    </ul>
+  </section>
+
+  <section id="cards">
+    <div class="head"><h2>Cards that know your class</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>From class level 2</b> each class can draw two commendations nobody else can, each a new trick: Cut Off the Head and Range Card for the rifleman, Belt Swap and Covering Fire for the gunner, Smelling Salts and Shell Dressings for the medic, Rubble Charges and Improvised Mine for the engineer, Shell Shock and On My Position for the radioman.</li>
+      <li><b>The Quartermaster&rsquo;s Issue</b> has a card for each class too: Marksman&rsquo;s Bandolier, Spare Barrel, Blood Plasma, Engineer&rsquo;s Stores and Signals Wagon. Some also put a charge back in your kit.</li>
+      <li>A class card shows its class on the footer, in that class&rsquo;s colour.</li>
+    </ul>
+  </section>
+
+  <section id="together">
+    <div class="head"><h2>Fight together</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Your engineer and medic now help you,</b> not only the AI squad: stand near an engineer and you take less; near a medic and your wounds start healing sooner. Six engineers still count as one, so nothing stacks silly.</li>
+      <li><b>Section Drills.</b> Two soldiers of different classes fighting close together form a drill with a small bonus for both: Overwatch, Crossfire, Fixed Lines, Aid Line, Stand-To, Dug-In Gun and Field Telephone. A gold diamond on the roster shows who&rsquo;s in one. Drills are co-op only.</li>
+      <li>The lobby&rsquo;s YOUR TEAM panel shows which drills your section can form, and which class you&rsquo;re missing.</li>
+      <li>Revives and heals from your mates have a sensible ceiling now, so six men round one casualty don&rsquo;t get him up in a quarter of a second.</li>
+    </ul>
+  </section>
+
+  <section id="keys">
+    <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><kbd>E</kbd> in a wave uses your kit while it has charges.</li>
+      <li><b>Crouch and press <kbd>E</kbd></b> for your class&rsquo;s once-a-wave AT mine, clearing post or sandbag wall. With your kit empty, plain <kbd>E</kbd> does it again.</li>
+      <li><kbd>E</kbd> at the post between waves is still READY, and holding it still repairs.</li>
+      <li>Hold <kbd>F</kbd> at an Ammunition Box to draw from it. The Improvised Mine card is now a short hold of the grenade key.</li>
+    </ul>
+  </section>
+
+  <section id="save">
+    <div class="head"><h2>Your save keeps everything</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>Nothing you bought is lost and nothing was made weaker. Your classes draw their starter kits on first load, and a class already at level 9 gets its first new kit free.</li>
+      <li>Everyone in a co-op game needs the playtest 20 build.</li>
+    </ul>
+  </section>
+
+  <section id="changed">
+    <div class="head"><h2>Also changed</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>What&rsquo;s new, with history.</b> The card at the top of the HQ now pages back through the last five playtests with its arrows (or Left/Right), and FULL NOTES opens the one you&rsquo;re looking at.</li>
+      <li>The SPECIALIST page folds rows you&rsquo;ve already chosen into one line when space runs short; click one to open it again.</li>
+      <li>A few numbers are set for this playtest only and may move after it: headshots refund at most two rounds a kill and go through at most three men from this playtest&rsquo;s sources; Fire Director&rsquo;s spotting is worth half a kill; Benzedrine and Stretcher Bay work once per man per wave.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li>Kits only work during a wave, because <kbd>E</kbd> between waves is READY.</li>
+      <li>Modifications don&rsquo;t show on the gun model yet.</li>
+      <li>Blood Plasma, Engineer&rsquo;s Stores and Signals Wagon top up your kit, but their card text doesn&rsquo;t say so yet.</li>
+      <li>A pack wall can go up on top of one of your AI squadmen.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Which kit and doctrine did you take,</b> and did they change how you played your class?</li>
+      <li>Which alternate kit did you buy first, and why?</li>
+      <li>Did <kbd>E</kbd>, crouch + <kbd>E</kbd> or <kbd>F</kbd> ever do the wrong thing?</li>
+      <li><b>In a full section:</b> did the ammo boxes, syrettes, aid posts or drills feel too strong with five or six of you?</li>
+      <li>Did anything on the HUD or the roster get in the way?</li>
+      <li>Is there a gun-level pick or Modification nobody would ever take?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 20">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
