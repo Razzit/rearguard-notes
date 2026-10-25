@@ -19,12 +19,12 @@
     <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
     <h1>Playtest 20<br>Patch Notes</h1>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>20</div>
-    <p class="lede">You told us the gunplay feels clean but your class was just a bigger number. This one changes that. Every specialist now carries kit of their own, picks a doctrine that changes how they fight, and draws cards only their class can get. Your guns branch as they level, and your RP now buys new ways to play, not just more damage.</p>
+    <p class="lede">You told us the gunplay feels clean but your class was just a bigger number, and every upgrade was more flat damage. This one changes that. Every specialist now carries kit of their own and picks a doctrine. Your RP buys new cards, kits and run boons instead of +10% damage. Cards come in schools that change the rules when you collect them, and every run is a choice: pick it on the Front Board, raise the stakes with the Pact, and take the forks along the way.</p>
     <div class="glance">
       <div><b>15</b><span>Class kits</span></div>
       <div><b>10</b><span>Doctrines</span></div>
-      <div><b>60</b><span>Gun-level picks</span></div>
-      <div><b>15</b><span>Class cards</span></div>
+      <div><b>7</b><span>Card schools</span></div>
+      <div><b>0</b><span>Flat damage upgrades</span></div>
     </div>
     <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game: it sends a screenshot and the map code for you.</span></p>
   </div>
@@ -34,14 +34,15 @@
   <div class="col nav-row">
     <div class="nav-links">
       <a href="#kits">Class kits</a>
-      <a href="#alternates">More kit</a>
       <a href="#doctrines">Doctrines</a>
-      <a href="#guns">Gun branches</a>
-      <a href="#cards">Class cards</a>
-      <a href="#together">Fight together</a>
+      <a href="#rp">What RP buys</a>
+      <a href="#cards">Cards</a>
+      <a href="#run">Your run</a>
+      <a href="#forks">Forks</a>
+      <a href="#guns">Guns &amp; nests</a>
+      <a href="#together">Together</a>
       <a href="#keys">Keys</a>
       <a href="#save">Your save</a>
-      <a href="#changed">Changed</a>
       <a href="#known">Known issues</a>
       <a href="#test">Testing</a>
     </div>
@@ -49,14 +50,15 @@
       <select id="nav-jump">
         <option value="">Jump to&hellip;</option>
         <option value="kits">Class kits</option>
-        <option value="alternates">More kit</option>
         <option value="doctrines">Doctrines</option>
-        <option value="guns">Gun branches</option>
-        <option value="cards">Class cards</option>
-        <option value="together">Fight together</option>
+        <option value="rp">What RP buys</option>
+        <option value="cards">Cards</option>
+        <option value="run">Your run</option>
+        <option value="forks">Forks</option>
+        <option value="guns">Guns &amp; nests</option>
+        <option value="together">Together</option>
         <option value="keys">Keys</option>
         <option value="save">Your save</option>
-        <option value="changed">Changed</option>
         <option value="known">Known issues</option>
         <option value="test">Testing</option>
       </select>
@@ -72,65 +74,85 @@
     <div class="head"><h2>Every class carries kit</h2><span class="tag new">New</span></div>
     <p class="short">Each specialist has a piece of kit on <kbd>E</kbd> during a wave. Its charges show over your weapons and as pips on the section roster, and they come back each wave you hold. Pick yours under LOADOUT &rsaquo; SPECIALIST.</p>
     <ul class="points">
-      <li><b>Rifleman: Spotter&rsquo;s Scope</b> (from rifleman level 2). Mark the man in your sights for the whole section. His helmet won&rsquo;t save him from a headshot, and a headshot kill on him by anyone gives your charge back.</li>
+      <li><b>Rifleman: Running Tally.</b> Headshot kills in a row notch your rifle up: a faster bolt, no sway after a sprint, an instant reload, a round that goes through two men, then a headshot that hits a heavy twice as hard. At five notches, <kbd>E</kbd> calls <b>STEADY, LADS!</b> and steadies the whole section&rsquo;s aim for three seconds. A body-shot kill or taking a hit starts the count again. Every rifleman&rsquo;s headshot now goes straight through a helmet.</li>
       <li><b>Machine Gunner: Ammunition Box.</b> Set a box down; any soldier holds <kbd>F</kbd> at it for full magazines and a grenade. Everyone gets their own share, so nobody races for it.</li>
       <li><b>Medic: Syrettes.</b> A jab for the man in reach: health and a few seconds where hits don&rsquo;t knock his aim, or, on a downed mate, it holds his bleeding for 20 seconds so you can finish the fight first.</li>
       <li><b>Engineer: Sandbag Pack.</b> Fill a blown gap in the sandbags at once, or throw up a short wall where you look, mid-fight. Your mates can hop it; the enemy has to go round.</li>
-      <li><b>Radioman: Signal Flares.</b> Fire a flare where you look: every man under it is marked for the section for a few seconds, and at night it lights the ground too.</li>
-    </ul>
-  </section>
-
-  <section id="alternates">
-    <div class="head"><h2>More kit to buy with RP</h2><span class="tag new">New</span></div>
-    <p class="short">Each class has two alternate kits, opening at class levels 6 and 9. You buy them once with RP, carry one at a time and swap free at HQ. Every kit also has upgrades that change how it works, not just how hard it hits.</p>
-    <ul class="points">
-      <li><b>Rifleman:</b> <b>Sniper&rsquo;s Veil</b>: crouch still and the enemy can&rsquo;t pick you out until they&rsquo;re close, and only a headshot keeps you hidden. <b>Dummy Head</b>: a helmet on a stick that makes men stop, turn and hold their fire.</li>
-      <li><b>Machine Gunner:</b> <b>Tripod Mount</b>: crouch at it with an automatic and the gun barely moves. <b>Captured Arms</b>: a captured StG 44 in your extra slot, and an upgrade to hand it to a mate.</li>
-      <li><b>Medic:</b> <b>Aid Post</b>: plant it and anyone resting in its ring heals. <b>Rescue Smoke</b>: a violet screen over a downed man that throws off the enemy&rsquo;s aim at whoever gets him up.</li>
-      <li><b>Engineer:</b> <b>Wire Party</b>: string a run of wire that slows and snags men; your mates walk straight through. <b>Bangalore Torpedo</b>: push a pipe out along your aim and blow a lane through them, armour included.</li>
-      <li><b>Radioman:</b> <b>Supply Drop Call</b>: a crate by parachute, a share for every soldier. <b>SOS Targets</b>: register a spot, and when men bunch up on it, shells land on them.</li>
-      <li>Upgrades include wired sandbag walls, a second ammo box, a belt feed on the tripod, ground flares that burn, a Bangalore you fire yourself, and a stabilised man who gets himself back up.</li>
+      <li><b>Radioman: Signal Flares.</b> Fire a flare where you look: every man under it is marked and takes more damage from the whole section, and at night it lights the ground too.</li>
+      <li><b>Alternate kits</b> open from class level 6 and are bought once with RP; you carry one and swap free at HQ. Sniper&rsquo;s Veil, Dummy Head and Marksman&rsquo;s Challenge for the rifleman; Tripod Mount and Captured Arms for the gunner; Aid Post and Rescue Smoke for the medic; Wire Party and Bangalore Torpedo for the engineer; Supply Drop Call and SOS Targets for the radioman. Every kit has upgrades that change how it works.</li>
     </ul>
   </section>
 
   <section id="doctrines">
     <div class="head"><h2>Doctrines: two ways to play each class</h2><span class="tag new">New</span></div>
-    <p class="short">Pick one from class level 1 on the SPECIALIST page and swap it free at HQ. It sits on top of your class; with none picked, your class plays exactly as before.</p>
+    <p class="short">Pick one on the SPECIALIST page and swap it free at HQ. With none picked, your class plays as before.</p>
     <ul class="points">
-      <li><b>Rifleman:</b> <b>Deliberate Fire</b> (a headshot kill makes your next shot dead true; string three and it goes through two men) or <b>Skirmisher</b> (every kill gives you a burst of speed and hip fire as true as aimed).</li>
-      <li><b>Machine Gunner:</b> <b>Beaten Zone</b> (a held burst pins every man it hits and marks him for the section) or <b>Marching Fire</b> (fire on the move with no spread, and kills put rounds back).</li>
-      <li><b>Medic:</b> <b>Field Surgeon</b> (hold <kbd>F</kbd> on a man up to 15 m off to patch him or get him up at range) or <b>Combat Medic</b> (your kills heal you and everyone near you).</li>
-      <li><b>Engineer:</b> <b>Assault Pioneer</b> (a grenade close to armour hits like a bazooka rocket) or <b>Bulwark</b> (crouch still to dig in: you take less and your aim steadies).</li>
-      <li><b>Radioman:</b> <b>Fire Director</b> (men under your field glasses are spotted, and a spotted man killed by anyone charges your fire missions) or <b>Signaller</b> (a free precision shell every 45 seconds on its own clock).</li>
+      <li><b>Rifleman:</b> <b>Deliberate Fire</b> (a headshot kill makes your next shot dead true) or <b>Skirmisher</b> (every kill gives you a burst of speed and true hip fire).</li>
+      <li><b>Machine Gunner:</b> <b>Beaten Zone</b> (a held burst pins every man it hits) or <b>Marching Fire</b> (fire on the move, and kills put rounds back).</li>
+      <li><b>Medic:</b> <b>Field Surgeon</b> (hold <kbd>F</kbd> on a man up to 15 m off to patch him or get him up) or <b>Combat Medic</b> (your kills heal you and everyone near you).</li>
+      <li><b>Engineer:</b> <b>Assault Pioneer</b> (a grenade close to armour hits like a bazooka rocket) or <b>Bulwark</b> (crouch still to dig in).</li>
+      <li><b>Radioman:</b> <b>Fire Director</b> (spotted men charge your fire missions when anyone kills them) or <b>Signaller</b> (a free precision shell every 45 seconds).</li>
     </ul>
   </section>
 
-  <section id="guns">
-    <div class="head"><h2>Your guns branch as they level</h2><span class="tag new">New</span></div>
+  <section id="rp">
+    <div class="head"><h2>What your RP buys now</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li><b>At gun levels 3, 6 and 9</b> every gun offers a choice between two ways to fight, free to pick and swap at the Armoury. A Kar can put a round back on a headshot, or fly its first settled shot straight through a man; the pistol can fan the hammer; the Trench Gun can drill a slug.</li>
-      <li><b>Modifications.</b> From gun level 4 each gun can take one of two Modifications, bought once with RP: T20 select-fire, a straight-pull bolt, a belt-fed B.A.R. and more. Anything a mod costs you is printed in red.</li>
-      <li>The level bonus to damage and reload is the same as before. Your Battle Honours still cap the level a gun fights at, so the level-6 and level-9 picks open with the higher tiers.</li>
-      <li>A gun already past a milestone shows <b>NEW</b> at the Armoury until you choose.</li>
+      <li><b>No more +10% damage.</b> The Quartermaster&rsquo;s Tier I lines are gone, and every RP you spent on them is refunded. Your soldier now hardens with service instead: <b>Service Conditioning I&ndash;VI</b> comes free at ranks 5, 10, 15, 20, 25 and 30. By rank 30 you are exactly as strong as a fully upgraded soldier was. Battle Honours pay a little more.</li>
+      <li><b>The Commendation Dossier</b> (rank 4). New soldiers start with a plainer deck. At UPGRADES &rsaquo; SOLDIER, requisition new Rare and Epic cards into your deck from three on offer. Veterans already own the lot.</li>
+      <li><b>Blueprints.</b> Now and then an officer carries a blueprint for a card you don&rsquo;t have. Pick it up where he falls and bring it home at the relief to keep it; die or get overrun and it&rsquo;s lost.</li>
+      <li><b>Return to stores.</b> Take up to four cards out of your own deck to aim a build. Free, and you can put them back.</li>
+      <li><b>Requisition Slips</b> (rank 9). Carry one boon into each deployment, chosen at BRIEFING: a lucky reroll, an early Issue, a Dressing Station, Corporals for your riflemen, a gun zeroed one level higher, a Legendary half on your first offer, and more.</li>
     </ul>
   </section>
 
   <section id="cards">
-    <div class="head"><h2>Cards that know your class</h2><span class="tag new">New</span></div>
+    <div class="head"><h2>Cards that change the rules</h2><span class="tag new">New</span></div>
     <ul class="points">
-      <li><b>From class level 2</b> each class can draw two commendations nobody else can, each a new trick: Cut Off the Head and Range Card for the rifleman, Belt Swap and Covering Fire for the gunner, Smelling Salts and Shell Dressings for the medic, Rubble Charges and Improvised Mine for the engineer, Shell Shock and On My Position for the radioman.</li>
-      <li><b>The Quartermaster&rsquo;s Issue</b> has a card for each class too: Marksman&rsquo;s Bandolier, Spare Barrel, Blood Plasma, Engineer&rsquo;s Stores and Signals Wagon. Some also put a charge back in your kit.</li>
-      <li>A class card shows its class on the footer, in that class&rsquo;s colour.</li>
+      <li><b>Schools and sets.</b> Every commendation belongs to a school: Marksman, Suppression, Close Quarters, Demolition, Fieldcraft, Signals or Medical. Hold 3 or 5 cards of one school and a rule comes in, such as <b>One Round Back</b> for marksmen. A card that would complete a set says so before you pick it.</li>
+      <li><b>Rule-breakers.</b> Eight new Legendaries that bend how your other cards work. Your first finished set puts one in your next offer.</li>
+      <li><b>Rank II.</b> A second copy of some action cards comes as RANK II, with a new trick instead of a bigger number.</li>
+      <li><b>Class cards</b> (from class level 2): two commendations each class can draw that nobody else can, plus a class card in the Quartermaster&rsquo;s Issue.</li>
+      <li>Your class&rsquo;s favourite cards are now its action cards, not its number cards, and the strongest number cards stack less.</li>
+    </ul>
+  </section>
+
+  <section id="run">
+    <div class="head"><h2>Pick your run</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>The Front Board</b> (rank 7). At BRIEFING each front offers three runs: the front as it comes, one with a Warning and an Anomaly, or one with two Warnings. Warnings make it harder (night, fog, elites, an armoured column, a busy front) and Anomalies are odd gifts; the RP and XP bonus is printed before you pick. In co-op the host picks.</li>
+      <li><b>The Pact</b> (once you&rsquo;ve secured a front at Battle Honours III). Sign lines for heat: flamethrowers every wave, no Issue after wave 3, tanks two waves early, and more. Each point of heat pays more RP and XP, and beating your best heat on a front pays a bounty. Heat 0 is the game as before.</li>
+    </ul>
+  </section>
+
+  <section id="forks">
+    <div class="head"><h2>Forks in the run</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Cursed crate.</b> Sometimes a break offers your own crate: a strong card with a printed burden for the next two waves. Only you carry it, and you never have to take it.</li>
+      <li><b>Perfect wave.</b> Some waves set a target, like keeping the post untouched. Meet it and the next card comes a tier higher.</li>
+      <li><b>PUSH ON.</b> After some waves, hold the ready key to vote to skip the break for a reward. More than half the section carries it; a quick tap still just readies you.</li>
+      <li><b>Route.</b> On Hold the Line, vote between Armour Push, Night Attack and Shock Troops, each paying more.</li>
+    </ul>
+  </section>
+
+  <section id="guns">
+    <div class="head"><h2>Guns and nests</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Gun levels branch.</b> At gun levels 3, 6 and 9 every gun offers a choice between two ways to fight, free to swap at the Armoury. From level 4 each gun takes a <b>Modification</b> bought once with RP; anything a mod costs you is printed in red.</li>
+      <li><b>The M1911 gets a Legendary pair:</b> Stopping Power + Hammer Pair = Gunfighter. It is also steadier: a tighter spread, less kick and less sway on the sights.</li>
+      <li><b>Nest Armament</b> (rank 18): AP belts that go through a man into the next, or an M2 .50 cal that pins men and punches through light cover. A Traversing Stop stakes out each gun&rsquo;s killing ground. The M1919 Gun Drill is retired and refunded.</li>
+      <li><b>Two new camps</b> (rank 18): Forward Pits puts the guns out ahead of the wire; the Inner Redoubt rings the post with a low wall. The host picks the defences at BRIEFING.</li>
+      <li><b>Automatic tagging.</b> Hit a heavy, officer, crewman, sniper or vehicle and the section sees him tagged for a few seconds, with a shout from your men. Marked men show through smoke, fog and night.</li>
     </ul>
   </section>
 
   <section id="together">
     <div class="head"><h2>Fight together</h2><span class="tag new">New</span></div>
     <ul class="points">
-      <li><b>Your engineer and medic now help you,</b> not only the AI squad: stand near an engineer and you take less; near a medic and your wounds start healing sooner. Six engineers still count as one, so nothing stacks silly.</li>
-      <li><b>Section Drills.</b> Two soldiers of different classes fighting close together form a drill with a small bonus for both: Overwatch, Crossfire, Fixed Lines, Aid Line, Stand-To, Dug-In Gun and Field Telephone. A gold diamond on the roster shows who&rsquo;s in one. Drills are co-op only.</li>
-      <li>The lobby&rsquo;s YOUR TEAM panel shows which drills your section can form, and which class you&rsquo;re missing.</li>
-      <li>Revives and heals from your mates have a sensible ceiling now, so six men round one casualty don&rsquo;t get him up in a quarter of a second.</li>
+      <li><b>Your engineer and medic now help you,</b> not only the AI squad. Six of the same class still count as one, so nothing stacks silly.</li>
+      <li><b>Section Drills.</b> Two soldiers of different classes fighting close together form a drill with a small bonus for both. A gold diamond on the roster shows who&rsquo;s in one.</li>
+      <li><b>Hand it on.</b> Press <kbd>J</kbd> in a wave break to give a mate a card you didn&rsquo;t pick; it turns up in his next offer.</li>
+      <li>The roster and the roll call show everyone&rsquo;s class, kit, slip and best cards at a glance.</li>
     </ul>
   </section>
 
@@ -138,26 +160,18 @@
     <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li><kbd>E</kbd> in a wave uses your kit while it has charges.</li>
-      <li><b>Crouch and press <kbd>E</kbd></b> for your class&rsquo;s once-a-wave AT mine, clearing post or sandbag wall. With your kit empty, plain <kbd>E</kbd> does it again.</li>
-      <li><kbd>E</kbd> at the post between waves is still READY, and holding it still repairs.</li>
-      <li>Hold <kbd>F</kbd> at an Ammunition Box to draw from it. The Improvised Mine card is now a short hold of the grenade key.</li>
+      <li><b>Crouch and press <kbd>E</kbd></b> for your class&rsquo;s once-a-wave AT mine, clearing post or sandbag wall.</li>
+      <li><kbd>E</kbd> at the post between waves is still READY; <b>hold</b> it during a PUSH ON break to vote to push on.</li>
+      <li><kbd>J</kbd> hands a card on. Hold <kbd>F</kbd> at an Ammunition Box to draw from it.</li>
     </ul>
   </section>
 
   <section id="save">
     <div class="head"><h2>Your save keeps everything</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li>Nothing you bought is lost and nothing was made weaker. Your classes draw their starter kits on first load, and a class already at level 9 gets its first new kit free.</li>
+      <li>Nothing you bought is lost. Tier I and the Gun Drill are refunded in full, and the BRIEFING says how much.</li>
+      <li>Your classes draw their starter kits on first load, and a class already at level 9 gets its first new kit free. If you owned the Spotter&rsquo;s Scope you now carry the Running Tally, and its upgrade carried over.</li>
       <li>Everyone in a co-op game needs the playtest 20 build.</li>
-    </ul>
-  </section>
-
-  <section id="changed">
-    <div class="head"><h2>Also changed</h2><span class="tag chg">Changed</span></div>
-    <ul class="points">
-      <li><b>What&rsquo;s new, with history.</b> The card at the top of the HQ now pages back through the last five playtests with its arrows (or Left/Right), and FULL NOTES opens the one you&rsquo;re looking at.</li>
-      <li>The SPECIALIST page folds rows you&rsquo;ve already chosen into one line when space runs short; click one to open it again.</li>
-      <li>A few numbers are set for this playtest only and may move after it: headshots refund at most two rounds a kill and go through at most three men from this playtest&rsquo;s sources; Fire Director&rsquo;s spotting is worth half a kill; Benzedrine and Stretcher Bay work once per man per wave.</li>
     </ul>
   </section>
 
@@ -166,20 +180,19 @@
     <ul class="points">
       <li>Kits only work during a wave, because <kbd>E</kbd> between waves is READY.</li>
       <li>Modifications don&rsquo;t show on the gun model yet.</li>
-      <li>Blood Plasma, Engineer&rsquo;s Stores and Signals Wagon top up your kit, but their card text doesn&rsquo;t say so yet.</li>
-      <li>A pack wall can go up on top of one of your AI squadmen.</li>
+      <li>Some numbers are set for this playtest only and may move after it, including the Pact&rsquo;s pay and how easily the Running Tally breaks.</li>
     </ul>
   </section>
 
   <section id="test" class="ask">
     <h2>What we&rsquo;d like you to test</h2>
     <ul class="points">
-      <li><b>Which kit and doctrine did you take,</b> and did they change how you played your class?</li>
-      <li>Which alternate kit did you buy first, and why?</li>
-      <li>Did <kbd>E</kbd>, crouch + <kbd>E</kbd> or <kbd>F</kbd> ever do the wrong thing?</li>
-      <li><b>In a full section:</b> did the ammo boxes, syrettes, aid posts or drills feel too strong with five or six of you?</li>
-      <li>Did anything on the HUD or the roster get in the way?</li>
-      <li>Is there a gun-level pick or Modification nobody would ever take?</li>
+      <li><b>Did you miss the Tier I lines?</b> Did your RP feel better spent on cards, kits and slips?</li>
+      <li>Which kit and doctrine did you take, and did they change how you played your class?</li>
+      <li>Did the Front Board, the Pact and the forks feel like real choices, or did you always pick the same thing?</li>
+      <li>Did you chase a school set? Did a rule-breaker change your run?</li>
+      <li><b>Rifleman:</b> does the Running Tally feel good, or does it break too easily?</li>
+      <li>Did <kbd>E</kbd>, crouch + <kbd>E</kbd>, <kbd>F</kbd> or the push-on hold ever do the wrong thing?</li>
       <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
     </ul>
   </section>
