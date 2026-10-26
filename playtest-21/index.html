@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 21 Patch Notes</title>
+<meta name="description" content="What changed in the Rearguard playtest 21 build: a BRIEFING that answers four questions, one figure for what a run pays, cards you can read in two seconds, and the works every third break.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
+    <h1>Playtest 21<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>21</div>
+    <p class="lede">Playtest 20 gave you a lot to play with, and a lot to read. You told us the BRIEFING had become an essay, that every card wanted a paragraph before you could pick it, and that the works vote on top of everything else was too much going on. This build fixes the reading. The BRIEFING is four plain questions with the answers under them and one figure for what the run pays. Every card says what it does in nine words or fewer and shows the rest as marks, with the full rule a hold away. The works come up every third break, never beside another vote. Nothing in the game does anything different; it just tells you so faster.</p>
+    <p class="note"><b>No balance changes.</b> Every card does exactly what it did in playtest 20. Your save loads as it is. Everyone in a co-op game needs this build.</p>
+    <div class="glance">
+      <div><b>4</b><span>Questions on the BRIEFING</span></div>
+      <div><b>1</b><span>Figure for what a run pays</span></div>
+      <div><b>171</b><span>Card faces rewritten</span></div>
+      <div><b>9</b><span>Words on a card, at most</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game: it sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#briefing">The BRIEFING</a>
+      <a href="#run">Which run</a>
+      <a href="#pay">What it pays</a>
+      <a href="#cards">Cards</a>
+      <a href="#hold">The hold</a>
+      <a href="#strip">The strip</a>
+      <a href="#places">Codex &amp; dossier</a>
+      <a href="#works">The works</a>
+      <a href="#together">Together</a>
+      <a href="#keys">Keys</a>
+      <a href="#save">Your save</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="briefing">The BRIEFING</option>
+        <option value="run">Which run</option>
+        <option value="pay">What it pays</option>
+        <option value="cards">Cards</option>
+        <option value="hold">The hold</option>
+        <option value="strip">The strip</option>
+        <option value="places">Codex &amp; dossier</option>
+        <option value="works">The works</option>
+        <option value="together">Together</option>
+        <option value="keys">Keys</option>
+        <option value="save">Your save</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="briefing">
+    <div class="head"><h2>The BRIEFING answers four questions</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The left column is four fields, always in the same place:</b> WHERE &middot; NEXT DEPLOYMENT, WHICH RUN, HOW HARD &middot; WHAT IT PAYS, and YOUR KIT. Each one is a caption, the answer in a line or two, and the button that changes it. Your kit sits at the same height whatever rank you are.</li>
+      <li><b>WHERE</b> names the front, says whether it&rsquo;s SECURED, how many waves win it and your best, and gives the first line of its story. CHANGE FRONT is at the right where it always was.</li>
+      <li>The board&rsquo;s rows of A / B / C, OP, OR with its arrows and &ldquo;1/7&rdquo;, CMP and the warning lines are gone from the page. One field says which run you&rsquo;re on; CHANGE RUN opens the rest.</li>
+      <li>&ldquo;ORDERS FROM HQ&rdquo; is gone from the dispatches, and the board&rsquo;s good surprises are called a <b>GIFT</b>, not an anomaly.</li>
+      <li>Nothing on the page is smaller than 14 pt any more. A line that would have shrunk to fit is cut short instead.</li>
+    </ul>
+  </section>
+
+  <section id="run">
+    <div class="head"><h2>Which run: one field and one sheet</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>The WHICH RUN field</b> is three lines: the run&rsquo;s letter and a plain title (C &middot; THE HARDEST RUN, WEEKLY OPERATION, DAILY ORDERS, CHALLENGE, THE CAMPAIGN), its modifiers as a pip and a name each, and what the pips mean. Until you&rsquo;ve taken a dealt run, line three says &ldquo;two harder runs pay more: CHANGE RUN&rdquo;.</li>
+      <li><b>CHANGE RUN opens the RUN sheet.</b> TODAY&rsquo;S BOARD is three cards side by side: letter, title, what it pays, and a line per modifier with its effect. The one you&rsquo;re on says SELECTED. Under them, OTHER WAYS TO PLAY lists the weekly operation, the daily orders, the campaign and each challenge as a row you can take.</li>
+      <li>THE MAP block prints the next deployment&rsquo;s conditions the same way: a pip and a name each, in ink, instead of names joined with a plus sign in red.</li>
+      <li>In a session a client&rsquo;s field shows the host&rsquo;s pick and says &ldquo;the host picks&rdquo;, with SEE THE BOARD to read it.</li>
+    </ul>
+  </section>
+
+  <section id="pay">
+    <div class="head"><h2>One figure for what a run pays</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>HOW HARD &middot; WHAT IT PAYS</b> gives one total in red (&ldquo;pays RP x3.00 &middot; XP x1.90&rdquo;) and the parts under it in whole percents: &ldquo;Standard tier &middot; 2 handicaps +55% &middot; Pact heat 9 +72% &middot; run C +44%&rdquo;. The same total is on the deploy bar, at the foot of the difficulty sheet and in the TEAM header, and it is exact: it&rsquo;s the figure your run pays at wave 1.</li>
+      <li>The difficulty sheet&rsquo;s tabs read <b>TIER / HANDICAPS / THE PACT</b>, and every figure on them is a part of the total (&ldquo;+55% RP&rdquo;, &ldquo;pays as is&rdquo;, &ldquo;heat 9 &middot; +72% RP&rdquo;). When the cap bites the sheet says so and what it caps.</li>
+      <li>The field is up whenever there is a difficulty to speak of, and the CHANGE button only when there&rsquo;s a dial to set. Before you&rsquo;ve secured a front, the run&rsquo;s pay is changed with CHANGE RUN.</li>
+      <li>A new soldier sees a Replacements line instead of a difficulty, and a client sees the host&rsquo;s pick.</li>
+    </ul>
+  </section>
+
+  <section id="cards">
+    <div class="head"><h2>Cards you can read in two seconds</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>One line, nine words at most.</b> Every one of the 171 cards (commendations, veteran cards and the Quartermaster&rsquo;s Issue) has a hand-written face line: the trigger first, the number last. &ldquo;Headshot kill -&gt; a round back into the gun.&rdquo; The old paragraph is still there, one hold away.</li>
+      <li><b>Marks instead of sentences.</b> The school is a lettered badge on the card&rsquo;s foot (M, S, CQ, D, F, SG, +) with pips: ink pips are the cards you hold of that school, the brass pip is this card, and a brass ring means it brings a set rule in. Beside the name: a gold seal for a rule-breaker, an arrow box for a transform, II for a Rank II copy, stack bars, gold pair brackets that close when you hold the partner, a struck badge for REPLACES, a red diamond for a cursed crate. Gun cards carry the gun in a blue box; class cards a square with the class&rsquo;s initial.</li>
+      <li>One brass <b>tag</b> at most over the top edge: COMPLETES a pair, SET: a rule it brings in, or FROM a mate.</li>
+      <li><b>Bigger type.</b> The name is 22 pt, the face 18, nothing on a card under 16 bar the gun&rsquo;s box. Nothing shrinks to fit any more.</li>
+      <li>A Rank II copy&rsquo;s face says only what the second rank adds. The seven school colours were re-mixed so they all tell apart for colour-blind players, and the letters say it anyway.</li>
+      <li>Five long names were shortened: Q.M.&rsquo;s Favourite, Regimental Colours, Fresh Riflemen, Loose Rounds, Mule-Borne Ammo, and Hand-Loaded Ammo. Same cards, same ids.</li>
+    </ul>
+  </section>
+
+  <section id="hold">
+    <div class="head"><h2>Hold <kbd>Y</kbd> for the whole rule</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Hold <kbd>Y</kbd> on the cards for 0.8 s</b> and every card opens to its full rule, then a line per mark explaining it (&ldquo;SET &nbsp;Close Quarters 3/3 -&gt; COLD STEEL: &hellip;&rdquo;). Let go and they close. You can pick at any time, held or not.</li>
+      <li>28 of the full rules were rewritten with the numbers the old text left out: Belt Swap&rsquo;s 8 s, Covering Fire&rsquo;s 1 s linger, Shock Rounds&rsquo; odds. Every safety clause and cooldown is in the hold.</li>
+      <li>A one-time caption on your first offer says &ldquo;Hold [Y]: the full rule&rdquo;.</li>
+    </ul>
+  </section>
+
+  <section id="strip">
+    <div class="head"><h2>The strip</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The card strip follows HUD SIZE now,</b> not MENU TEXT. It keeps clear of the compass, the weapon corner and the crosshair. Five or six cards come in two rows at full size instead of one squeezed row.</li>
+      <li>One header line (&ldquo;FIELD COMMENDATION &middot; 1-3&rdquo;, or &ldquo;[Y] + 1-3&rdquo; in a fight), short reroll and chit lines, and a PITY +20% tag. The &ldquo;No hurry: it waits into the next wave&rdquo; line shows on your first three offers only.</li>
+      <li>The world dims behind the strip in a break, and the number keys arm the moment the break starts.</li>
+      <li><b>Mates&rsquo; picks:</b> &ldquo;DAN took HOT STREAK II&rdquo; with the school badge, under the kill feed for 3 s, on every machine. It replaces the host&rsquo;s old &ldquo;X took LEGENDARY&rdquo; chat alert. Pairs completed and section sets still post their gold chat alerts.</li>
+    </ul>
+  </section>
+
+  <section id="places">
+    <div class="head"><h2>The codex, the dossier and the Tab sheet</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>RECORDS &rsaquo; CODEX</b> shows every card&rsquo;s face in the grid and the full card on the right with its source, state and odds. DRAW RULES opens on <b>THE MARKS</b>, a key to every symbol, once after this update.</li>
+      <li>The <b>commendation dossier</b> at HQ shows the real cards; rest the mouse on one for its full rule.</li>
+      <li>The <b>Tab sheet</b> shows mini cards with the badge, and the ringed card&rsquo;s box shows its face and then the rule. Set rows are badge, pips and the rule&rsquo;s name.</li>
+      <li><b>RULES IN FORCE</b> leads each tag with its badge, seal or pair mark.</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <div class="head"><h2>The works, every third break</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The works vote comes every third break,</b> not every break. Your pioneers keep between votes, so the pile is bigger when it comes and there is something worth building.</li>
+      <li><b>Never beside another vote.</b> A works break that lands on a push-on, a dare, a route or the lorries waits for the next quiet break. The break briefing says THE WORKS when one is coming.</li>
+      <li>The panel starts with a line that says what it&rsquo;s for: every wave held pays the section a pioneer, and what you build stands for the whole deployment. <kbd>K</kbd> votes, as before.</li>
+    </ul>
+  </section>
+
+  <section id="together">
+    <div class="head"><h2>Together</h2><span class="tag chg">Co-op</span></div>
+    <ul class="points">
+      <li>The <b>TEAM header</b> names the run&rsquo;s total (&ldquo;HOSTING &middot; pays RP x3.00&rdquo;) instead of the Pact heat, so it&rsquo;s the same figure as the BRIEFING and the bar. Nothing is added when the run pays as is.</li>
+      <li>The host&rsquo;s line says what the host decides: the front, the run and the difficulty for everyone, and DEPLOY never waits for ready ticks. Roster names fit before they shrink, and your own folds &ldquo;(you)&rdquo; to &ldquo;&middot;you&rdquo; when it must.</li>
+      <li>A client&rsquo;s BRIEFING fields show the host&rsquo;s choices and say &ldquo;the host picks&rdquo; where the buttons would be.</li>
+      <li>The field manual&rsquo;s first lobby note now says: pick a gun and a specialist under LOADOUT, then MARK READY; the host picks the run.</li>
+    </ul>
+  </section>
+
+  <section id="keys">
+    <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Hold <kbd>Y</kbd></b> on a card offer for the full rule and a line per mark. Tap it as before to reroll where you can.</li>
+      <li><kbd>K</kbd> votes the works when the break has one. <kbd>J</kbd> hands a card on, <kbd>L</kbd> uses your field kit. All rebindable at OPTIONS &rsaquo; CONTROLS.</li>
+    </ul>
+  </section>
+
+  <section id="save">
+    <div class="head"><h2>Your save</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>Nothing changes in your save. Every card, kit, boon and level loads as it was, and no card does anything different.</li>
+      <li>A soldier with offers behind them never sees the &ldquo;it waits&rdquo; line; a new soldier sees it three times. The codex&rsquo;s THE MARKS page opens itself once.</li>
+      <li><b>Everyone in a co-op game needs playtest 21.</b> The mates&rsquo; picks line rides the wire, so an older build gets a plain message to update instead of a silent drop.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li>The BRIEFING, the bar and the TEAM header all print the same pay. Before, a host on run C could read &ldquo;pays RP x1.78&rdquo; on the bar while the page showed nothing.</li>
+      <li>At HUD 130% the three longest held cards lost their last line; a mark line gives way first now. At MENU TEXT 130% the codex and dossier grew each wrapped line on its own; they don&rsquo;t.</li>
+      <li>A number no longer breaks from its unit at a line end (&ldquo;8 / m&rdquo;).</li>
+      <li>Three or more cards at HUD 130% can&rsquo;t fit between the HUD&rsquo;s corners on 16:9, so the strip steps down to 115% or 100% and never narrows a card. The squad roster and the STEADYING label fold away under it as a last resort.</li>
+      <li>Reduce motion (OPTIONS &rsaquo; weapon sway and bob off) now also stills the Legendary gleam.</li>
+      <li>The first-time &ldquo;two harder runs pay more&rdquo; hint only shows while run A is picked; once you&rsquo;ve found the sheet it gives the legend instead.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li>Holding <kbd>Y</kbd> on a two-row strip in a fight covers the crosshair while it&rsquo;s held.</li>
+      <li>On 4:3 and 16:10 screens with HUD 130% and five or six cards, the strip may touch the compass or the Spirit meter; the dossier on a 4:3 screen cuts long names.</li>
+      <li>The glyph letters on the school badges are small at 720p. Tell us if you can&rsquo;t read one.</li>
+      <li>The BRIEFING&rsquo;s layout, the pay field&rsquo;s rule and the works&rsquo; cadence of three were set for this playtest and may move after it.</li>
+      <li>This build was checked by machines reading every card and every page, not played by a person before it went out.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Open a card offer and pick without holding <kbd>Y</kbd>.</b> Did the face line and the marks tell you enough? Which card made you hold?</li>
+      <li>Did the marks make sense before you read THE MARKS in the codex? Which one didn&rsquo;t?</li>
+      <li><b>On the BRIEFING,</b> could you tell where you were going, which run you were on and what it paid without opening anything? Did the one pay figure match what you got?</li>
+      <li>Did you find CHANGE RUN, and did the RUN sheet&rsquo;s cards read better than the old rows?</li>
+      <li><b>The works:</b> did every third break feel right, or did you forget they were there? Was the pile worth spending when it came?</li>
+      <li>In a section, did the mates&rsquo; picks line tell you anything useful? Did the TEAM header&rsquo;s pay match the host&rsquo;s BRIEFING?</li>
+      <li>Did anything on a card, the strip or the BRIEFING get cut off or overlap at your resolution and HUD size? Say which.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 21">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
