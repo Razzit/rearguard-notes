@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rearguard Playtest 20 Patch Notes</title>
-<meta name="description" content="What changed in the Rearguard playtest 20 build.">
+<meta name="description" content="What changed in the Rearguard playtest 20 build, recut 26 October with the roguelite lock-down round.">
 <meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
     <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
     <h1>Playtest 20<br>Patch Notes</h1>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>20</div>
-    <p class="lede">You told us the gunplay feels clean but your class was just a bigger number, and every upgrade was more flat damage. This one changes that. Every specialist now carries kit of their own and picks a doctrine. Your RP buys new cards, kits and run boons instead of +10% damage. Cards come in schools that change the rules when you collect them, and every run is a choice: pick it on the Front Board, raise the stakes with the Pact, and take the forks along the way.</p>
+    <p class="lede">You told us the gunplay feels clean but your class was just a bigger number, and every upgrade was more flat damage. This one changes that. Every specialist now carries kit of their own and picks a doctrine. Your RP buys new cards, kits and run boons instead of +10% damage. Cards come in schools that change the rules when you collect them, and every run is a choice: pick it on the Front Board, raise the stakes with the Pact, and take the forks along the way. And now the roguelite is locked down: something new at every rank, picks that replace and transform, finds from the men you drop, works your pioneers build, a three-front campaign, and a codex that keeps everything you learn, win or lose.</p>
+    <p class="note"><b>Recut 26 October.</b> This build went out twice. The first cut carried the class kits, doctrines, gun branches and the first roguelite round. The recut adds the lock-down round: the sections marked <b>Recut</b> below are new, and the ranks that open the Front Board, slips and the Pact have moved forward. The version stays 0.20.0; Steam updates you by itself, and the What&rsquo;s New card comes up again at HQ.</p>
     <div class="glance">
       <div><b>15</b><span>Class kits</span></div>
       <div><b>10</b><span>Doctrines</span></div>
       <div><b>7</b><span>Card schools</span></div>
-      <div><b>0</b><span>Flat damage upgrades</span></div>
+      <div><b>3</b><span>Fronts in a campaign</span></div>
     </div>
     <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game: it sends a screenshot and the map code for you.</span></p>
   </div>
@@ -37,12 +38,21 @@
       <a href="#doctrines">Doctrines</a>
       <a href="#rp">What RP buys</a>
       <a href="#cards">Cards</a>
+      <a href="#picks">Picks</a>
+      <a href="#firsthour">The first hour</a>
       <a href="#run">Your run</a>
       <a href="#forks">Forks</a>
+      <a href="#finds">Field finds</a>
+      <a href="#works">The works</a>
+      <a href="#campaign">The campaign</a>
+      <a href="#endgame">Endgame</a>
+      <a href="#codex">Codex &amp; debrief</a>
       <a href="#guns">Guns &amp; nests</a>
       <a href="#together">Together</a>
+      <a href="#section">Section play</a>
       <a href="#keys">Keys</a>
       <a href="#save">Your save</a>
+      <a href="#fixes">Fixes</a>
       <a href="#known">Known issues</a>
       <a href="#test">Testing</a>
     </div>
@@ -53,12 +63,21 @@
         <option value="doctrines">Doctrines</option>
         <option value="rp">What RP buys</option>
         <option value="cards">Cards</option>
+        <option value="picks">Picks</option>
+        <option value="firsthour">The first hour</option>
         <option value="run">Your run</option>
         <option value="forks">Forks</option>
+        <option value="finds">Field finds</option>
+        <option value="works">The works</option>
+        <option value="campaign">The campaign</option>
+        <option value="endgame">Endgame</option>
+        <option value="codex">Codex &amp; debrief</option>
         <option value="guns">Guns &amp; nests</option>
         <option value="together">Together</option>
+        <option value="section">Section play</option>
         <option value="keys">Keys</option>
         <option value="save">Your save</option>
+        <option value="fixes">Fixes</option>
         <option value="known">Known issues</option>
         <option value="test">Testing</option>
       </select>
@@ -99,29 +118,50 @@
     <div class="head"><h2>What your RP buys now</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li><b>No more +10% damage.</b> The Quartermaster&rsquo;s Tier I lines are gone, and every RP you spent on them is refunded. Your soldier now hardens with service instead: <b>Service Conditioning I&ndash;VI</b> comes free at ranks 5, 10, 15, 20, 25 and 30. By rank 30 you are exactly as strong as a fully upgraded soldier was. Battle Honours pay a little more.</li>
-      <li><b>The Commendation Dossier</b> (rank 4). New soldiers start with a plainer deck. At UPGRADES &rsaquo; SOLDIER, requisition new Rare and Epic cards into your deck from three on offer. Veterans already own the lot.</li>
+      <li><b>The Commendation Dossier</b> (rank 4). New soldiers start with a plainer deck, with twelve more Rare and Epic cards in it since the recut. At UPGRADES &rsaquo; SOLDIER, requisition new Rare and Epic cards into your deck from three on offer. Veterans already own the lot.</li>
       <li><b>Blueprints.</b> Now and then an officer carries a blueprint for a card you don&rsquo;t have. Pick it up where he falls and bring it home at the relief to keep it; die or get overrun and it&rsquo;s lost.</li>
       <li><b>Return to stores.</b> Take up to four cards out of your own deck to aim a build. Free, and you can put them back.</li>
-      <li><b>Requisition Slips</b> (rank 9). Carry one boon into each deployment, chosen at BRIEFING: a lucky reroll, an early Issue, a Dressing Station, Corporals for your riflemen, a gun zeroed one level higher, a Legendary half on your first offer, and more.</li>
+      <li><b>Requisition Slips</b> (rank 3 since the recut, and the first one is free). Carry one boon into each deployment, chosen at BRIEFING: a lucky reroll, an early Issue, a Dressing Station, Corporals for your riflemen, a gun zeroed one level higher, a Legendary half on your first offer, and more.</li>
     </ul>
   </section>
 
   <section id="cards">
     <div class="head"><h2>Cards that change the rules</h2><span class="tag new">New</span></div>
     <ul class="points">
-      <li><b>Schools and sets.</b> Every commendation belongs to a school: Marksman, Suppression, Close Quarters, Demolition, Fieldcraft, Signals or Medical. Hold 3 or 5 cards of one school and a rule comes in, such as <b>One Round Back</b> for marksmen. A card that would complete a set says so before you pick it.</li>
-      <li><b>Rule-breakers.</b> Eight new Legendaries that bend how your other cards work. Your first finished set puts one in your next offer.</li>
+      <li><b>Schools and sets.</b> Every commendation belongs to a school: Marksman, Suppression, Close Quarters, Demolition, Fieldcraft, Signals or Medical. Hold 3 or 5 cards of one school and a rule comes in, such as <b>One Round Back</b> for marksmen. A card that would complete a set says so before you pick it (&ldquo;&raquo; MARKSMAN 2/3&rdquo;).</li>
+      <li><b>Rule-breakers.</b> Eight new Legendaries that bend how your other cards work. Since the recut they have a slot of their own, one a deployment, and can turn up from rank 3.</li>
       <li><b>Rank II.</b> A second copy of some action cards comes as RANK II, with a new trick instead of a bigger number.</li>
       <li><b>Class cards</b> (from class level 2): two commendations each class can draw that nobody else can, plus a class card in the Quartermaster&rsquo;s Issue.</li>
       <li>Your class&rsquo;s favourite cards are now its action cards, not its number cards, and the strongest number cards stack less.</li>
     </ul>
   </section>
 
+  <section id="picks">
+    <div class="head"><h2>Picks that matter</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>Either/or.</b> Some cards can&rsquo;t be held together. A red line says what a card rules out, or REPLACES, and taking it hands the old one back.</li>
+      <li><b>Seven Epic transforms,</b> one a school: Drawn Bead, Traversing Fire, Put the Boot In, Fire Bombs, Shell Scrape, Strafing Run, Blood Up. Each changes how a thing works, not how big it is. They are dossier cards, so requisition them.</li>
+      <li><b>The pair comes.</b> Hold one half of your gun&rsquo;s Legendary pair and its partner turns up within two offers. A cursed crate&rsquo;s Legendary is a third Legendary slot.</li>
+      <li><b>Something that grows.</b> After a deployment&rsquo;s first offer, every offer holds a card you already have that can go up, beside the new ones. The first offer is the draw as it falls.</li>
+    </ul>
+  </section>
+
+  <section id="firsthour">
+    <div class="head"><h2>The roguelite starts sooner</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>Each promotion brings one new system:</b> rank 2 the Front Board, rank 3 requisition slips, rank 4 the dossier, rank 5 Service Conditioning, rank 6 dispatches, rank 7 the board&rsquo;s third offer, rank 8 the works, rank 9 the campaign. A slow soldier gets the board, slips, dossier and dispatches after one, two, three and four deployments, whichever comes first. Run conditions from your second deployment.</li>
+      <li><b>RULES IN FORCE:</b> brass tags under the wave count show what your build is doing: sets, rule-breaker, pair, burden, Jerry&rsquo;s doctrine, the section&rsquo;s rules, a dare, your finds, the works, the campaign stop. Hold <kbd>Tab</kbd> for your mates&rsquo;.</li>
+      <li><b>NEXT BREAK</b> under the wave banner says what the coming break brings: a commendation, the Quartermaster&rsquo;s Issue, a cursed crate, a push-on vote, the works, a dare, a route vote, the march.</li>
+      <li><b>SAME ORDERS:</b> one press on the after-action page and you&rsquo;re back out with the same front, board, Pact and kit on a fresh map.</li>
+    </ul>
+  </section>
+
   <section id="run">
     <div class="head"><h2>Pick your run</h2><span class="tag new">New</span></div>
     <ul class="points">
-      <li><b>The Front Board</b> (rank 7). At BRIEFING each front offers three runs: the front as it comes, one with a Warning and an Anomaly, or one with two Warnings. Warnings make it harder (night, fog, elites, an armoured column, a busy front) and Anomalies are odd gifts; the RP and XP bonus is printed before you pick. In co-op the host picks.</li>
-      <li><b>The Pact</b> (once you&rsquo;ve secured a front at Battle Honours III). Sign lines for heat: flamethrowers every wave, no Issue after wave 3, tanks two waves early, and more. Each point of heat pays more RP and XP, and beating your best heat on a front pays a bounty. Heat 0 is the game as before.</li>
+      <li><b>The Front Board</b> (rank 2 since the recut; the third offer at rank 7). At BRIEFING each front offers three runs: the front as it comes, one with a Warning and an Anomaly, or one with two Warnings. Warnings make it harder (night, fog, elites, an armoured column, a busy front) and Anomalies are odd gifts; the RP and XP bonus is printed before you pick. In co-op the host picks. Since the recut, Anomalies cost a little pay, a run&rsquo;s pay tops out at x3 before Battle Honours, and Warnings name the school that answers them: its cards come three times as often while the Warning holds.</li>
+      <li><b>The Pact</b> (from Battle Honours I since the recut). Sign lines for heat: flamethrowers every wave, no Issue after wave 3, tanks two waves early, and more. Each point of heat pays more RP and XP, and beating your best heat on a front pays a bounty. Heat 0 is the game as before. The Pact clears after each deployment unless you tick KEEP.</li>
+      <li><b>Daily Orders and six Challenges</b> on the board since the recut, with their pay printed. A friend&rsquo;s BRIEFING shows the orders the host picked.</li>
     </ul>
   </section>
 
@@ -131,7 +171,53 @@
       <li><b>Cursed crate.</b> Sometimes a break offers your own crate: a strong card with a printed burden for the next two waves. Only you carry it, and you never have to take it.</li>
       <li><b>Perfect wave.</b> Some waves set a target, like keeping the post untouched. Meet it and the next card comes a tier higher.</li>
       <li><b>PUSH ON.</b> After some waves, hold the ready key to vote to skip the break for a reward. More than half the section carries it; a quick tap still just readies you.</li>
-      <li><b>Route.</b> On Hold the Line, vote between Armour Push, Night Attack and Shock Troops, each paying more.</li>
+      <li><b>Route.</b> On Hold the Line, vote between Armour Push, Night Attack and Shock Troops, each paying more. Since the recut, single fronts also choose a route for waves 7 to 9 in the wave-6 Issue break, and G-2 names the ace you&rsquo;ll meet at the final assault.</li>
+    </ul>
+  </section>
+
+  <section id="finds">
+    <div class="head"><h2>Field finds</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>Officers, snipers, gunners and elites you drop may leave you something,</b> lit gold and seen by you alone: a captured gun with a printed trait, a gun part that raises your gun to TIER II and then III (brass bands on the barrel), or field kit on its own key, <kbd>L</kbd>: a Smoke Pot, a Flare Pistol that marks men, or an MG Belt.</li>
+      <li>Hold <kbd>F</kbd> to take a find. In a wave, <kbd>J</kbd> gives the find you&rsquo;re looking at to the nearest mate.</li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <div class="head"><h2>The works</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>From rank 8, holding waves earns the section PIONEERS.</b> Each break, spend them on one piece of works that stands for the deployment: a spare MG pit, wire, a breastwork out front, a raised parapet or a listening post, sited facing where the next attack comes from. Press <kbd>K</kbd> to vote, or KEEP THE PIONEERS.</li>
+      <li>The works can share a break with one other vote (push on, a dare, a route, the lorries): <kbd>K</kbd> votes the works, the ready key votes the other. Only the campaign&rsquo;s march stands the works down, and the pioneers march with you.</li>
+      <li><b>LANE INTEL:</b> every break says how many are coming, from which side and what they bring, with a wedge on the compass.</li>
+    </ul>
+  </section>
+
+  <section id="campaign">
+    <div class="head"><h2>The campaign</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>From rank 9, THE CAMPAIGN on the Front Board:</b> three fronts in one run, five waves a stop, a route map with a fork after the first and second stops. Every stop prints its curse, its pay and the school that answers it, and the finale names its ace. Later stops fight like the middle of a deployment, not its end.</li>
+      <li>Your cards, Issue cards and kit go with you on the march. The works and anything left lying stay behind. <b>Hold a stop and your requisition is banked there and then.</b></li>
+      <li>The section votes each fork with the ready key: more votes take it, a tie goes to the host. Every campaign has a short code of its own, and SAME GROUND? replays the whole route.</li>
+    </ul>
+  </section>
+
+  <section id="endgame">
+    <div class="head"><h2>The Pact opens doors</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>Heat 2:</b> Jerry plays doctrines (snipers in the trees, flamethrower teams, officers leading), announced in the break with how to beat them. <b>Heat 4:</b> the front&rsquo;s own event. <b>Heat 6:</b> the Captured Orders Issue card. <b>Heat 9:</b> the ace&rsquo;s Kampfgruppe in the final assault. <b>Heat 12:</b> Jerry&rsquo;s best.</li>
+      <li><b>Each front has its own event and Issue card:</b> Hedgerow Infiltration, Ski Troops, Mule Train, House to House, Night Infiltration; Farmer&rsquo;s Guide, Winter Rum, Mule-Borne Ammunition, Falling Masonry, Coastwatcher&rsquo;s Map. They also come from Battle Honours IV.</li>
+      <li><b>The Veteran Dossier:</b> 14 new commendations as you secure fronts at Battle Honours II, IV and VI.</li>
+      <li><b>RECORDS</b> shows each front&rsquo;s heat ladder and a 100-cell completion grid. Every cell pays once.</li>
+    </ul>
+  </section>
+
+  <section id="codex">
+    <div class="head"><h2>Every loss counts</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>The after-action says what broke the line,</b> how close you came and what&rsquo;s next. New enemy files, set rules found, pairs completed and whatever overran you are kept.</li>
+      <li><b>RECORDS &rsaquo; CODEX:</b> every commendation, Issue card and threat you have met, and the ones still to find. Pairs, set rules and the draw odds are written out.</li>
+      <li><b>Every deployment has a code.</b> Copy it to share a run, or press SAME GROUND? to fight it again; a campaign&rsquo;s route and the day&rsquo;s orders come back with it.</li>
+      <li>The Sar&rsquo;nt-Major has a word about your last deployment on the BRIEFING page, and the Battalion&rsquo;s story moves on every time you go out.</li>
     </ul>
   </section>
 
@@ -156,13 +242,24 @@
     </ul>
   </section>
 
+  <section id="section">
+    <div class="head"><h2>Section play</h2><span class="tag new">Recut &middot; co-op</span></div>
+    <ul class="points">
+      <li><b>SECTION SETS:</b> when enough of you each hold the same school&rsquo;s set, a section rule comes in for everyone.</li>
+      <li><b>Your cards lean toward what your mates are building,</b> and say so: &ldquo;MARKSMAN WITH BAKER&rdquo;, &ldquo;FUSES WITH BAKER&rdquo;.</li>
+      <li><b>AMMUNITION FUSION:</b> two of you with different special rounds on the same man make FLASHOVER, PANIC, EARTHED and more.</li>
+      <li><b>THE SECTION DARE:</b> every few breaks a printed dare for the next wave, its pay and its cost. Hold ready to take it.</li>
+      <li>The host decides every find and every vote, so six machines always agree, and a rejoin after a drop brings your finds, tier and kit back.</li>
+    </ul>
+  </section>
+
   <section id="keys">
     <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li><kbd>E</kbd> in a wave uses your kit while it has charges.</li>
       <li><b>Crouch and press <kbd>E</kbd></b> for your class&rsquo;s once-a-wave AT mine, clearing post or sandbag wall.</li>
-      <li><kbd>E</kbd> at the post between waves is still READY; <b>hold</b> it during a PUSH ON break to vote to push on.</li>
-      <li><kbd>J</kbd> hands a card on. Hold <kbd>F</kbd> at an Ammunition Box to draw from it.</li>
+      <li><kbd>E</kbd> at the post between waves is still READY; <b>hold</b> it during a PUSH ON break to vote to push on, or to take a dare.</li>
+      <li><kbd>J</kbd> hands a card on in a break and gives a find in a wave. <kbd>K</kbd> votes the works. <kbd>L</kbd> uses your field kit. Hold <kbd>F</kbd> at an Ammunition Box to draw from it, or at a find to take it. All rebindable at OPTIONS &rsaquo; CONTROLS.</li>
     </ul>
   </section>
 
@@ -171,7 +268,19 @@
     <ul class="points">
       <li>Nothing you bought is lost. Tier I and the Gun Drill are refunded in full, and the BRIEFING says how much.</li>
       <li>Your classes draw their starter kits on first load, and a class already at level 9 gets its first new kit free. If you owned the Spotter&rsquo;s Scope you now carry the Running Tally, and its upgrade carried over.</li>
-      <li>Everyone in a co-op game needs the playtest 20 build.</li>
+      <li>Everyone in a co-op game needs the playtest 20 recut: an older build gets a plain message to update instead of a silent drop.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li><b>Chat filter:</b> racial slurs are blotted out of chat lines and callsigns. Swearing is left alone.</li>
+      <li>Field glasses say GUNS SILENT during Counter-Battery instead of a full NOT READY meter (field report 3).</li>
+      <li>A six-card commendation or Issue strip narrows to keep clear of the screen edges and the HUD corners (field report 7).</li>
+      <li>The Tab sheet and the commendation sheet fit at 720p and 130% HUD size with six men; the BRIEFING&rsquo;s veteran column fits at 1080p and 720p.</li>
+      <li>PUSH ON: Esc doesn&rsquo;t decline it, and a ready section doesn&rsquo;t wait on it.</li>
+      <li>Six players: heals from others, damage cuts that aren&rsquo;t your own kit, and team effects are capped so a full section can&rsquo;t stack itself invulnerable. Your own heals are never capped.</li>
     </ul>
   </section>
 
@@ -180,7 +289,8 @@
     <ul class="points">
       <li>Kits only work during a wave, because <kbd>E</kbd> between waves is READY.</li>
       <li>Modifications don&rsquo;t show on the gun model yet.</li>
-      <li>Some numbers are set for this playtest only and may move after it, including the Pact&rsquo;s pay and how easily the Running Tally breaks.</li>
+      <li>Some numbers are set for this playtest only and may move after it, including the Pact&rsquo;s pay, how easily the Running Tally breaks, and the recut&rsquo;s card odds and works prices.</li>
+      <li>The recut&rsquo;s round was scored against a roguelite rubric by machines, not played by a person before it went out.</li>
     </ul>
   </section>
 
@@ -192,6 +302,9 @@
       <li>Did the Front Board, the Pact and the forks feel like real choices, or did you always pick the same thing?</li>
       <li>Did you chase a school set? Did a rule-breaker change your run?</li>
       <li><b>Rifleman:</b> does the Running Tally feel good, or does it break too easily?</li>
+      <li><b>Recut:</b> does a new system at every rank teach itself, or is it too much? Do REPLACE and TRANSFORM cards feel like decisions, and did your gun&rsquo;s pair come within two offers?</li>
+      <li><b>Recut:</b> how much heat did you sign, and were the doors it opened worth it? Did the campaign&rsquo;s fork votes go smoothly in a section?</li>
+      <li><b>Recut:</b> did <kbd>L</kbd> and <kbd>K</kbd> come to hand, or did you forget the finds and the works were there?</li>
       <li>Did <kbd>E</kbd>, crouch + <kbd>E</kbd>, <kbd>F</kbd> or the push-on hold ever do the wrong thing?</li>
       <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
     </ul>
