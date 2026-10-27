@@ -20,7 +20,7 @@
     <h1>Playtest 21<br>Patch Notes</h1>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>21</div>
     <p class="lede">Playtest 20 gave you a lot to play with, and a lot to read. You told us the BRIEFING had become an essay, that every card wanted a paragraph before you could pick it, and that the works vote on top of everything else was too much going on. This build fixes the reading. The BRIEFING is four plain questions with the answers under them and one figure for what the run pays. Every card says what it does in nine words or fewer and shows the rest as marks, with the full rule a hold away. A break asks one question at most, answered one way: hold Tab, tap 1 or 2. The works build themselves. Nothing else in the game does anything different; it just tells you so faster.</p>
-    <p class="note"><b>No balance changes.</b> Every card does exactly what it did in playtest 20. Your save loads as it is. Everyone in a co-op game needs this build.</p>
+    <p class="note"><b>Recut on 27 October, after your first session.</b> Everything you told us that afternoon that could be fixed the same day is in this build: the fight&rsquo;s HUD is trimmed, <kbd>Y</kbd> is a tap, the break is five seconds longer, the card hand-off is gone, the medic can plant the Aid Post before a wave, and the range, the after-action card and the names are fixed. Details under <a href="#session">From your first session</a>. No card changed what it does. Your save loads as it is. Everyone in a co-op game needs this build.</p>
     <div class="glance">
       <div><b>4</b><span>Questions on the BRIEFING</span></div>
       <div><b>1</b><span>Figure for what a run pays</span></div>
@@ -53,6 +53,7 @@
     <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
       <select id="nav-jump">
         <option value="">Jump to&hellip;</option>
+        <option value="session">From your first session</option>
         <option value="briefing">The BRIEFING</option>
         <option value="run">Which run</option>
         <option value="pay">What it pays</option>
@@ -76,6 +77,19 @@
 
 <main class="gutter">
 <div class="col">
+
+  <section id="session">
+    <div class="head"><h2>From your first session</h2><span class="tag new">Recut</span></div>
+    <ul class="points">
+      <li><b>Less on the screen in a fight.</b> The column under the wave count now carries only what you can act on in the next half minute. The section roster, the dispatch tracker and the pay line are break reading (hold <kbd>Tab</kbd> for the section at any time). The rules tags stay for the first five seconds of a wave, the main thrust for ten (the compass rim keeps it all wave), PERFECT WAVE folds to one line after six seconds and leaves once it&rsquo;s lost. A counter-attack is two lines, and a map case lying by its rider is one mark, not two.</li>
+      <li><b>Tap <kbd>Y</kbd> for the whole rule.</b> A tap opens every card to its full rule and they stay open until you tap again or pick. Holding still peeks, as before.</li>
+      <li><b>Five seconds more with the cards.</b> A plain break is 19 s, not 14. A question still holds it open to its clock.</li>
+      <li><b>No more handing a card to a mate.</b> It asked a key of you in the one place you were already reading. <kbd>X</kbd> only gives a field find to the nearest mate now, and the PLAYTEST 21 card says so.</li>
+      <li><b>The medic plants the Aid Post before a wave.</b> Hold <kbd>E</kbd> in the break to plant it for the wave to come; a tap still readies you. It stands through that wave and uses one of the wave&rsquo;s two charges.</li>
+      <li><b>A crosshair of your own:</b> cross or dot, white, green or amber, 60 to 160%, under OPTIONS &rsaquo; GAMEPLAY.</li>
+      <li><b>Names the game can draw.</b> A name of symbols or another script drew as a row of bars on both rosters and made the lobby re-introduce that soldier every second. Names are kept to letters now, 20 at most; a name with nothing left falls back to &ldquo;Rifleman N&rdquo;.</li>
+    </ul>
+  </section>
 
   <section id="briefing">
     <div class="head"><h2>The BRIEFING answers four questions</h2><span class="tag chg">Changed</span></div>
@@ -121,11 +135,11 @@
   </section>
 
   <section id="hold">
-    <div class="head"><h2>Hold <kbd>Y</kbd> for the whole rule</h2><span class="tag new">New</span></div>
+    <div class="head"><h2>Tap <kbd>Y</kbd> for the whole rule</h2><span class="tag new">New</span></div>
     <ul class="points">
-      <li><b>Hold <kbd>Y</kbd> on the cards for 0.8 s</b> and every card opens to its full rule, then a line per mark explaining it (&ldquo;SET &nbsp;Close Quarters 3/3 -&gt; COLD STEEL: &hellip;&rdquo;). Let go and they close. You can pick at any time, held or not.</li>
+      <li><b>Tap <kbd>Y</kbd> on the cards</b> and every card opens to its full rule, then a line per mark explaining it (&ldquo;SET &nbsp;Close Quarters 3/3 -&gt; COLD STEEL: &hellip;&rdquo;). They stay open until you tap again or pick. Hold it for 0.8 s instead and they open only while it&rsquo;s held (the recut: the first build was hold only). You can pick at any time, open or not.</li>
       <li>28 of the full rules were rewritten with the numbers the old text left out: Belt Swap&rsquo;s 8 s, Covering Fire&rsquo;s 1 s linger, Shock Rounds&rsquo; odds. Every safety clause and cooldown is in the hold.</li>
-      <li>A one-time caption on your first offer says &ldquo;Hold [Y]: the full rule&rdquo;.</li>
+      <li>A one-time caption on your first offer says &ldquo;Tap [Y]: the full rule&rdquo;.</li>
     </ul>
   </section>
 
@@ -183,11 +197,11 @@
   <section id="keys">
     <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li><b>Hold <kbd>Y</kbd></b> on a card offer for the full rule and a line per mark. Tap it as before to reroll where you can.</li>
+      <li><b>Tap <kbd>Y</kbd></b> on a card offer for the full rule and a line per mark; tap again to close. <kbd>U</kbd> rerolls where you can.</li>
       <li><b><kbd>J</kbd>, <kbd>K</kbd> and <kbd>L</kbd> do nothing now.</b> None of them was in reach of the hands that move and aim.</li>
-      <li><b>Hand a spare card on with <kbd>X</kbd></b> in a break, or give a find you&rsquo;re looking at to a mate with <kbd>X</kbd> in a wave. <kbd>X</kbd> is also the rifle grenade&rsquo;s key: a press that hands off or gives doesn&rsquo;t load the launcher, every other press does.</li>
+      <li><b>Give a find you&rsquo;re looking at to a mate with <kbd>X</kbd></b> in a wave. <kbd>X</kbd> is also the rifle grenade&rsquo;s key: a press that gives doesn&rsquo;t load the launcher, every other press does. (The recut removed the card hand-off that shared this key.)</li>
       <li><b>Your field kit is on <kbd>Z</kbd>,</b> beside your movement hand. Ping is on <kbd>Q</kbd> alone (<kbd>Z</kbd> was its second key).</li>
-      <li><b>Hold <kbd>Tab</kbd> and tap <kbd>1</kbd> or <kbd>2</kbd></b> to answer the section&rsquo;s question. <kbd>E</kbd> only readies you; hold-<kbd>E</kbd> to push on, from playtest 20, is gone.</li>
+      <li><b>Hold <kbd>Tab</kbd> and tap <kbd>1</kbd> or <kbd>2</kbd></b> to answer the section&rsquo;s question. A tap of <kbd>E</kbd> readies you; hold-<kbd>E</kbd> to push on, from playtest 20, is gone. A medic&rsquo;s hold of <kbd>E</kbd> in a break plants the Aid Post (the engineer&rsquo;s hold repairs, as before).</li>
       <li>All rebindable at OPTIONS &rsaquo; CONTROLS, which has one row fewer.</li>
     </ul>
   </section>
@@ -205,6 +219,10 @@
   <section id="fixes">
     <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
     <ul class="fixes">
+      <li>The recut: a RECON panel from a run you&rsquo;d left in a break sat over the range course&rsquo;s station card (and would have named a false main thrust on your next first wave). Recon&rsquo;s bearings are forgotten when a run ends, and the wave column never draws on the range.</li>
+      <li>The recut: the range&rsquo;s marker sat on the target&rsquo;s chest with its distance under it, hiding a 50 m target. It sits above the head now, names a place to get to with the distance (&ldquo;THE PEG &ndash; 21 M&rdquo;), and the objective is a diamond on the compass too.</li>
+      <li>The recut: on a client&rsquo;s after-action card, soldiers who had left paired up with the wrong rows (two soldiers shown twice with each other&rsquo;s kills and accolades). Each soldier is matched by his machine now, and a soldier who leaves keeps his own figures.</li>
+      <li>The recut: the M1903A4&rsquo;s Lyman peep ring and front blade took the rifle&rsquo;s camo, so a snow-white sight vanished against night fog and read as inaccurate. They stay dark steel. The aim itself was true.</li>
       <li>The BRIEFING, the bar and the TEAM header all print the same pay. Before, a host on run C could read &ldquo;pays RP x1.78&rdquo; on the bar while the page showed nothing.</li>
       <li>At HUD 130% the three longest held cards lost their last line; a mark line gives way first now. At MENU TEXT 130% the codex and dossier grew each wrapped line on its own; they don&rsquo;t.</li>
       <li>A number no longer breaks from its unit at a line end (&ldquo;8 / m&rdquo;).</li>
@@ -221,7 +239,7 @@
       <li>On 4:3 and 16:10 screens with HUD 130% and five or six cards, the strip may touch the compass or the Spirit meter; the dossier on a 4:3 screen cuts long names.</li>
       <li>The glyph letters on the school badges are small at 720p. Tell us if you can&rsquo;t read one.</li>
       <li>The BRIEFING&rsquo;s layout, the pay field&rsquo;s rule and the works&rsquo; cadence of three were set for this playtest and may move after it.</li>
-      <li>This build was checked by machines reading every card and every page, not played by a person before it went out.</li>
+      <li>The recut&rsquo;s changes were checked by machines and by the first session&rsquo;s reports, not played again by a person before it went out. The Aid Post in a break and the tap of <kbd>Y</kbd> in a fight are the two to try first.</li>
     </ul>
   </section>
 
@@ -234,7 +252,9 @@
       <li>Did you find CHANGE RUN, and did the RUN sheet&rsquo;s cards read better than the old rows?</li>
       <li><b>The section&rsquo;s question:</b> did you find <kbd>Tab</kbd> + <kbd>1</kbd> without being told? Did you ever pick a card when you meant to answer, or answer when you meant to pick? Did the brass &ldquo;Nobody:&rdquo; line make it fine to leave it?</li>
       <li><b>The works:</b> did you notice them go up, and did NEXT BREAK&rsquo;s line tell you where to look? Does the base feel like it builds itself, or barely builds at all?</li>
-      <li>Did <kbd>X</kbd> ever load your rifle grenade when you meant to hand a card on, or the other way round? Is the field kit easier to reach on <kbd>Z</kbd>?</li>
+      <li><b>The recut:</b> with the column trimmed, could you read the fight? Did you miss the section roster in a fight, or find it on <kbd>Tab</kbd>? Is 19 s enough with the cards? Did a tap of <kbd>Y</kbd> in a fight ever get in your way?</li>
+      <li>Medics: did the Aid Post go down in the break on a hold of <kbd>E</kbd>, and did a tap still ready you?</li>
+      <li>Did <kbd>X</kbd> ever load your rifle grenade when you meant to give a find, or the other way round? Is the field kit easier to reach on <kbd>Z</kbd>?</li>
       <li>In a section, did the mates&rsquo; picks line tell you anything useful? Did the TEAM header&rsquo;s pay match the host&rsquo;s BRIEFING?</li>
       <li>Did anything on a card, the strip or the BRIEFING get cut off or overlap at your resolution and HUD size? Say which.</li>
       <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
