@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rearguard Playtest 21 Patch Notes</title>
-<meta name="description" content="What changed in the Rearguard playtest 21 build: a BRIEFING that answers four questions, one figure for what a run pays, cards you can read in two seconds, and the works every third break.">
+<meta name="description" content="What changed in the Rearguard playtest 21 build: a BRIEFING that answers four questions, one figure for what a run pays, cards you can read in two seconds, one question a break answered on Tab, and works that build themselves.">
 <meta name="color-scheme" content="dark">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,7 @@
     <span class="eyebrow">Rearguard &middot; Field dispatch to all testers</span>
     <h1>Playtest 21<br>Patch Notes</h1>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>21</div>
-    <p class="lede">Playtest 20 gave you a lot to play with, and a lot to read. You told us the BRIEFING had become an essay, that every card wanted a paragraph before you could pick it, and that the works vote on top of everything else was too much going on. This build fixes the reading. The BRIEFING is four plain questions with the answers under them and one figure for what the run pays. Every card says what it does in nine words or fewer and shows the rest as marks, with the full rule a hold away. The works come up every third break, never beside another vote. Nothing in the game does anything different; it just tells you so faster.</p>
+    <p class="lede">Playtest 20 gave you a lot to play with, and a lot to read. You told us the BRIEFING had become an essay, that every card wanted a paragraph before you could pick it, and that the works vote on top of everything else was too much going on. This build fixes the reading. The BRIEFING is four plain questions with the answers under them and one figure for what the run pays. Every card says what it does in nine words or fewer and shows the rest as marks, with the full rule a hold away. A break asks one question at most, answered one way: hold Tab, tap 1 or 2. The works build themselves. Nothing else in the game does anything different; it just tells you so faster.</p>
     <p class="note"><b>No balance changes.</b> Every card does exactly what it did in playtest 20. Your save loads as it is. Everyone in a co-op game needs this build.</p>
     <div class="glance">
       <div><b>4</b><span>Questions on the BRIEFING</span></div>
@@ -42,6 +42,7 @@
       <a href="#strip">The strip</a>
       <a href="#places">Codex &amp; dossier</a>
       <a href="#works">The works</a>
+      <a href="#question">One question</a>
       <a href="#together">Together</a>
       <a href="#keys">Keys</a>
       <a href="#save">Your save</a>
@@ -60,6 +61,7 @@
         <option value="strip">The strip</option>
         <option value="places">Codex &amp; dossier</option>
         <option value="works">The works</option>
+        <option value="question">One question a break</option>
         <option value="together">Together</option>
         <option value="keys">Keys</option>
         <option value="save">Your save</option>
@@ -148,11 +150,23 @@
   </section>
 
   <section id="works">
-    <div class="head"><h2>The works, every third break</h2><span class="tag chg">Changed</span></div>
+    <div class="head"><h2>The works build themselves</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li><b>The works vote comes every third break,</b> not every break. Your pioneers keep between votes, so the pile is bigger when it comes and there is something worth building.</li>
-      <li><b>Never beside another vote.</b> A works break that lands on a push-on, a dare, a route or the lorries waits for the next quiet break. The break briefing says THE WORKS when one is coming.</li>
-      <li>The panel starts with a line that says what it&rsquo;s for: every wave held pays the section a pioneer, and what you build stands for the whole deployment. <kbd>K</kbd> votes, as before.</li>
+      <li><b>No vote.</b> From rank 8 the section still earns pioneers from waves held (one a wave, one more per 15 kills). Every third quiet break the pioneer sergeant puts up the piece the ground asks for, facing where recon says the next wave comes from, and it stands for the whole deployment.</li>
+      <li><b>The rule is printed, not voted:</b> a listening post before wave 5 if the pioneers can pay for it; otherwise wire, then a breastwork, then a pit, then the parapet &ndash; the first one that side hasn&rsquo;t got and the pioneers can pay for. When nothing can be sited or paid for, the pioneers are kept for next time.</li>
+      <li><b>NEXT BREAK names it a break ahead</b> (&ldquo;THE WORKS &ndash; wire, west&rdquo;), and the banner says what went up. The works panel is one line now. Never beside another question: a works break that lands on one waits for the next quiet break.</li>
+      <li>LANE INTEL and WORKS on RULES IN FORCE stay as they were. <kbd>K</kbd> does nothing.</li>
+    </ul>
+  </section>
+
+  <section id="question">
+    <div class="head"><h2>One question a break</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Hold <kbd>Tab</kbd>, tap <kbd>1</kbd> or <kbd>2</kbd>.</b> Push on, a section dare, the route, the campaign&rsquo;s fork, the lorries and HOLD THE LINE? all ask the same way now. <kbd>1</kbd> is the first answer (push on, take the dare, route A, call the lorries); <kbd>2</kbd> is the second (route B), or tap your answer again to take it back. Let go of <kbd>Tab</kbd> and nothing has changed.</li>
+      <li><b>One panel, where the ready panel was:</b> the question, its two answers with their terms, every soldier&rsquo;s answer as it comes in, the clock, and in brass what happens if nobody answers (&ldquo;Nobody: the break as usual, mend and make ready&rdquo;). Leaving it is always fine.</li>
+      <li><b>One question a break, never two.</b> A route or fork vote is 12 s, not 20, and closes 3 s after everyone has answered. Push on is 8 s, a dare 10 s, the lorries 20 s.</li>
+      <li><b><kbd>E</kbd> only readies you</b> (and repairs the post, held, if you&rsquo;re the engineer). Holding <kbd>E</kbd> to push on, as in playtest 20, is gone. Solo, <kbd>Tab</kbd> + <kbd>1</kbd> pushes on and a tap of <kbd>E</kbd> declines it and starts the wave.</li>
+      <li>With a card offer up, <kbd>Tab</kbd> + <kbd>1</kbd> answers and picks no card; <kbd>1</kbd> alone picks a card and answers nothing.</li>
     </ul>
   </section>
 
@@ -170,7 +184,11 @@
     <div class="head"><h2>Keys</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li><b>Hold <kbd>Y</kbd></b> on a card offer for the full rule and a line per mark. Tap it as before to reroll where you can.</li>
-      <li><kbd>K</kbd> votes the works when the break has one. <kbd>J</kbd> hands a card on, <kbd>L</kbd> uses your field kit. All rebindable at OPTIONS &rsaquo; CONTROLS.</li>
+      <li><b><kbd>J</kbd>, <kbd>K</kbd> and <kbd>L</kbd> do nothing now.</b> None of them was in reach of the hands that move and aim.</li>
+      <li><b>Hand a spare card on with <kbd>X</kbd></b> in a break, or give a find you&rsquo;re looking at to a mate with <kbd>X</kbd> in a wave. <kbd>X</kbd> is also the rifle grenade&rsquo;s key: a press that hands off or gives doesn&rsquo;t load the launcher, every other press does.</li>
+      <li><b>Your field kit is on <kbd>Z</kbd>,</b> beside your movement hand. Ping is on <kbd>Q</kbd> alone (<kbd>Z</kbd> was its second key).</li>
+      <li><b>Hold <kbd>Tab</kbd> and tap <kbd>1</kbd> or <kbd>2</kbd></b> to answer the section&rsquo;s question. <kbd>E</kbd> only readies you; hold-<kbd>E</kbd> to push on, from playtest 20, is gone.</li>
+      <li>All rebindable at OPTIONS &rsaquo; CONTROLS, which has one row fewer.</li>
     </ul>
   </section>
 
@@ -178,6 +196,7 @@
     <div class="head"><h2>Your save</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li>Nothing changes in your save. Every card, kit, boon and level loads as it was, and no card does anything different.</li>
+      <li><b>A key you rebound yourself is kept.</b> If your own ping binding kept <kbd>Z</kbd>, your field kit comes up with no key rather than sharing it: the WHAT&rsquo;S NEW card says so once, and OPTIONS &rsaquo; CONTROLS sets one.</li>
       <li>A soldier with offers behind them never sees the &ldquo;it waits&rdquo; line; a new soldier sees it three times. The codex&rsquo;s THE MARKS page opens itself once.</li>
       <li><b>Everyone in a co-op game needs playtest 21.</b> The mates&rsquo; picks line rides the wire, so an older build gets a plain message to update instead of a silent drop.</li>
     </ul>
@@ -213,7 +232,9 @@
       <li>Did the marks make sense before you read THE MARKS in the codex? Which one didn&rsquo;t?</li>
       <li><b>On the BRIEFING,</b> could you tell where you were going, which run you were on and what it paid without opening anything? Did the one pay figure match what you got?</li>
       <li>Did you find CHANGE RUN, and did the RUN sheet&rsquo;s cards read better than the old rows?</li>
-      <li><b>The works:</b> did every third break feel right, or did you forget they were there? Was the pile worth spending when it came?</li>
+      <li><b>The section&rsquo;s question:</b> did you find <kbd>Tab</kbd> + <kbd>1</kbd> without being told? Did you ever pick a card when you meant to answer, or answer when you meant to pick? Did the brass &ldquo;Nobody:&rdquo; line make it fine to leave it?</li>
+      <li><b>The works:</b> did you notice them go up, and did NEXT BREAK&rsquo;s line tell you where to look? Does the base feel like it builds itself, or barely builds at all?</li>
+      <li>Did <kbd>X</kbd> ever load your rifle grenade when you meant to hand a card on, or the other way round? Is the field kit easier to reach on <kbd>Z</kbd>?</li>
       <li>In a section, did the mates&rsquo; picks line tell you anything useful? Did the TEAM header&rsquo;s pay match the host&rsquo;s BRIEFING?</li>
       <li>Did anything on a card, the strip or the BRIEFING get cut off or overlap at your resolution and HUD size? Say which.</li>
       <li>Press <kbd>F10</kbd> the moment something looks wrong; it sends the map code for you.</li>
