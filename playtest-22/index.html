@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 22 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 22 build. This one is all guns. Recoil you have to fight, a kick you can feel on every shot, five sounds for every gun, rifle rounds that stop a man, and a gun in your hands that looks like metal and wood.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 22<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>22</div>
+    <p class="lede">This one is all guns. We weren&rsquo;t happy with how they felt, and when we looked at why, we found the recoil was mostly for show. The game pulled the gun back down for you, so your mouse had nothing to do. That&rsquo;s why the Grease Gun was the easy pick. Now the recoil is real and you fight it. Every shot kicks the picture. Every gun has five sounds and you can hear each step of a reload. A rifle round stops a man and an SMG round doesn&rsquo;t. And the gun in your hands is lit and shadowed like the thing it is. The rest of the game plays as it did in playtest 21.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Nothing you own changed.</p>
+    <div class="glance">
+      <div><b>10</b><span>Guns reworked, all of them</span></div>
+      <div><b>5</b><span>Sounds for every gun&rsquo;s shot</span></div>
+      <div><b>120 m</b><span>You hear your round strike</span></div>
+      <div><b>0</b><span>Changes to your save</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#recoil">Recoil</a>
+      <a href="#shot">The shot</a>
+      <a href="#sound">Sound</a>
+      <a href="#hits">Hits</a>
+      <a href="#flash">Flash &amp; brass</a>
+      <a href="#look">The look</a>
+      <a href="#handling">Handling</a>
+      <a href="#options">Options</a>
+      <a href="#together">Together</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="recoil">Recoil you fight</option>
+        <option value="shot">The shot</option>
+        <option value="sound">Sound</option>
+        <option value="hits">Hits</option>
+        <option value="flash">Flash, brass and tracers</option>
+        <option value="look">The look</option>
+        <option value="handling">Handling</option>
+        <option value="options">Options</option>
+        <option value="together">Together</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="recoil">
+    <div class="head"><h2>Recoil you fight</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Pull down against the kick and the gun stays on target.</b> Before, the game returned most of each kick on its own, and your pull went on top of that. So pulling down made you shoot low, and not pulling was fine. Now your pull is what brings the gun back. If you pull the right amount, you&rsquo;re on target. If you don&rsquo;t, you climb.</li>
+      <li><b>Automatics climb while you hold the trigger.</b> They don&rsquo;t settle until you let go. Then they come home, each at its own speed. The B.A.R. takes about 0.4 s. The SMGs are quicker. The first round of a burst kicks hardest.</li>
+      <li><b>Each gun leans its own way.</b> The Thompson and the B.A.R. drift left. The Grease Gun drifts right. It wanders a bit, so no two bursts are the same.</li>
+      <li><b>The Grease Gun isn&rsquo;t free any more.</b> Attachments and cards used to stack until there was almost no kick left. That stops now. Attachments can take a gun down to half its kick, and cards and perks down to about a third. The Grease Gun is still the easiest automatic to hold. You just have to hold it.</li>
+      <li><b>Long bursts spread.</b> A short burst stays tight. Keep the trigger down and the cone opens, and you can see it open on the sights. Steady Burst, the Cutts and the Finned Barrel now do what their cards say. They didn&rsquo;t before, because the bloom they reduced was never there.</li>
+      <li><b>The sights turn at the speed of their zoom.</b> A scope turns slower than an SMG&rsquo;s peep. The Kar98k is exactly as it was. Aiming sensitivity in OPTIONS still scales all of it.</li>
+    </ul>
+  </section>
+
+  <section id="shot">
+    <div class="head"><h2>The shot</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Every shot hits the screen.</b> A punch to the field of view, a roll and a short jolt, sized to the gun. The Kar98k and the Trench Gun thump. The SMGs tap, and breathe wider through a long burst. The front sight rises with the real kick, so it stays where your rounds are going.</li>
+      <li><b>A headshot kill holds the gun for a beat.</b> About a fifteenth of a second. You&rsquo;ll feel it more than see it.</li>
+      <li><b>Reloads have weight.</b> Magazines go in with a cant and a seat. Racks yank. There&rsquo;s a pause before the slam and a settle after it. Fast Hands cuts the pauses now rather than speeding your hands up. The Grease Gun is carried with its ejection cover open, like it should be.</li>
+      <li><b>Coming out of a sprint takes as long as the gun is heavy.</b> An SMG is up in about an eighth of a second. The B.A.R. takes longer.</li>
+    </ul>
+  </section>
+
+  <section id="sound">
+    <div class="head"><h2>Five shots for every gun</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>No two shots in a row sound the same.</b> Every gun has 5 shots and never plays the same one twice running. Automatic fire is tight. Each round cracks, and the echo rolls away when you let go instead of piling up.</li>
+      <li><b>Your own gun sounds like yours.</b> It has the snap of the mechanism just before the crack and a thump under it. Your mates&rsquo; guns and the enemy&rsquo;s are thinner and further off. Rifles, the Trench Gun and the B.A.R. push the background down for an instant when they fire.</li>
+      <li><b>You can hear each step of a reload.</b> Magazine out, magazine seated, the rack. The Kar&rsquo;s bolt in four parts and the stripper clip. The Garand&rsquo;s op-rod slam. Each shell going into the Trench Gun. The sounds land where your hands are, so if Fast Hands shortens the reload, the sounds move with it.</li>
+      <li><b>You hear your round strike</b> out to 120 m. Long headshots thwack from 60 m.</li>
+      <li>These are still built sounds, not recordings. We&rsquo;re getting a set of real WW2 weapon recordings and they&rsquo;ll go in for a later build. Tell us which gun sounds worst now, so we know where to start.</li>
+    </ul>
+  </section>
+
+  <section id="hits">
+    <div class="head"><h2>Rifle rounds stop a man</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>A rifle round in the body staggers him.</b> A Kar98k, Enfield, Springfield, Garand or B.A.R. round, or a load of buckshot, stops him for a moment, cuts off his burst and shoves him back. An SMG or pistol round makes him flinch and that&rsquo;s all. So the rifle is the gun that stops a charge, and the SMG is the gun that finishes it.</li>
+      <li><b>Some men shrug it off.</b> The Heavy Gunner, gun crews, riders, officers, snipers and flamethrower men keep coming. A man can only be staggered once every 0.6 s, so you can&rsquo;t pin him in place with a rifle.</li>
+      <li><b>Men show what hit them.</b> The flinch is sized to the blow. The head snaps back on a headshot. The white flash on every hit is gone. A puff of red and the dust off his uniform show it instead, with a heavier marker and a heavier tick for a heavy hit.</li>
+      <li><b>In co-op your kills count the instant your round lands.</b> You don&rsquo;t wait for the host to say so. Your grenade, mine and blast kills mark the crosshair too.</li>
+      <li><b>Damage numbers are off.</b> We want you to read the hit from the man, not a number. If you&rsquo;d rather have them, they&rsquo;re under OPTIONS &rsaquo; ACCESSIBILITY &rsaquo; Damage numbers. Armour weak spots still show theirs.</li>
+    </ul>
+  </section>
+
+  <section id="flash">
+    <div class="head"><h2>Flash, brass and tracers</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The flash is sharp.</b> One or two frames, in 8 shapes, never the same one twice. It lights your gun and your hands, by day and by night. In a burst it skips now and then, so it flickers rather than strobes.</li>
+      <li><b>Every gun throws its brass.</b> Round, shiny and sized to the cartridge. The Trench Gun throws red hulls. The bolt rifles throw theirs on the stroke of the bolt, from beside your hand. Your mates&rsquo; guns throw brass too.</li>
+      <li><b>No more laser lines.</b> Bolt rifles, the pistol and the shotgun fire no tracer at all. The Garand and the carbine show a short line. Automatics fire a bright tracer every third round, like the belts had.</li>
+      <li>Less smoke hangs in front of your sights.</li>
+    </ul>
+  </section>
+
+  <section id="look">
+    <div class="head"><h2>The gun in your hands</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>It&rsquo;s lit like an object in the sun.</b> The top catches the sky and the underside falls into shade. The gun shadows itself, so the bolt handle throws a shadow on the receiver.</li>
+      <li><b>Steel looks like steel and walnut like walnut.</b> There&rsquo;s oil on the metal and wear on the edges. The grain shows in the stock.</li>
+      <li><b>You can see through the peeps.</b> The Grease Gun&rsquo;s and the M1 Carbine&rsquo;s rear sights are thin rings now. They used to be thick enough to hide a man.</li>
+    </ul>
+  </section>
+
+  <section id="handling">
+    <div class="head"><h2>SMGs move like SMGs</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Tighter from the hip, faster on the sights.</b> An SMG comes onto the sights in about a sixth of a second and out of a sprint in an eighth. Bolt rifles hip-fire wider than they did. The B.A.R. and the scoped rifle are slower to raise.</li>
+      <li>None of the damage, magazine or reload numbers changed. Only how the guns move, kick, sound and look.</li>
+    </ul>
+  </section>
+
+  <section id="options">
+    <div class="head"><h2>Options and your save</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>One new row.</b> Damage numbers, under ACCESSIBILITY, off by default. Everything else in OPTIONS is as it was.</li>
+      <li><b>The weapon sway and bob slider</b> still stills the gun at 0%. It never touches the recoil. Recoil is the game now, not a camera effect.</li>
+      <li><b>Your save loads as it is.</b> Every gun, attachment, card and level is where you left it. Your Grease Gun kicks harder than it did, because the floor on steadying applies to what you already own. Nothing was taken from it.</li>
+    </ul>
+  </section>
+
+  <section id="together">
+    <div class="head"><h2>Together</h2><span class="tag chg">Co-op</span></div>
+    <ul class="points">
+      <li><b>Everyone needs playtest 22.</b> The way a man&rsquo;s death is sent changed, so a playtest 21 build joining a 22 game would show the wrong thing. The game checks the build on join and turns an older one away with a plain message.</li>
+      <li>Your mates&rsquo; shots sound like theirs. Their brass matches their gun. Their tracers follow the same rule as yours.</li>
+      <li>We ran it with 6 soldiers all on automatics. Nobody dropped, and nobody heard a kill twice.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="fixes">
+      <li>At 60 fps the automatics fired slower than they should have. The Thompson was doing about 600 rounds a minute instead of 682, and the B.A.R. about 400 instead of 444, because each shot lost the rest of the frame it fired on. At 144 fps you got nearly the full rate. Now every frame rate gets the same rate.</li>
+      <li>On OPTIONS &rsaquo; SETTINGS the Field notes buttons sat on top of DONE. In a run, Working the bolt sat on the line above DONE too. Field notes has moved to the left column and the sheet starts higher.</li>
+      <li>A staff car leaving at the end of a run could throw an error on the host after the last client had left. It doesn&rsquo;t now.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li>With 6 soldiers all on automatics during a Rolling Barrage, the game runs out of sound channels for a minute. Some shots and hits go quiet until the barrage ends.</li>
+      <li>The gun sounds are still built, not recorded. See <a href="#sound">Sound</a>.</li>
+      <li>We set the kick, the punch and the stagger numbers for this playtest from scripted shots. Nobody had played this build when these notes went up. The B.A.R.&rsquo;s return speed, the Kar98k&rsquo;s punch and how far the guns wander are the ones most likely to move after you&rsquo;ve played.</li>
+      <li>A bolt rifle&rsquo;s case can be hidden by your hand for the frame it leaves. It&rsquo;s there. Look for it off to the right.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Hold the trigger on an automatic and pull down.</b> Could you keep it on a man at 30 m? Did it feel like you were doing it, or like the game was?</li>
+      <li><b>Which gun did you reach for,</b> and was it still the Grease Gun? If so, why?</li>
+      <li><b>Shut your eyes and listen to a mate fire.</b> Could you tell the Thompson from the B.A.R. from the Kar? Which gun sounds worst?</li>
+      <li><b>Shoot a charging man in the chest with a rifle, then with an SMG.</b> Did you see the difference? Did the stagger ever feel unfair, for him or for you?</li>
+      <li>Did you miss the damage numbers? Did you go and turn them back on?</li>
+      <li>Did the flash, the brass or the tracers ever get in the way of your sight picture? Which gun?</li>
+      <li>Does the gun look better in your hands, or just different? Look at it in the open at noon and in the dark.</li>
+      <li>Did any kick, roll or punch make you feel sick? Say which gun and whether sway and bob was turned down.</li>
+      <li>In co-op, did a kill ever sound twice, or not at all? Did anyone get turned away on join?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 22">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
