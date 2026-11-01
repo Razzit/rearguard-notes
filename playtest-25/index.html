@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 25 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 25 build. Build your base with points, ready up on Z, store guns on a weapons rack, take a front&rsquo;s conditions off, and more time to read a vote. Most of it came from your reports.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 25<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>25</div>
+    <p class="lede">This one is your suggestions. You drew a better base page, so the base now runs on points. You said too much was on E, so ready up has moved to Z and there&rsquo;s a weapons rack. You wanted to play a front without its conditions, and to have time to read a vote. All of that is in.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. If you bought base upgrades, you get all that RP back.</p>
+    <div class="glance">
+      <div><b>Z</b><span>Ready up. Enter still works too</span></div>
+      <div><b>20</b><span>Base points at rank 18. 11 at rank 9</span></div>
+      <div><b>2</b><span>Rack pegs for each soldier</span></div>
+      <div><b>+6 s</b><span>On a break with a vote in it</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#base">Build your base</a>
+      <a href="#keys">Ready and E</a>
+      <a href="#rack">Weapons rack</a>
+      <a href="#runs">Runs and breaks</a>
+      <a href="#gunner">Machine gunner</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="base">Build your base</option>
+        <option value="keys">Ready and E</option>
+        <option value="rack">Weapons rack</option>
+        <option value="runs">Runs and breaks</option>
+        <option value="gunner">Machine gunner</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="base">
+    <div class="head"><h2>Build your base</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>UPGRADES &gt; BASE is now BUILD YOUR BASE.</b> You spend points, not RP, and you can change your plan at HQ before any deployment. Thanks to Lachie for the mock-up, and Duncan for asking for a base you can see.</li>
+      <li><b>It opens at rank 9, with 11 points.</b> You get one more a rank, up to 20 at rank 18. From rank 18 you can buy up to 5 more with RP.</li>
+      <li><b>If you bought base upgrades, you get all that RP back,</b> and your old base is set up as your first plan.</li>
+      <li><b>Each gun has its own weapon and ammo.</b> Weapons: the .30 cal (free), water-cooled (1 point), M2 .50 cal (2). Ammo: standard (free), Heavy Ball, Armour-piercing or Incendiary (2 each). Traversing Stop is 1 point a gun.</li>
+      <li><b>Each gate has its own wire.</b> The first row is free. A second row is 1 point.</li>
+      <li><b>For the whole base:</b> Taller Sandbags (2), Thicker Wire (2: men in wire move 45% slower, not 30%), Battery Allotment (4: +3 shells a barrage).</li>
+      <li><b>Three new upgrades.</b> Emergency Flare (8): once a deployment, at 35% post health, every soldier&rsquo;s fire mission is ready. Danger Close (4): fire missions can land inside the wire, and the shells can still hurt you. Radio Jamming (5): enemy mortars and rockets land twice as wide.</li>
+      <li>Layouts are free now: Standard Camp, Forward Pits and Double Ring.</li>
+      <li>In co-op the host&rsquo;s plan is the one you fight with. You can see it on BRIEFING at any rank, but you can&rsquo;t change it.</li>
+      <li>The campaign now opens at rank 10, so rank 9 brings one new thing.</li>
+    </ul>
+  </section>
+
+  <section id="keys">
+    <div class="head"><h2>Ready and E</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Ready up is on Z now, or Enter.</b> E is only your class kit and repair. A tap of E in a break no longer readies you.</li>
+      <li>Z still uses a field kit in a wave. The press that starts a wave won&rsquo;t waste it.</li>
+      <li>Z does nothing for the first second of a break, so you won&rsquo;t ready up by accident.</li>
+      <li>If you set your own keys, they stay. If something else already held Z, ready is on Enter and WHAT&rsquo;S NEW tells you. You can change it in OPTIONS &gt; CONTROLS.</li>
+    </ul>
+  </section>
+
+  <section id="rack">
+    <div class="head"><h2>Weapons rack</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>There&rsquo;s a rack on the post wall, by the door.</b> Look at a peg and hold <kbd>F</kbd> to leave a weapon there or take it back. That gets you more storage, and you can save your best gun for later.</li>
+      <li><b>Two pegs, yours alone.</b> It holds bazookas, flamethrowers, picked-up guns, Panzerfausts and magnetic mines, one of each.</li>
+      <li><b>It keeps what&rsquo;s left in it until the run ends.</b> Nothing on the rack refills.</li>
+      <li>It works in a wave too. The hold is longer: 1.5 s, against under half a second in a break.</li>
+      <li>You still carry one heavy weapon. Take a heavy off a peg while carrying the other and they swap.</li>
+      <li>Your loadout guns, found guns with traits and a gunner&rsquo;s issued StG can&rsquo;t go on it. If you leave the game, the rack is empty when you come back.</li>
+    </ul>
+  </section>
+
+  <section id="runs">
+    <div class="head"><h2>Runs and breaks</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>You can take today&rsquo;s conditions off a front.</b> Where a front rolled some, CHANGE RUN has a NO CONDITIONS card under run A. You give up the pay they&rsquo;d bring, and the front&rsquo;s own bonus still counts. In co-op it&rsquo;s the host&rsquo;s pick.</li>
+      <li><b>A vote in a break adds 6 seconds,</b> so reading it doesn&rsquo;t use up your time for the card.</li>
+      <li><b>Creeping Barrage is gone.</b> It was loud and gave you nothing to do. The Rolling Barrage fire plan, with its assault behind it, is still in.</li>
+      <li>When you take HOLD THE LINE, the banner says the relief is moving on, and they march off the field instead of vanishing halfway.</li>
+    </ul>
+  </section>
+
+  <section id="gunner">
+    <div class="head"><h2>Machine gunner</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Cool Hand:</b> MG nests heat 50% slower. It was 20%.</li>
+      <li><b>Final Protective Fire:</b> 10 seconds without heating. It was 6.</li>
+      <li><b>Captured Arms:</b> the StG 44 your kit issues hits for 36, up from 30, and fights at your primary&rsquo;s gun level. An StG off the ground is unchanged.</li>
+      <li><b>Tripod with the Feed Tray:</b> the belt only feeds after half a second braced, so a quick crouch is no longer a free reload. It only slows that trick. Whether a braced gun should have unlimited ammo is still open, so tell us.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li>The medic&rsquo;s posts stand on the ground and no longer float. The Aid Post and Casualty Clearing Post now show their reach with red-topped stakes and tape.</li>
+      <li>The downed pilot&rsquo;s box no longer says you carry him. You walk him in, and he walks himself.</li>
+      <li>The report form has a real cursor. Arrow keys, Home, End and Delete all work, and Ctrl moves or deletes by the word.</li>
+      <li>A long report with blank lines no longer gets cut off in Discord.</li>
+      <li>Descriptions say &ldquo;x% more damage&rdquo; everywhere, not &ldquo;hit x% harder&rdquo;.</li>
+      <li>The M1911&rsquo;s spread settles faster: 0.25 s, down from 0.4 s.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> We checked it with scripted runs, with up to 4 soldiers in the field. The base points and upgrades have had no balance testing at all, so expect some to be too strong or too weak. The .50 with armour-piercing belts is the one we&rsquo;d watch.</li>
+      <li>A tester was dropped to the menu a few times in co-op. We haven&rsquo;t found the cause. If it happens to you, please press <kbd>F10</kbd> at HQ straight away, before you restart.</li>
+      <li>We couldn&rsquo;t reproduce the captured StG having only one magazine, or vehicles getting stuck on Monte Lungo. If you see either, press <kbd>F10</kbd> while it&rsquo;s happening. For a stuck vehicle, the host&rsquo;s report helps most.</li>
+      <li>With the HUD at 130%, the prompt for placing works runs a little past its box.</li>
+      <li>On concrete posts the rack sits in front of the open door leaf. It looks fine to us. Tell us if it doesn&rsquo;t to you.</li>
+      <li>BRIEFING&rsquo;s PLAY WITH FRIENDS panel has a small grey &ldquo;Steam off&rdquo; line in this build. It&rsquo;s for our own testing. Ignore it. Join codes work without Steam.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Spend your base points.</b> Could you tell what each thing does? Is there one pick you&rsquo;d always take, or one you&rsquo;d never touch?</li>
+      <li><b>Use Z for a few runs.</b> Does it feel right after a while? Did you ever ready up by accident, or lose a field kit?</li>
+      <li><b>Use the rack in a hard wave.</b> Could you find it, and was the hold worth it? Did you save anything for later?</li>
+      <li><b>Pick NO CONDITIONS.</b> Is it clear what you give up?</li>
+      <li><b>Answer a vote.</b> Did you have time to read it and pick your card?</li>
+      <li><b>Play the gunner.</b> Is the captured StG worth taking now? Is the tripod still too strong?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 25">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
