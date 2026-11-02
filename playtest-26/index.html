@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 26 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 26 build. Orders now come during the wave with a clock on them, there&rsquo;s a new Forward Observer job and a raid you can take, and a big memory leak is fixed.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 26<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>26</div>
+    <p class="lede">This one is mostly the orders. They used to be marked in the break, so you&rsquo;d walk over and finish them before the wave turned up. They were quick and a bit of a chore. Now they come in the middle of the fight, with a clock, and what you do about them changes the fight. We also fixed a big memory leak and made a new soldier&rsquo;s first few visits to HQ calmer.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is.</p>
+    <div class="glance">
+      <div><b>60&ndash;100 s</b><span>On the clock for each job</span></div>
+      <div><b>+15%</b><span>Men next wave if you leave most jobs</span></div>
+      <div><b>+25%</b><span>Men next wave if you take a raid</span></div>
+      <div><b>2 MB</b><span>Memory added each deployment. It was about 90</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#orders">Orders</a>
+      <a href="#observer">Forward Observer</a>
+      <a href="#raids">Raids</a>
+      <a href="#complications">Complications</a>
+      <a href="#first">First few visits</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="orders">Orders</option>
+        <option value="observer">Forward Observer</option>
+        <option value="raids">Raids</option>
+        <option value="complications">Complications</option>
+        <option value="first">First few visits</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="orders">
+    <div class="head"><h2>Orders come during the wave</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The break only warns you now.</b> From wave 3, every 3rd or 4th wave, it says &ldquo;Orders expected during this wave.&rdquo; You don&rsquo;t get the job, the place or a marker until it arrives.</li>
+      <li><b>The order comes once 30 to 50% of the wave has spawned,</b> if the post is at 50% or better. By 70% spawned with no order, none comes, and you&rsquo;re told. The next wave can try again.</li>
+      <li><b>A card stands for 8 seconds</b> with the job, its clock, where it is, what a win does, what leaving costs and the pay.</li>
+      <li><b>Every job has a clock.</b> It fails when the clock runs out. The wave can&rsquo;t end while the clock runs and someone is on the job, so killing fast doesn&rsquo;t cost you the order. If nobody&rsquo;s on it when the wave clears, it fails on the spot.</li>
+      <li><b>A failed job costs you on the next wave.</b> The cost doesn&rsquo;t stack, and it never touches your banked pay or ends your run.</li>
+      <li><b>What each job does now:</b></li>
+      <li>Mortar Pit (75 s, 21 RP): a win silences the tube. Leave it and it shells you next wave too.</li>
+      <li>Dispatches (75 s, 19 RP): a win means 15% fewer men next wave, and you see what&rsquo;s in it. Leave it and it&rsquo;s 15% more.</li>
+      <li>Crossroads (100 s, 28 RP): the hold is 45 s, down from 60. A win stops up to 30% of the men still to come. Leaving it has no cost next wave.</li>
+      <li>Cider Press (60 s, 18 RP): a win means no more grenades this wave. Leave it and it&rsquo;s 15% more men next wave.</li>
+      <li>Fuel Dump (60 s, 14 RP): a win means no armour next wave. Leave it and any armoured cars and half-tracks come first and early.</li>
+      <li>Sewer Grate (60 s, 14 RP): a win stops the men coming out. Leave it and they keep coming at half rate, this wave and next.</li>
+      <li>Belfry (75 s, 20 RP): a win stops the bombs and any Fire Plan for two waves. Leave it and a new observer drops a bomb every 30 s, until you kill him.</li>
+      <li>Downed Pilot (75 s, 22 RP): a win sends a P-47 down the thickest knot of the wave. Leaving him has no cost next wave.</li>
+      <li><b>The job comes after you.</b> A hunting party goes for whoever takes the map case or the pilot. Any hit on you during a hold takes the hold back to nothing. The cider press blast really does hurt now: 150 at the charge and 45 at the edge. Enemies close to the pilot can put him down until you raise him.</li>
+    </ul>
+  </section>
+
+  <section id="observer">
+    <div class="head"><h2>Forward Observer</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>It&rsquo;s a new job on every front.</b> You go out to a taped ring 32 to 48 m from the post, with 75 s on the clock and 22 RP for a win.</li>
+      <li><b>Stay in the ring for 30 s to charge a barrage.</b> You can shoot, reload and throw grenades in there. Step out and the charge waits for you. A hunting party sets off 8 s after you step in.</li>
+      <li><b>A second soldier at the field telephone cuts it to 20 s.</b> It&rsquo;s on the wall nearest the ring. There&rsquo;s no key to press. Just stand in the circle and keep fighting. Playing solo, one of your squad goes if one is free.</li>
+      <li><b>When the guns are laid, ping to aim.</b> It&rsquo;s your normal ping, <kbd>Q</kbd> unless you&rsquo;ve changed it, from inside the ring. You get a 4 s warning, then 8 shells. Half of them come down on men inside the red ring.</li>
+      <li><b>It can hurt you and your mates.</b> A shell does 85 to our own, so 1 won&rsquo;t kill a full-health soldier and 2 can. The post takes nothing, and you can&rsquo;t aim within 22 m of its middle.</li>
+      <li>Leave the job and it&rsquo;s 15% more men next wave.</li>
+    </ul>
+  </section>
+
+  <section id="raids">
+    <div class="head"><h2>Raids</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>A quiet break may ask: TAKE THE RAID?</b> You get 25% more men next wave, and every soldier gets one extra commendation once that wave is held. An order is also certain to come.</li>
+      <li>It&rsquo;s a section vote: <kbd>Tab</kbd> + <kbd>1</kbd>, more than half of you, 10 s to answer. Solo, the ready key says no. If nobody answers, nothing changes.</li>
+      <li>A raid&rsquo;s job pays half its RP. The prize is the card.</li>
+      <li>You won&rsquo;t see one in your first run, on HOLD THE LINE, or just before the final assault.</li>
+    </ul>
+  </section>
+
+  <section id="complications">
+    <div class="head"><h2>Complications</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>After your first 3 orders, a job may draw one of these.</b> It&rsquo;s a coin flip, and the card tells you which.</li>
+      <li><b>Sniper:</b> he covers the site. Go for him first, or do the job under his fire.</li>
+      <li><b>Tripwire:</b> on the map case or a fuel drum, in bright red with a red rag on it. Hold crouched and it takes 1 s longer with no harm. Hold standing and it takes 30 damage, but never your last health.</li>
+      <li><b>Smoke:</b> a cloud every 12 s over the site. You can&rsquo;t see through it and nor can they, unless they&rsquo;re within 6 m.</li>
+      <li><b>Officer:</b> he stands near the site. Kill him and the next charge is 20% smaller, or 40% with a headshot.</li>
+    </ul>
+  </section>
+
+  <section id="first">
+    <div class="head"><h2>A new soldier&rsquo;s first few visits</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The Front Board and run conditions now open after 2 deployments.</b> The second visit to HQ has less on it. The weekly operation opens a deployment later at rank 1. If you use a same-ground code on your second deployment, it drops its conditions.</li>
+      <li><b>If all you have is the pistol,</b> NEXT UP tells you to save for the Kar98k and how much RP it takes.</li>
+      <li>On your first MG team wave, the cavalry troop arrives a wave later. That only changes things on Standard. Replacements already holds them back until wave 5.</li>
+      <li>LOADOUT and SERVICE RECORD no longer show padlocks and rows of zeros to a new soldier. Appearance stays hidden until you&rsquo;ve won something for it.</li>
+      <li>You don&rsquo;t keep a grade the card never showed you. Grades on older saves still show.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li><b>We fixed a memory leak.</b> Each deployment used to add about 90 MB. Now it adds about 2 MB, so long sessions use far less memory. Later deployments also load their guns about 3 times faster.</li>
+      <li>We added safety checks against bad positions and collision shapes, to lower the risk of a rare crash. We didn&rsquo;t find the cause, so tell us if you crash.</li>
+      <li>F10 reports now say how long your last deployment took to load.</li>
+      <li>While an order&rsquo;s card is up, other lines in the column stand aside. The clock and the place are the biggest things on it.</li>
+      <li>World marks stay out of the left column. Wave titles sit on a dark band, and name marks stay out of their words. The RP you gain has its own chip.</li>
+      <li>The kill feed no longer runs into the doctrine&rsquo;s box at HUD 130%.</li>
+      <li>Armour left idle now gives up at 120 s, not 240. Bosses, the train and anything you&rsquo;ve hurt in the last 30 s keep the 240, so nothing you&rsquo;re fighting loses its bounty sooner.</li>
+      <li>The Low graphics preset now turns off ambient shadows and sun shafts, and keeps a light colour pass. The Brightness slider works on Low now.</li>
+      <li>If Steam invites can&rsquo;t open, the game tells you what to do: start from Steam, or share the code. The grey debug line in the lobby is gone.</li>
+      <li>Hosting by direct IP now shows the address friends can reach, on PCs with a virtual network adapter too.</li>
+      <li>The co-op panel now says online play signs you in to Unity&rsquo;s Relay service anonymously.</li>
+      <li>There are credits now, at RECORDS &gt; Credits and licences. LICENSES.txt is in the game&rsquo;s folder.</li>
+      <li>Long lines on the after-action card, the Field Commission card and SERVICE RECORD are no longer cut off.</li>
+      <li>Monte Lungo and the Factory: the street lamp is gone, the signs are stencilled and the tower clock has a real face.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> We checked it with scripted runs, with up to 6 soldiers. The orders have had no real balance testing, so expect some clocks and costs to be off.</li>
+      <li>Jobs may pay a bit too much in a big section. A job pays every soldier in full, so a maxed 6-man section earns more from them than we&rsquo;d like.</li>
+      <li>The Mortar Pit, Dispatches and Crossroads orders have no voice for now. The old lines described the old jobs. The banner and the card tell you what to do.</li>
+      <li>The cider press blast and your own barrage can kill you when you&rsquo;re playing solo. We&rsquo;re not sure that&rsquo;s right yet, so tell us.</li>
+      <li>Memory still grows by about 2 MB a deployment. We don&rsquo;t know why yet.</li>
+      <li>Low is about 12% brighter than High, and on our PC it&rsquo;s slightly slower than the old Low. We haven&rsquo;t tried it on a weak PC, so tell us how it runs.</li>
+      <li>A tester was dropped to the menu a few times in co-op. We still haven&rsquo;t found the cause. If it happens, please press <kbd>F10</kbd> at HQ straight away, before you restart.</li>
+      <li>The KEPT row on the after-action card can still get cut off.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Do the orders feel better?</b> Are they exciting now, or just stressful? Do you go for them, or ignore them?</li>
+      <li><b>Are the clocks fair?</b> Tell us about any job you couldn&rsquo;t reach in time, or that was too easy.</li>
+      <li><b>Run a Forward Observer job with a mate on the telephone.</b> Could you find the telephone? Did the barrage do enough?</li>
+      <li><b>Take a raid.</b> Was the extra commendation worth 25% more men?</li>
+      <li><b>Hit a complication.</b> Could you tell what it wanted from you?</li>
+      <li><b>If you can, start a new soldier.</b> Does the second visit to HQ feel better?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 26">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
