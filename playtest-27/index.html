@@ -18,6 +18,7 @@
     <a class="back" href="../">&larr; All patch notes</a>
     <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
     <h1>Playtest 27<br>Patch Notes</h1>
+    <p class="note"><b>Recut, late on 3 November.</b> The first cut went out that afternoon; the recut below is what&rsquo;s in the build now. The WHAT&rsquo;S NEW card comes up again so you see it.</p>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>27</div>
     <p class="lede">This one is the HQ. It&rsquo;s been redrawn from scratch as a field desk. Four tabs, one page each, and your soldier stands on the page with his gun and his kit. The old HQ had grown a lot of panels over the last ten playtests. We also cut the game down for new soldiers, so its systems open one at a time, and we fixed eight things you reported from playtest 26.</p>
     <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Nothing is wiped or refunded.</p>
@@ -86,8 +87,9 @@
   <section id="lean">
     <div class="head"><h2>A leaner game</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li><b>The game opens its systems one at a time.</b> A new soldier sees a plain game first. Each visit to HQ shows one new thing, marked NEW, instead of everything at once.</li>
-      <li><b>Veterans keep everything.</b> Your rank, guns and unlocks are all there. If you&rsquo;ve already reached a thing, it&rsquo;s open for you. We hid things, we didn&rsquo;t delete them.</li>
+      <li><b>Things open by rank.</b> A new soldier sees a plain game first and meets each system at the rank it opens. Anything that opened since your last visit wears NEW on its tab.</li>
+      <li><b>Veterans keep everything.</b> Your rank, guns and unlocks are all there, and everything your rank has opened is on the page from your first visit. We hid things, we didn&rsquo;t delete them.</li>
+      <li><b>Recut:</b> the first cut paced this by visits and deployments, so a rank-18 soldier found SQUAD and BASE missing. That&rsquo;s gone. If you played the first cut, your next visit shows everything your rank opens, without NEW on all of it.</li>
       <li><b>The fight is quieter.</b> Fewer banners and call-outs. The order card, the clock and the place are the biggest things on the screen.</li>
       <li><b>Each break is for one thing.</b> You pick your card. The works build themselves.</li>
       <li><b>Pay is one number.</b> Tier and Pact are one heat ladder now.</li>
@@ -105,6 +107,11 @@
   <section id="fixes">
     <div class="head"><h2>Fixes from your reports</h2><span class="tag fix">Fixed</span></div>
     <ul class="points">
+      <li><b>Recut: the purple slab.</b> Kill the relief boss fast, before he sets up, and the track he throws turned magenta. It keeps its steel now. If anything ever draws purple again, press <kbd>F10</kbd>: the report names it.</li>
+      <li><b>Recut: [Y] in a fight.</b> A tap no longer opens every card to its full rule. Hold [Y]: the faces at once, the full rule after 0.8 s, gone when you let go. Rerolling with [Y] held keeps the fresh cards up. The break keeps its tap-to-read.</li>
+      <li><b>Recut: Work Party.</b> The repair card comes when the post is hurt. With the post whole it&rsquo;s a quarter as likely as before, at half health as likely as before, at a quarter health or less four times as likely.</li>
+      <li><b>Recut: the works window.</b> Every third break it now says &ldquo;[Hold F]  Put the wire on the east side&rdquo; and &ldquo;Look at a side and hold [F]: the pioneers build there. Free. Leave it and they build it in 12 s.&rdquo; A one-line caption explains it the first time.</li>
+      <li><b>Recut: WEAPONS.</b> Clicking a gunsmith slot no longer swaps the gun&rsquo;s part to the next one you could fit. It shows what you have until you hover or pick.</li>
       <li><b>MG nests dig in where they fit.</b> No more nests through a building or right beside you. We checked 288 sites on the five maps.</li>
       <li><b>One prompt under the crosshair.</b> If a crate lands at a gun, you see the crate&rsquo;s prompt, not the gun&rsquo;s.</li>
       <li><b>Sniper&rsquo;s Veil works at range.</b> A hidden man isn&rsquo;t picked out from far off, and no new hunt turns on him while he&rsquo;s hidden.</li>
