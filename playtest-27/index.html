@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 27 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 27 build. The HQ is a field desk now, with four tabs and your soldier on the page. The game opens its systems one at a time. Eight fixes from your reports.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 27<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>27</div>
+    <p class="lede">This one is the HQ. It&rsquo;s been redrawn from scratch as a field desk. Four tabs, one page each, and your soldier stands on the page with his gun and his kit. The old HQ had grown a lot of panels over the last ten playtests. We also cut the game down for new soldiers, so its systems open one at a time, and we fixed eight things you reported from playtest 26.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Nothing is wiped or refunded.</p>
+    <div class="glance">
+      <div><b>4</b><span>Tabs on the HQ. One page each</span></div>
+      <div><b>1</b><span>Soldier on the page. He&rsquo;s you</span></div>
+      <div><b>8</b><span>Fixes from your playtest 26 reports</span></div>
+      <div><b>-oldhq</b><span>Start the game with it to get the old HQ back</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#hq">The new HQ</a>
+      <a href="#pages">The four tabs</a>
+      <a href="#lean">A leaner game</a>
+      <a href="#base">Placing your base</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="hq">The new HQ</option>
+        <option value="pages">The four tabs</option>
+        <option value="lean">A leaner game</option>
+        <option value="base">Placing your base</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="hq">
+    <div class="head"><h2>The HQ is a field desk</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Every page is one sheet of paper.</b> One hand of type, in two sizes. What you can press is a button. What you own is a card. The tab you&rsquo;re on has the red edge.</li>
+      <li><b>The top bar is the same on every page.</b> Your rank and RP on the left, then MANUAL, WHAT&rsquo;S NEW, REPORT, OPTIONS and QUIT. The yellow slip in the middle tells you what the page is for.</li>
+      <li><b>Fewer things are behind a modal.</b> Lists are lists. The things you can&rsquo;t afford yet are hidden, not greyed out, so a page only shows what you can do today.</li>
+      <li><b>The old HQ is still in the build.</b> Start the game with <kbd>-oldhq</kbd> on the command line, or in Steam under Launch Options, and you get it back. If you need to do that, tell us which page sent you there.</li>
+    </ul>
+  </section>
+
+  <section id="pages">
+    <div class="head"><h2>The four tabs</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>BRIEFING</b> shows the front as a map, with the enemy&rsquo;s arrows on it. The fronts you can pick are down the left side. Under the map is your kit strip and what the next deployment pays. DEPLOY is the big red stamp, bottom right. CHANGE RUN is off the first page. Fewer things to read before you go.</li>
+      <li><b>LOADOUT</b> has three pages: WEAPONS, SPECIALIST and APPEARANCE. Your soldier stands in the middle with his gun on his back. The class patch is on his sleeve, and lines run from him to what he&rsquo;s carrying. The guns are a gallery, ten of them with their parts in one pass. A FIELD SHEET view lists everything in one column, if you&rsquo;d rather read.</li>
+      <li><b>UPGRADES</b> keeps the soldier on the page and hangs the offers on him. A card you can take says DRAW, and its tier is the coloured chip. SQUAD shows the man you can hire in a ghost tint. BASE is here too, see below.</li>
+      <li><b>RECORDS</b> is your service record. The fronts are a strip across the top. Dispatches show their pips only once you&rsquo;ve made progress on one. Commendations are field cards now, the same cards you see in the break. Your archive is at the bottom. Credits moved under OPTIONS.</li>
+      <li><b>In a co-op game</b> the host plans the base and picks the front. A client sees THE HOST&rsquo;S FRONT and THE HOST&rsquo;S BASE, with nothing to press, and marks ready.</li>
+      <li><b>At 1280&times;720 with 130% text,</b> every line fits. That was the size that broke most often, so we checked all of it there.</li>
+    </ul>
+  </section>
+
+  <section id="lean">
+    <div class="head"><h2>A leaner game</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The game opens its systems one at a time.</b> A new soldier sees a plain game first. Each visit to HQ shows one new thing, marked NEW, instead of everything at once.</li>
+      <li><b>Veterans keep everything.</b> Your rank, guns and unlocks are all there. If you&rsquo;ve already reached a thing, it&rsquo;s open for you. We hid things, we didn&rsquo;t delete them.</li>
+      <li><b>The fight is quieter.</b> Fewer banners and call-outs. The order card, the clock and the place are the biggest things on the screen.</li>
+      <li><b>Each break is for one thing.</b> You pick your card. The works build themselves.</li>
+      <li><b>Pay is one number.</b> Tier and Pact are one heat ladder now.</li>
+    </ul>
+  </section>
+
+  <section id="base">
+    <div class="head"><h2>Placing your base</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>BASE is now a plan you place things on.</b> Nests and pits go where you put them, on the post&rsquo;s drawing, with the keys shown as caps. Points come from rank, as in playtest 25. If you can&rsquo;t afford an option today, it isn&rsquo;t shown.</li>
+      <li><b>In co-op the host places.</b> Everyone sees the plan on their BRIEFING before the lorries leave.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes from your reports</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li><b>MG nests dig in where they fit.</b> No more nests through a building or right beside you. We checked 288 sites on the five maps.</li>
+      <li><b>One prompt under the crosshair.</b> If a crate lands at a gun, you see the crate&rsquo;s prompt, not the gun&rsquo;s.</li>
+      <li><b>Sniper&rsquo;s Veil works at range.</b> A hidden man isn&rsquo;t picked out from far off, and no new hunt turns on him while he&rsquo;s hidden.</li>
+      <li><b>E works after a ready tap.</b> The ready key let go of its claim late, so your next E did nothing.</li>
+      <li>The pilot&rsquo;s box says you walk him in. You never carried him.</li>
+      <li>The KEPT row on the after-action card wraps now. It was the last line still getting cut off.</li>
+      <li>The order barks match the clock. The old lines described the old jobs.</li>
+      <li>The licences file names the Steamworks SDK, and the CC0 text is in it.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> We checked it with scripted runs, 1,247 screenshots of the HQ at two sizes, and sessions with 6 soldiers. A redrawn HQ will have things we didn&rsquo;t see. Tell us the page and send a screenshot.</li>
+      <li>Your soldier faces front on every page. He doesn&rsquo;t turn yet.</li>
+      <li>On a client&rsquo;s SERVICE RECORD there&rsquo;s an empty gap where RANGE used to be. RANGE is the host&rsquo;s.</li>
+      <li>On BASE, options you can pick together still grey out when you can&rsquo;t afford them, instead of hiding like the rest.</li>
+      <li>A dispatch you haven&rsquo;t started shows a card with an empty lower half.</li>
+      <li>A few lone tree crowns on the Hedgerow Farm map could pass for ponds.</li>
+      <li>A tester was dropped to the menu a few times in co-op in playtest 26. We still haven&rsquo;t found the cause. If it happens, press <kbd>F10</kbd> at HQ straight away.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Can you find things?</b> Pick a front, change your gun, buy an upgrade, read your record. Tell us where you got lost, or where you had to guess.</li>
+      <li><b>Does the map help?</b> Does BRIEFING tell you enough to pick a front, or did you miss the old list?</li>
+      <li><b>If you can, start a new soldier.</b> Does the game open up at the right pace, or does it hide too much?</li>
+      <li><b>Host a game and place your base.</b> Did your mates see the plan? Did the nests go where you put them?</li>
+      <li><b>Play at 1280&times;720 if you can, with text at 130%.</b> Anything cut off is a bug.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 27">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
