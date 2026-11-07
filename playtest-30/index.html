@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 30 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 30 build. Your Friday suggestions, built the same day. Hire up to six men, and get a downed man back up. Double-tap Q to bring them home. 35 arsenal points. Fewer grenades and wider barrages late in a run. Suppression eased and MG gunners exposed. Leaves hide you. The chain cards once every 3 seconds. Hold M in a break for the approach map.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 30<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>30</div>
+    <p class="lede">Playtest 29 went up at lunchtime on Friday. By then you&rsquo;d already sent the next lot of suggestions, so we built those through the afternoon and this is them. Most of it is Lachie&rsquo;s list: the squad, the explosives, the suppression, the chain cards, the point cap, and a map of where the next wave comes from. Plus one bug from a field report, an officer shooting you through a bush.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Your base plan loads as it was, with 10 points to spare.</p>
+    <div class="glance">
+      <div><b>6</b><span>Men you can hire now. Hold [F] to get a downed one up</span></div>
+      <div><b>35</b><span>Arsenal points at rank 18. It was 25</span></div>
+      <div><b>[M]</b><span>Hold it in a break for the approach map</span></div>
+      <div><b>3 s</b><span>Between procs on Chain Reaction and Shock Rounds</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#squad">Your hired men</a>
+      <a href="#map">The approach map</a>
+      <a href="#explosives">Explosives</a>
+      <a href="#suppression">Suppression</a>
+      <a href="#leaves">Leaves</a>
+      <a href="#points">Points and cards</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="squad">Your hired men</option>
+        <option value="map">The approach map</option>
+        <option value="explosives">Explosives</option>
+        <option value="suppression">Suppression</option>
+        <option value="leaves">Leaves</option>
+        <option value="points">Points and cards</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="squad">
+    <div class="head"><h2>Your hired men</h2><span class="tag new">New</span></div>
+    <p class="short">You asked for more men, for commands, and for a way to get them back up. Assign, unassign, follow me and hold here were already in. The rest is here.</p>
+    <ul class="points">
+      <li><b>Hire up to six.</b> Pvt. Delgado with a Garand at rank 22 for 7,500 RP, and Cpl. Haskell with a B.A.R. at rank 25 for 12,000. Marsh, the fourth man, now opens at rank 18 instead of 25. The squad page shows five or six in two rows.</li>
+      <li><b>Six on the line in co-op.</b> The host&rsquo;s men go first, then one from each friend. If your mates bring nobody, all six of yours come.</li>
+      <li><b>Anyone can put a man on a gun.</b> On UPGRADES &gt; BASE a client can now assign one of the host&rsquo;s men to a slot. The host checks it.</li>
+      <li><b>Double-tap [Q] and they come home.</b> While your men follow you or hold outside the wire, two quick taps of [Q] send them back to their posts. One tap still pings. The order line on the roster says so.</li>
+      <li><b>A hired man goes down instead of dying.</b> Hit to zero, he lies there for 30 seconds with his rifle slung. Rounds pass him and the enemy look past him. Hold [F] beside him for 3 seconds and he&rsquo;s up on half health. A medic does it in 1.5 seconds and gets him up on 90%. A syrette holds his clock. If nobody gets to him he&rsquo;s gone and replaced after the wave as before. If you hold the wave, every man still down gets up.</li>
+      <li>A blast that takes a standing man to zero downs him, and nothing hurts a man already down. That&rsquo;s the rule you play by, so your men do too.</li>
+      <li>Not built yet: the men picking each other up. Say if you want it.</li>
+    </ul>
+  </section>
+
+  <section id="map">
+    <div class="head"><h2>The approach map</h2><span class="tag new">New</span></div>
+    <p class="short">You asked for a map of the upcoming spawns to plan against. The game doesn&rsquo;t know every spawn in advance, it rolls each squad&rsquo;s edge as it comes. What it does know in a break is where most of the next wave is coming from. So that&rsquo;s what the map shows.</p>
+    <ul class="points">
+      <li><b>In a break, hold [M].</b> A paper sheet of the post from above, the sixteen edges lettered. The edges the main thrust comes from are red with arrows in, and it says MOST FROM THE NORTH-WEST, or FROM ANY SIDE when there is no thrust yet.</li>
+      <li>Under it, the lane intel line and the name of the event. Your guns are amber dots, your section white ones. When the intel names armour, the road says ARMOUR.</li>
+      <li>The first three breaks remind you of the key, then it&rsquo;s in the field manual. You can rebind it under CONTROLS.</li>
+      <li>Nothing shows in the fight. The compass wedge is still the fight&rsquo;s picture.</li>
+      <li>While doing this we found the thrust could stray. About one charge in 20 came from an edge the map wouldn&rsquo;t have marked. Now a charge on the thrust always comes from a marked edge.</li>
+    </ul>
+  </section>
+
+  <section id="explosives">
+    <div class="head"><h2>Explosives late in a run</h2><span class="tag chg">Changed</span></div>
+    <p class="short">All five points you listed.</p>
+    <ul class="points">
+      <li><b>Fewer grenades from wave 8.</b> The ordinary riflemen&rsquo;s shared grenade clock slows from wave 8, down to half as many by wave 14. The GRENADIER veteran keeps his own. In our wave 14 soak the throws a minute went from 4 to 7 down to 0 to 2.</li>
+      <li><b>Grab an enemy grenade from 6 metres.</b> That was Hot Potato&rsquo;s reach. It&rsquo;s everyone&rsquo;s now. Hot Potato still means back at once, further and harder.</li>
+      <li><b>A landed grenade burns 2.4 seconds,</b> not 1.4. Thrown back from 12 metres it now bursts half a metre from the man who threw it. It used to fall 7 metres short.</li>
+      <li><b>Enemy mortars and rockets land twice as wide,</b> for everyone. That&rsquo;s what Radio Jamming used to buy. The dead-ground mortar team&rsquo;s bombs on the post are the exception, so that fight keeps its clock.</li>
+      <li><b>Crews slow as they lose men.</b> A rocket crew&rsquo;s salvo gap doubles with one man gone and quadruples with two. A lone mortarman fires every 15 seconds instead of 11.</li>
+    </ul>
+  </section>
+
+  <section id="suppression">
+    <div class="head"><h2>Suppression late in a run</h2><span class="tag chg">Changed</span></div>
+    <p class="short">All five points. You were right that the earlier fix never touched the first round.</p>
+    <ul class="points">
+      <li><b>The first kick is smaller,</b> 0.5 degrees instead of 0.8, and it takes four rounds to pin you instead of three.</li>
+      <li><b>At a mounted gun you shake it off as fast as behind the bags.</b> The kick is halved again there, the HUD says AT THE GUN, and it stops telling you to get down.</li>
+      <li><b>MG42 gunners show more head.</b> Eyes and brow over the shield where only the helmet showed.</li>
+      <li><b>A nest that loses its loader goes quiet.</b> The gunner loads every belt himself and the gun fires about 40% of the time. If the gunner dies first, the loader who takes over is alone too.</li>
+      <li><b>Blasts rock your view half as much,</b> clear sooner, and reach less far. The damage is the same.</li>
+      <li>Measured on the same seeds against playtest 29: at wave 12 on the ruins, chest hits at 60 metres went from 65% to 72% and time pinned from 76% to 64%.</li>
+    </ul>
+  </section>
+
+  <section id="leaves">
+    <div class="head"><h2>Leaves hide you</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li><b>The officer who shot you through the corner of a bush.</b> Bushes have never had a collider, by design, and the enemy&rsquo;s sight check was a plain ray, so a man behind leaves could pick you out while you couldn&rsquo;t see him. Now enemies ask the same rule the hidden spawns use, and a hedgerow&rsquo;s end hides you too.</li>
+      <li>Your hired men don&rsquo;t fire through leaves either, and nor do your crewed nests.</li>
+      <li>Rounds still pass through leaves. A bush is concealment, not cover.</li>
+      <li>Armoured car gunners, enemy MG teams and cavalry still use the plain ray. Tell us if they catch you through a hedge.</li>
+    </ul>
+  </section>
+
+  <section id="points">
+    <div class="head"><h2>Points and cards</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>35 arsenal points at rank 18.</b> 26 at rank 9, one more a rank. You asked for it to test more combinations, and 35 fits every heavy gun with its option and a second .50. Your playtest 29 plan loads as it was with 10 to spare. If 35 turns out to be the right game, say so.</li>
+      <li><b>Chain Reaction and Shock Rounds once every 3 seconds.</b> Chain Reaction&rsquo;s belt was firing once a second and, with Bundled Charges, feeding itself. Shock Rounds had no cooldown at all. Both cards now say Every 3 s on their face. The blue tracer only shows on a round that can arc.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> It was built on Friday afternoon from your reports and checked with scripted runs and a four-player soak to wave 10. Tell us what we missed.</li>
+      <li>A hired man who is down when the lorries leave is left behind.</li>
+      <li>The approach map, held in the first break, covers the end of the mission title, and the recon strip on small screens.</li>
+      <li>The same map code rolls its waves differently from playtest 29, because of the thrust fix.</li>
+      <li>The AT gun still can&rsquo;t be carried.</li>
+      <li>A tester was dropped to the menu a few times in co-op in playtest 26. Still not found. If it happens, press <kbd>F10</kbd> at HQ straight away.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Hire six and lose one.</b> Let a man go down and get him up with [F]. Try it as the medic. Try it as a client.</li>
+      <li><b>Take the men out with FOLLOW ME, then double-tap [Q].</b> Did they come straight back? Did a single tap still ping?</li>
+      <li><b>Hold [M] in every break.</b> Did the red side match where most of them came from? Could you read it at your screen size?</li>
+      <li><b>Play to wave 12 or more.</b> Are the grenades, the barrages and the suppression bearable now, or did we go too far?</li>
+      <li><b>Stand at a mounted gun under fire.</b> Does AT THE GUN feel different?</li>
+      <li><b>Hide behind a bush</b> and see whether anyone still finds you through it.</li>
+      <li><b>Spend 35 points.</b> Is there a plan you still can&rsquo;t make?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 30">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
