@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 31 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 31 build. Your Saturday reports, twenty-two of them. Two mortars and two AT guns a plan, dragged onto the BASE map. The AT gun turns fast, fires the shell you chose, and a hired man lays it. The approach map shows what comes from each point. A leaner HUD with FULL in OPTIONS. Votes on F1 and F2 last the whole break. Music at the HQ by Jaake. A settled aimed shot always hits. Real guns in your men&rsquo;s hands, eyes in their heads, a hammer for the engineer.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 31<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>31</div>
+    <p class="lede">Playtest 30 went up on Friday night. Twenty-two reports came in on Saturday, most of them from the owner&rsquo;s own sessions, and we built them through Saturday and overnight. This is the lot: the AT gun and the mortar reworked, the BASE page you drag, the approach map in detail, a leaner fight HUD, votes that last the break, and the first music in the game. It is the biggest build since the HQ redesign.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Your base plan loads as it was; if it had a Forward Pits or Double Ring layout, that choice is now your arsenal.</p>
+    <div class="glance">
+      <div><b>2</b><span>Mortars, and 2 AT guns, in one plan. Drag them on the BASE map</span></div>
+      <div><b>[F1] [F2]</b><span>Cast a vote. It stays up the whole break</span></div>
+      <div><b>LEAN</b><span>The fight HUD now. FULL is in OPTIONS</span></div>
+      <div><b>&#9834;</b><span>Music at the HQ, by Jaake</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#base">The base</a>
+      <a href="#atgun">The AT gun</a>
+      <a href="#mortars">Mortars</a>
+      <a href="#map">The approach map</a>
+      <a href="#hud">HUD and votes</a>
+      <a href="#shooting">Shooting</a>
+      <a href="#look">The look</a>
+      <a href="#music">Music</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="base">The base</option>
+        <option value="atgun">The AT gun</option>
+        <option value="mortars">Mortars</option>
+        <option value="map">The approach map</option>
+        <option value="hud">HUD and votes</option>
+        <option value="shooting">Shooting</option>
+        <option value="look">The look</option>
+        <option value="music">Music</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="base">
+    <div class="head"><h2>The base</h2><span class="tag new">New</span></div>
+    <p class="short">Two of a kind, a map you drag, and mounts that say why they won&rsquo;t take a gun.</p>
+    <ul class="points">
+      <li><b>Two mortars and two AT guns fit a plan,</b> the second at the same price as the first. With two up, the prompts and the gun&rsquo;s corner say No. 1 and No. 2. Each keeps its own shells, seat, crewman and aim. The AT crate fills them all. Anyone in co-op can take either. A third is refused.</li>
+      <li><b>Drag a gun onto the BASE map to place it.</b> The list of mount codes is gone. Drop a gun on another gun to swap them. Mounts have plain names now: West gate, north. NE pit. TAKE OFF is a button at the foot of the column, or Del. Assigned AI steps with the arrows like Facing. The Firing arc row is gone.</li>
+      <li><b>A mount tells you why it&rsquo;s dark.</b> Walk up with a gun and a mount you can&rsquo;t use says so in red: The S-L has the .30 on it. The NW WING is not built. No fitting stands at a wing nobody bought. Only on a mount shows only when nothing is in reach.</li>
+      <li><b>YOUR BASE on the BRIEFING is your arsenal now,</b> titled by what&rsquo;s in it (3 guns &middot; NE wing &middot; SE tower). CHANGE opens UPGRADES &gt; BASE. It no longer cycles Forward Pits and Double Ring.</li>
+      <li><b>The boards, stakes and lettering on the mounts are gone.</b> The plate on the stand still lights while you carry a gun, and the HUD still names each free mount with its distance.</li>
+      <li><b>The works can be placed right up to the wave.</b> The prompt used to hide with 15 seconds left. Now if nobody holds [F] the pioneers build the rule&rsquo;s piece as the wave comes, and everyone gets one line saying so.</li>
+    </ul>
+  </section>
+
+  <section id="atgun">
+    <div class="head"><h2>The AT gun</h2><span class="tag chg">Changed</span></div>
+    <p class="short">You called it clunky, then horrible. It&rsquo;s a different gun now.</p>
+    <ul class="points">
+      <li><b>[F] anywhere round the gun mans it.</b> Man the 6-pounder. The press steps you round to the gunner&rsquo;s seat. The loader&rsquo;s seat is offered only when someone is already laying it. Looking at the gun beats a crate beside it.</li>
+      <li><b>It turns fast.</b> A quarter turn in 1.6 seconds alone, 1.2 crewed. Reload 3.2 seconds alone, 1.2 crewed. Finer through the sight. No [R] on the gun.</li>
+      <li><b>You pick its shell on the BASE page.</b> Standard is AP with a small burst. Penetrator costs 2 more. High Explosive for men. One shell a gun. The issued gun has shells from wave 1.</li>
+      <li><b>A hired man lays it himself.</b> Assign him on the BASE page and from wave 1 he picks armour first within 140 metres, and men only with a shell that bursts. Walk up and it&rsquo;s Take the 6-pounder from Pvt. Kowalski, and he loads for you. [Q] still takes him off it.</li>
+      <li>It still can&rsquo;t be carried. Next time.</li>
+    </ul>
+  </section>
+
+  <section id="mortars">
+    <div class="head"><h2>Mortars, yours and theirs</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>On the mortar your eye rises</b> 8 metres over the tube in about half a second and settles on the ground 60 metres out, so the ring sits on open ground from any mount instead of behind the sandbags. [RMB] still zooms. Under a roof the eye stops short of it.</li>
+      <li><b>The enemy mortar crew won&rsquo;t sell you insurance.</b> Walk up on a mortar team and both men draw pistols inside 8 metres, stop the tube and shoot. Walk 14 metres off and they holster and go back to it. A crew that leaves the tube to come for you draws at once, walks in side by side and stops about 8 metres off. The HUD says coming in with pistols. The tube stays standing.</li>
+      <li><b>The dead-ground team digs in where the wall can see it.</b> Its sandbags are in sight from most of the wall now, still on a flank, nothing overhead. Your mortar and a fire mission can reach it. The crew stay behind their parapet, so a rifle from the wall still won&rsquo;t.</li>
+      <li><b>The telephone order comes at the buzzer.</b> The Forward Observer&rsquo;s order is given as the wave starts and the guns charge to the wave&rsquo;s size, 12 to 30 seconds. On the Factory&rsquo;s wave 4 the shells land at 26 seconds. They used to land after the last man was already in.</li>
+    </ul>
+  </section>
+
+  <section id="map">
+    <div class="head"><h2>The approach map</h2><span class="tag chg">Changed</span></div>
+    <p class="short">Playtest 30 showed you which sides. This one shows you what.</p>
+    <ul class="points">
+      <li><b>In a break, hold [M].</b> The host decides the coming wave onto the eight real spawn points, and the wave then comes exactly as the map says. When each part comes is still random.</li>
+      <li>Each point carries a stencil plate, CH 4 HG 1 FL 1 / OF 1 SA 2 +9, red on the thrust. Paratroopers show BEHIND THE LINE. A legend names the letters.</li>
+      <li>LANE INTEL&rsquo;s rough count and the plates&rsquo; exact counts can differ by a few men. The plates are right.</li>
+    </ul>
+  </section>
+
+  <section id="hud">
+    <div class="head"><h2>The HUD and the votes</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The fight HUD is LEAN now.</b> Enemies left, the tags, the rules strip, MAIN THRUST, RP, the accolade banner, the kill feed and the Spirit meter are off the fight and on the Tab roll call instead: WAVE N &middot; X LEFT, a RULES line, your RP for the wave and your Spirit score. Health bars only on the big ones: the ace and boss tanks, the Tiger, the train, the Colonel, the Nebelwerfer and the Stukas. No tip on any bar; the field manual has them.</li>
+      <li><b>OPTIONS &gt; ACCESSIBILITY &gt; HUD: FULL</b> brings the old layout back exactly.</li>
+      <li><b>A vote stays up the whole break,</b> and an answer with a second left counts. The questions used to close on their own clock, sized for a 25 second break that no longer exists.</li>
+      <li><b>[F1] and [F2] cast it.</b> Vote 1 and Vote 2 are their own rows under CONTROLS, so you can rebind them. TAB is the roll call only. The hold Tab + number chord is gone.</li>
+      <li><b>The PUSH ON? vote is gone.</b> Everyone ready starts the wave, question or no question.</li>
+    </ul>
+  </section>
+
+  <section id="shooting">
+    <div class="head"><h2>Shooting</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>A lined-up shot hits.</b> Sights fully up, standing still, the last kick settled: the first aimed round has no spread, on every gun. The B.A.R. at 47 metres went from 15 to 23 hits in 50 to 50 in 50. Hip fire, fire on the move and the rest of a held burst keep their spread. A near miss&rsquo;s kick spoils the shot until it settles.</li>
+      <li>Steady Aim now reads Aim a moment and your next shot pierces.</li>
+      <li><b>The engineer swings a hammer when he repairs,</b> on a beat, with a tap, sparks and chips. Everyone else sees him raise it and bring it down on the post.</li>
+    </ul>
+  </section>
+
+  <section id="look">
+    <div class="head"><h2>The look</h2><span class="tag new">New</span></div>
+    <p class="short">Still all built in code, no bought assets. More of it now.</p>
+    <ul class="points">
+      <li><b>Your men and the Germans carry real guns.</b> Garands, B.A.R.s, Carbines and Thompsons; Kar98ks and MP40s; stocks, slings, and fists closed round them. Collars, rounded boots, and the GIs get a flared helmet brim.</li>
+      <li><b>The emplaced guns are rebuilt in detail.</b> The mortar, the four nests, the mounted flamethrower and the 6-pounder have rims, sights, handwheels and painted steel. Mortar bombs look like bombs.</li>
+      <li><b>The men have eyes,</b> not cinders. A real white, a brown iris, a pupil, a catchlight and lids. A face up close in full sun reads as a face.</li>
+      <li>None of it costs frame time. 400 riflemen went from 19.4 to 19.0 milliseconds.</li>
+    </ul>
+  </section>
+
+  <section id="music">
+    <div class="head"><h2>Music</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Jaake&rsquo;s razz plays at the HQ,</b> under every page and the lobby. In over 2 seconds, a crossfade at the loop, out as you deploy. It&rsquo;s on the Music slider and it ducks under voice lines. Jaake is first on the credits card. Find more at <a href="https://soundcloud.com/jaake">soundcloud.com/jaake</a>.</li>
+      <li>Nobody has heard it in the game yet. Every test run is muted. Tell us about the level and the loop.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> It was built from your Saturday reports and checked with scripted runs and a four-player soak to wave 10 on the LEAN HUD. Tell us what we missed.</li>
+      <li>Kills by a hired man on the AT gun credit nobody.</li>
+      <li>At 130% HUD scale on a small screen the commendation strip can cover the works prompt, and a career&rsquo;s first works break can run the left column into the roster.</li>
+      <li>The [Q] relief line can sit on the AT gun&rsquo;s loading line.</li>
+      <li>The MG42 crew still push in unarmed.</li>
+      <li>A hired man who is down when the lorries leave is left behind.</li>
+      <li>The AT gun can&rsquo;t be carried, and the men don&rsquo;t pick each other up yet.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Put two AT guns in a plan,</b> one with a hired man on it, and pick a shell for each. Did he fire at the right things? Did the step-round to the seat feel like a teleport?</li>
+      <li><b>Drag the base about.</b> Could you place and swap guns without the codes? Did a dark mount tell you why?</li>
+      <li><b>Sit on the mortar.</b> Is the raised eye right, or would you rather see the bags?</li>
+      <li><b>Play a whole run on LEAN.</b> What did you miss from the fight HUD? Press Tab for it. Then try FULL for a run and say which you want.</li>
+      <li><b>Vote with [F1] and [F2]</b> late in a break. Did it count?</li>
+      <li><b>Hold [M]</b> and check the plates against what came.</li>
+      <li><b>Walk up on an enemy mortar crew</b> and see what they do.</li>
+      <li><b>Listen at the HQ.</b> Is the music the right level? Does the loop seam show?</li>
+      <li><b>Look at your men up close</b> in the sun. The guns, the fists, the eyes, the hammer.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 31">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
