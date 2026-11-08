@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 32 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 32 build. Early waves size themselves to the men and guns you bring. GUN DRILL and STEADY CREWS cards for your emplaced guns. Tap Q at a free gun to put a man on it. Two men back a break from wave 7. The AT mine kills an armoured car outright. No white dot at full aim. The Thunderbolt every 3 seconds. The BASE page arrows offer only free men. The observer stands down when nothing is left to shell.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 32<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>32</div>
+    <p class="lede">Playtest 31 went up at lunchtime on Sunday. By the afternoon you&rsquo;d told us the AI army made you an unkillable overlord for nine waves and then the run fell over, the AT mine couldn&rsquo;t kill a car, the white dot sat on your front sight, the BASE page arrows stole men off other guns, and a wave wouldn&rsquo;t end until you called in a strike with nobody left to shell. We measured each one in soaks before touching a number, and this is the result. It is a balance build, with a few fixes.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads as it is. Your base plan loads as it was.</p>
+    <div class="glance">
+      <div><b>+N%</b><span>Early waves size themselves to the men and guns you bring</span></div>
+      <div><b>2</b><span>New cards for your emplaced guns: GUN DRILL and STEADY CREWS</span></div>
+      <div><b>[Q]</b><span>At a free gun, puts a man who follows you on it</span></div>
+      <div><b>1</b><span>AT mine now kills an armoured car or half-track outright</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#waves">The waves</a>
+      <a href="#section">Your section</a>
+      <a href="#guns">Guns and cards</a>
+      <a href="#fixes">Fixes</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="waves">The waves</option>
+        <option value="section">Your section</option>
+        <option value="guns">Guns and cards</option>
+        <option value="fixes">Fixes</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="waves">
+    <div class="head"><h2>The waves</h2><span class="tag chg">Changed</span></div>
+    <p class="short">Fuzzy and Lachie both said it: six men and six guns made the first nine waves redundant, then the run flipped. We measured it. The wave plan counted human soldiers only. Hired men and plan points entered nowhere, so a full section got the lone rifleman&rsquo;s wave. With six men and a 34-point plan the first four waves lasted 15 seconds each and the post was untouched to wave 9.</p>
+    <ul class="points">
+      <li><b>Early waves size themselves to the men and guns you bring.</b> Each hired man and each plan point adds to the wave&rsquo;s count, capped at +70%, fading to nothing two waves before the relief so the late end is not made worse. A soldier with nobody and a bare plan sees no change. On the farm, wave 1 goes from 6 men to 10 for a full section.</li>
+      <li><b>In co-op it is shared.</b> The men and the plan are the section&rsquo;s, so their strength is spread over the soldiers, not stacked on each. Four soldiers with six men get 16 on wave 1, not 23. The ENEMY STRENGTH line shows the figure actually applied, the same on every screen.</li>
+      <li><b>The late step at high Honours was measured and left alone.</b> Honours VIII won the relief in our soak; Honours X killed the bot at wave 7 twice. No run met the rule for moving the second Panzer earlier. Tell us what you see.</li>
+      <li><b>The Thunderbolt fires once every 3 seconds.</b> When Shock Rounds and Chain Reaction got their 3 second gap in Playtest 30, the Thunderbolt card was left uncapped. Storm of Steel&rsquo;s bolts wait on the same gap. That is why it felt stronger. The P-47 is untouched.</li>
+    </ul>
+  </section>
+
+  <section id="section">
+    <div class="head"><h2>Your section</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>Tap [Q] at a free gun of the plan</b> and the nearest free man within 25 metres is put on it. The AI gunner lays the 6-pounder, the mortar man works the tube. [Q] at him again stands him down to the line. The host&rsquo;s order only; a client&rsquo;s tap pings, as every field order does today.</li>
+      <li><b>From wave 7 the break brings two fallen men back</b> instead of one. It only refills, it never adds a man.</li>
+      <li><b>A hired gunner&rsquo;s kills are the section&rsquo;s.</b> The AI AT gunner&rsquo;s shells and the mortar crew&rsquo;s bombs used to credit the host with the kill, the fire-mission charge and the combo. They go to the squad&rsquo;s tally and half bounty now.</li>
+    </ul>
+  </section>
+
+  <section id="guns">
+    <div class="head"><h2>Guns and cards</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>GUN DRILL:</b> emplaced guns +20% damage, crewed or manned, including the AT gun and the mortar. <b>STEADY CREWS:</b> the crews settle on a target in half the time with a tighter cone. Both Rare, offered only with two or more machine guns standing in the field.</li>
+      <li><b>The engineer&rsquo;s AT mine kills an armoured car or a half-track outright.</b> It used to be one sure bazooka rocket plus a coin toss for a second, so a 1,000 hp car lived half the time. The demolition charge is brought up to match. A Panzer IV takes about 58% from a mine; a man beside it dies.</li>
+      <li><b>No white dot at full aim.</b> The sights do the aiming. The crosshair&rsquo;s arms stay until the sights are 90% up, instead of being cut at 60%, and the dot no longer paints over the ZF41 and Weaver scopes. The Trench Gun keeps its spread marker.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>Fixes</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li><b>The BASE page&rsquo;s AI arrows offer only free men,</b> so stepping to the man you want never pulls another off his gun. When every man is on a gun the arrow says so. To move a man, set his gun to None, then pick him on the other.</li>
+      <li><b>A Forward Observer order stands down when nothing is left to shell.</b> Standing in the ring with the guns laid used to hold the wave for the order&rsquo;s 75 second clock, then fail it and give the next wave 15% more men. Now, with the guns laid and the field empty, the order is won with its pay and commendation, no penalty, and the wave ends half a second later. While the guns are still charging the ring still holds the wave, briefly.</li>
+      <li><b>A lone enemy holding off at range no longer holds the wave.</b> The Goliath operator used to wait at his controls for a charge that never arrived, outside the straggler rule. Once he is the last of the wave and has been there 25 seconds, the charges still out go dead and he comes on with his rifle.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody had played this build when these notes went up.</b> It was built from Sunday&rsquo;s reports and checked with scripted runs and four-player soaks to wave 10. Tell us what we missed.</li>
+      <li>In our solo soaks the bot died in the final wave with the post above 85%. The final still comes on all at once. That is being measured now for the next build.</li>
+      <li>Armour killed by a hired gunner still credits the host.</li>
+      <li>STEADY CREWS covers the machine-gun crews only.</li>
+      <li>Alt-tabbing out and back restarts the HQ music from the top. Found, fix coming.</li>
+      <li>The MG42 crew still push in unarmed. The AT gun still can&rsquo;t be carried.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What we&rsquo;d like you to test</h2>
+    <ul class="points">
+      <li><b>Play a full run with six men and a full plan.</b> Do waves 1 to 6 ask anything of you now? Where does it turn?</li>
+      <li><b>Play one with nobody hired.</b> It should feel like Playtest 31.</li>
+      <li><b>In co-op, read the ENEMY STRENGTH line</b> at wave 1 on every screen. Did it match?</li>
+      <li><b>Take GUN DRILL or STEADY CREWS</b> with two guns standing and watch the crews.</li>
+      <li><b>Tap [Q] at a free gun</b> with a man following you. Did he go, lay it, fire?</li>
+      <li><b>Lay a mine under a car.</b></li>
+      <li><b>Aim down any sight</b> and look for the dot. Then the scope.</li>
+      <li><b>Stand in the observer&rsquo;s ring</b> after the guns are laid and let your guns finish the wave.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 32">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
