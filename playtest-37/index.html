@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 37 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 37 build. Fixes and changes from your Playtest 34 reports: the medic reaches squadmates, the STORES ammunition box fills everything, the stun grenade has a short fuse, armour you aim at shows its health, and the Trench Gun tops up faster.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 37<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>37</div>
+    <p class="lede">Playtest 37 is your reports from Playtest 34. I held them back so the skill tree could go out first. They&rsquo;re all in now, on the new tree.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> A Playtest 36 build can&rsquo;t join. Your save loads as it is.</p>
+    <div class="glance">
+      <div><b>9</b><span>Reports from Playtest 34 fixed or changed</span></div>
+      <div><b>1.5 s</b><span>Fuse on the stun grenade, down from 3.5 s</span></div>
+      <div><b>2</b><span>Full refills each at the STORES ammunition box</span></div>
+      <div><b>30 s</b><span>To hold the Crossroads, down from 45 s</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#class">Changing class</a>
+      <a href="#medic">Medic</a>
+      <a href="#grenades">Grenades</a>
+      <a href="#supplies">Ammunition</a>
+      <a href="#hud">The HUD</a>
+      <a href="#field">The field</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="class">Changing class</option>
+        <option value="medic">Medic</option>
+        <option value="grenades">Grenades</option>
+        <option value="supplies">Ammunition</option>
+        <option value="hud">The HUD</option>
+        <option value="field">The field</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="class">
+    <div class="head"><h2>Changing class</h2><span class="tag chg">Changed</span></div>
+    <p class="short">You can change class from the hub or BRIEFING. It was there in Playtest 36, but hard to find.</p>
+    <ul class="points">
+      <li><b>UPGRADES &gt; TREE:</b> every class card you can play has a DEPLOY AS button. The class you play says DEPLOYING AS.</li>
+      <li>A class&rsquo;s own tree page also shows DEPLOY AS at the top right, whatever skill you&rsquo;re looking at.</li>
+      <li><b>BRIEFING:</b> CHANGE CLASS on the class card takes you to those cards.</li>
+      <li>To play a class, buy its first skill on its tree. A card you can&rsquo;t play yet says so.</li>
+      <li><b>The Field Skill you wear shows on the tree.</b> Its flag turns orange with FIELD SKILL under it, Field Skill Slot shows which skill it is, and THE COMPANY card on the hub names it. If you play the class it comes from, it says the slot isn&rsquo;t needed and you can take it off there.</li>
+      <li><b>Strongpoint&rsquo;s +6 points only count when you play Engineer.</b> Play another class and POST DEFENCES marks the guns that need them. Those guns deploy cut back to fit. Your plan stays saved for when you play Engineer again.</li>
+    </ul>
+  </section>
+
+  <section id="medic">
+    <div class="head"><h2>Medic</h2><span class="tag fix">Fixed</span></div>
+    <p class="short">More of the medic&rsquo;s kit now works on your squadmates as well as other players. In co-op too, when the medic isn&rsquo;t the host.</p>
+    <ul class="points">
+      <li><b>Rescue Smoke works on a downed squadmate.</b> Look at him and press <kbd>E</kbd>: the prompt names him and the smoke lands on him.</li>
+      <li><b>The Shell Dressings and Smelling Salts cards work on squadmates.</b> So does Blood Plasma: a squadmate you revive gets up at full health.</li>
+      <li>A syrette goes to a downed squadmate when you look at his body, even if his feet are behind a sandbag. Before, it went to you.</li>
+      <li>Field Surgeon and Shout Him Up already reached squadmates in Playtest 36. They still do.</li>
+    </ul>
+  </section>
+
+  <section id="grenades">
+    <div class="head"><h2>Grenades</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The stun grenade goes off 1.5 s after you press <kbd>G</kbd>,</b> not 3.5 s. You can still hold it to cook it. If it goes off in the air, it stuns the ground below.</li>
+      <li><b>The molotov breaks on the first thing it hits.</b> It can&rsquo;t be cooked. Holding <kbd>G</kbd> only aims it. That includes our own sandbags and wire, so throw over them.</li>
+      <li>While you hold a grenade, the line under the crosshair shows that grenade&rsquo;s own fuse.</li>
+      <li><b>Grenadier&rsquo;s Pouch swaps on its own key: tap <kbd>Alt</kbd>.</b> Holding <kbd>G</kbd> only cooks now, and <kbd>F</kbd> no longer swaps. You can swap before you throw or while you cook. Change the key in OPTIONS &gt; CONTROLS.</li>
+    </ul>
+  </section>
+
+  <section id="supplies">
+    <div class="head"><h2>Ammunition</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>The STORES ammunition box gives each player 2 full refills a deployment.</b> One refill fills everything you carry: grenades, satchels, every magazine, rifle grenades, a flamethrower or bazooka, and a captured gun.</li>
+      <li>One hold of <kbd>F</kbd> is one refill. Before, one hold took both.</li>
+      <li>If you&rsquo;re fully stocked, the box tells you and keeps your refill.</li>
+      <li><b>The Trench Gun reloads only the shells it needs.</b> 1 or 2 shells take less than half the time of a full reload. Before, they took the full time. An empty gun takes as long as before. Faster reload skills speed up these short reloads too.</li>
+    </ul>
+  </section>
+
+  <section id="hud">
+    <div class="head"><h2>The HUD</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Aim at a tank, armoured car, half-track or truck to see its health bar.</b> It shows at the top under COMMAND POST while it&rsquo;s in your crosshair, and for 2.5 s after. Hitting it starts the 2.5 s again. This is on the LEAN HUD, the one you start with. The FULL HUD (OPTIONS) shows every bar, as before.</li>
+      <li>In the break, the LEAN HUD no longer shows your card rules under the wave count. Hold <kbd>Tab</kbd> to see them.</li>
+    </ul>
+  </section>
+
+  <section id="field">
+    <div class="head"><h2>The field</h2><span class="tag fix">Fixed</span></div>
+    <ul class="points">
+      <li><b>You can shoot through the gaps of a Nebelwerfer</b> to hit the rockets behind. Its wreck no longer has an invisible wall round it. A new Nebelwerfer sets up at least 10 m from an old wreck.</li>
+      <li><b>On the Factory&rsquo;s clear day the far town no longer disappears into the sun&rsquo;s glare.</b> The dust is thinner. Other weather and other maps are the same.</li>
+      <li><b>Hold the Crossroads: stay in the ring for 30 s,</b> down from 45 s. The first enemies come at it 9 s after the order.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody outside the team has played this build yet.</b> Tell me what I missed.</li>
+      <li>Molotovs often break on our own sandbags and wire when you throw from behind them. Tell me if that gets in the way.</li>
+      <li>On the Factory&rsquo;s clear day you may spot enemies sooner through the thinner dust.</li>
+      <li>You still carry one kit on <kbd>E</kbd>. Second Kit is still taped off.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What to test</h2>
+    <ul class="points">
+      <li><b>Play a medic with squadmates.</b> Do your syrettes, smoke and medic cards reach them? In co-op, try it when you&rsquo;re not the host.</li>
+      <li><b>Throw a stun grenade and a molotov.</b> Does the 1.5 s fuse feel right?</li>
+      <li><b>Got Grenadier&rsquo;s Pouch?</b> Swap with <kbd>Alt</kbd>. Does that key suit you?</li>
+      <li><b>Aim at armour.</b> Do you see its health bar?</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 37">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the wave and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
