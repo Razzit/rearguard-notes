@@ -19,13 +19,13 @@
     <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
     <h1>Playtest 36<br>Patch Notes</h1>
     <div class="stamp" aria-hidden="true">PLAYTEST<br>36</div>
-    <p class="lede">This one is the skill tree. Each class has its own small tree now, and THE COMPANY is a tree everyone shares. We built a version of this as Playtest 35, played it ourselves, found the skills flat and never sent it out. So this is the second go. This time every skill is meant to change what you do or see in a fight.</p>
-    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build is turned away when it tries to join. Your save loads, and anything that was removed is paid back in RP.</p>
+    <p class="lede">Playtest 36 is the skill tree. Each class has its own tree now. THE COMPANY tree works no matter what class you deploy with. You&rsquo;ll find them all under UPGRADES &gt; TREE.</p>
+    <p class="note"><b>Everyone in a co-op game needs this build.</b> An older build can&rsquo;t join. Your save loads, and anything that was removed is paid back in full in RP.</p>
     <div class="glance">
-      <div><b>6</b><span>Trees: one for each class and THE COMPANY</span></div>
-      <div><b>79</b><span>Skills. Rank opens each one and RP buys it</span></div>
-      <div><b>120</b><span>Health for every soldier from day one, up from 100</span></div>
-      <div><b>100%</b><span>Of the RP you spent on removed skills comes back</span></div>
+      <div><b>6</b><span>Trees: one for each class, plus THE COMPANY</span></div>
+      <div><b>79</b><span>Skills to unlock</span></div>
+      <div><b>120</b><span>Health when you start, up from 100</span></div>
+      <div><b>100%</b><span>Of the RP you spent on removed things comes back</span></div>
     </div>
     <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
   </div>
@@ -38,8 +38,8 @@
       <a href="#classes">The classes</a>
       <a href="#company">THE COMPANY</a>
       <a href="#save">Your save</a>
-      <a href="#posting">Postings</a>
-      <a href="#look">Look and words</a>
+      <a href="#posting">Starting over</a>
+      <a href="#look">Text and screens</a>
       <a href="#known">Known issues</a>
       <a href="#test">Testing</a>
     </div>
@@ -50,8 +50,8 @@
         <option value="classes">The classes</option>
         <option value="company">THE COMPANY</option>
         <option value="save">Your save</option>
-        <option value="posting">Postings</option>
-        <option value="look">Look and words</option>
+        <option value="posting">Starting over</option>
+        <option value="look">Text and screens</option>
         <option value="known">Known issues</option>
         <option value="test">Testing</option>
       </select>
@@ -65,104 +65,94 @@
 
   <section id="tree">
     <div class="head"><h2>The skill tree</h2><span class="tag new">New</span></div>
-    <p class="short">It lives under UPGRADES &gt; TREE and replaces the old class pages. It opens on a hub with six cards: one for each class and one for THE COMPANY. Each card shows how far along you are and what&rsquo;s next.</p>
+    <p class="short">UPGRADES &gt; TREE opens on a page with six cards: one for each class and one for THE COMPANY. Click a card to open that tree.</p>
     <ul class="points">
-      <li><b>Each tree fits on one page.</b> No zooming or panning. <kbd>Q</kbd> and <kbd>E</kbd> step between the trees and <kbd>Esc</kbd> takes you back to the hub.</li>
-      <li><b>Rank opens a skill and RP buys it.</b> A skill that glows is one you can take now. Hover for its card and hold the mouse button to take it.</li>
-      <li>Each class tree has 13 skills. Your class kit sits at the root, then a line of skills to the capstone at rank 40. There&rsquo;s a fork where you pick one of two sides, and a bag of extra kits.</li>
-      <li><b>Your guns are on the tree too.</b> They sit on THE RACK along the foot of every page, at the same ranks and prices as before.</li>
-      <li>Hold <kbd>Tab</kbd> to see the name of every skill on the page.</li>
-      <li>In co-op the hub shows which class everyone in the lobby is playing.</li>
-      <li>Four skills are marked IN TRAINING. You can see them but can&rsquo;t buy them yet: Captured MG42, Fire and Movement, Sappers and Second Kit.</li>
+      <li><b>Your rank unlocks a skill, then you buy it with RP.</b> A skill that glows is one you can buy now. Hover over it to read what it does. Hold the mouse button on it to buy it.</li>
+      <li><kbd>Q</kbd> and <kbd>E</kbd> switch between trees. <kbd>Esc</kbd> goes back to the six cards.</li>
+      <li>Hold <kbd>Tab</kbd> to see the name of every skill.</li>
+      <li>Each class tree starts with your class kit. Partway along you pick one of two skills. You can&rsquo;t have both.</li>
+      <li><b>Your guns are along the bottom of every tree page.</b> Same ranks and prices as before.</li>
+      <li>In co-op the first page shows which class everyone is playing.</li>
+      <li>Four skills are taped off. You can see them but can&rsquo;t buy them yet: Captured MG42, Fire and Movement, Sappers and Second Kit.</li>
     </ul>
   </section>
 
   <section id="classes">
     <div class="head"><h2>The classes</h2><span class="tag new">New</span></div>
-    <p class="short">A class&rsquo;s skills only work when you deploy as that class. The exception is the Field Skill slot on THE COMPANY, which lets you wear one skill with a small flag from another class&rsquo;s tree.</p>
+    <p class="short">A class&rsquo;s skills only work when you deploy as that class.</p>
     <ul class="points">
-      <li><b>Rifleman.</b> Rifle and Carbine kills add notches to your tally, and a headshot adds 2. At 5, press <kbd>E</kbd> for Mad Minute: 6 seconds of fast fire with no reloading. At 3 or 4 notches <kbd>E</kbd> fires a rifle grenade where you look. Later skills let your rounds go through a man, through hedges, and drop anyone climbing the sandbags with one shot. Rapid Fire, Lads! gets the whole section firing flat out during your Mad Minute.</li>
-      <li><b>Gunner.</b> Long Burst is your kit now. Press <kbd>E</kbd> and for 8 seconds your gun needs no reload and never overheats, and every man you hit is pinned. Two a wave. Press <kbd>R</kbd> at an overheated nest to change the barrel in 2 seconds. Fire Lane and Grazing Fire pin men your bursts pass near. With Nobody Crosses at rank 40, a man you keep pinned can&rsquo;t move at all.</li>
-      <li><b>Medic.</b> Toss the Tin throws a syrette to anyone in your sights up to 12 m away. Shout Him Up gets a downed man up from 15 m without you leaving your wall. With Fight from the Ground you keep shooting while you&rsquo;re down, and every kill puts 9 seconds back on your clock. While a medic with Nobody Left Behind is on his feet, nobody&rsquo;s bleed-out clock runs.</li>
-      <li><b>Engineer.</b> Trip mines are back on <kbd>H</kbd>. Assault Pioneer puts 2 satchel charges in your grenade pouch every wave. The other side of that fork, Working Party, puts a squadmate on each of your 2 newest walls. There&rsquo;s a Fougasse that shoots fire 25 m, foxholes you dig in the break, and the Clacker: hold <kbd>E</kbd> and everything you laid in view goes up at once.</li>
-      <li><b>Radioman.</b> In the binoculars, tap <kbd>X</kbd> to pick BLAST, SMOKE or FIRE shells. Harassing Fire takes the supply drop&rsquo;s place: stake a spot and a shell lands on it every 15 seconds till the wave ends. Ping during a barrage and the shells walk to your ping. Fire Plan at rank 40 lets you mark 3 spots each break, and each one fires a free barrage in the wave.</li>
+      <li><b>Rifleman.</b> Rifle and Carbine kills fill a counter. A headshot counts 2. At 3 or 4, press <kbd>E</kbd> to fire a rifle grenade. At 5, press <kbd>E</kbd> for 6 seconds of fast fire with no reloading. Later skills let your shots go through hedges and through an enemy into the one behind.</li>
+      <li><b>Gunner.</b> Press <kbd>E</kbd> and for 8 seconds your gun doesn&rsquo;t reload or overheat, and every enemy you hit is pinned. Twice a wave. Press <kbd>R</kbd> on an overheated gun to change the barrel in 2 seconds.</li>
+      <li><b>Medic.</b> You can throw a syrette to a teammate up to 12 m away. You can get a downed teammate up from 15 m away. While you&rsquo;re down you can keep shooting, and each kill gives you more time before you bleed out.</li>
+      <li><b>Engineer.</b> Trip mines are back on <kbd>H</kbd>. You can get 2 satchel charges every wave, dig foxholes in the break, and set off everything you&rsquo;ve laid at once.</li>
+      <li><b>Radioman.</b> In the binoculars, tap <kbd>X</kbd> to pick BLAST, SMOKE or FIRE shells. You can mark a spot and a shell lands on it every 15 seconds until the wave ends.</li>
     </ul>
   </section>
 
   <section id="company">
     <div class="head"><h2>THE COMPANY</h2><span class="tag chg">Changed</span></div>
-    <p class="short">THE COMPANY&rsquo;s skills work whatever class you deploy as. This is also where your damage and health come from now.</p>
+    <p class="short">THE COMPANY skills work whatever class you deploy with.</p>
     <ul class="points">
-      <li><b>Every soldier handles like a veteran from day one.</b> Faster aim, fire and reloads, bigger magazines, and 120 health. You used to earn that slowly through Service Conditioning.</li>
-      <li><b>Rank doesn&rsquo;t add damage or health any more.</b> Four cheap Company skills do: Stopping Power at rank 5, Hardened at 10, Old Soldier at 18 and Man-Stopper at 19. Hardened and Old Soldier make the command post tougher too.</li>
-      <li>If you were already past those ranks, they&rsquo;re yours already. You&rsquo;re exactly as strong as you were.</li>
-      <li><b>Covering Fire, Lads!</b> at rank 17. When you&rsquo;re pinned, the 2 nearest squadmates fire on the men pinning you for 4 seconds.</li>
-      <li>Old Sweats gets your squadmates reviving each other, and under fire they keep shooting instead of ducking.</li>
-      <li>Grenadier&rsquo;s Pouch carries a second kind of grenade and 2 more grenades. Hold <kbd>G</kbd> and press <kbd>F</kbd> to swap.</li>
-      <li>The card skills: A Set Is Yours makes one card set come up 3 times as often, Fourth Card shows 4 cards in every offer, and Starting Card gives you a pick before wave 1.</li>
-      <li>Squad training and the post&rsquo;s walls now come from the best soldier in your section, not the host&rsquo;s rank.</li>
-      <li>The easier Replacements difficulty is gone. New soldiers are strong enough without it.</li>
+      <li><b>New soldiers start stronger.</b> 120 health, faster aiming, firing and reloading, and bigger magazines.</li>
+      <li><b>Your damage and health now come from four cheap skills in THE COMPANY,</b> at ranks 5, 10, 18 and 19. Rank on its own doesn&rsquo;t add them any more. If you&rsquo;re already past those ranks, you have them already, and you&rsquo;re as strong as before.</li>
+      <li>At rank 17: when you&rsquo;re pinned, your 2 nearest squadmates shoot at whoever is pinning you.</li>
+      <li>One skill lets your squadmates revive each other.</li>
+      <li>One skill lets you carry a second kind of grenade and 2 more grenades. Hold <kbd>G</kbd> and press <kbd>F</kbd> to swap.</li>
+      <li>Three skills change the upgrade cards: one set comes up more often, you see 4 cards instead of 3, and you get a pick before wave 1.</li>
+      <li>One slot lets you use a skill from another class&rsquo;s tree.</li>
+      <li>The Replacements difficulty is gone. New soldiers don&rsquo;t need it now.</li>
     </ul>
   </section>
 
   <section id="save">
-    <div class="head"><h2>Your soldier and your save</h2><span class="tag chg">Changed</span></div>
+    <div class="head"><h2>Your save</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
       <li><b>Your guns came across as they were.</b> So did most kits.</li>
-      <li><b>Some kits changed.</b> The Gunner&rsquo;s kit is Long Burst instead of the Ammunition Box. The Rifleman&rsquo;s tally ends in Mad Minute. The Radioman&rsquo;s supply drop is Harassing Fire now. The whistle is Come On, Then!</li>
-      <li><b>Old kit upgrades are part of their kits now, for free,</b> and the RP you paid for them is back.</li>
-      <li><b>Every skill that was removed is paid back in full in RP.</b> A card at BRIEFING tells you once what came across and how much RP you got.</li>
-      <li>Veteran Points are gone. Each one you hadn&rsquo;t spent was turned into 60,000 RP, and the field commission at rank 50 pays 60,000 RP now.</li>
-      <li>The rank bonuses from rank 33 to 49 stay as they were.</li>
+      <li><b>Some kits changed.</b> The Gunner&rsquo;s ammunition box, the Rifleman&rsquo;s tally and the Radioman&rsquo;s supply drop work differently now. See the classes above.</li>
+      <li><b>Anything removed is paid back in full in RP.</b> The first time you load, a card at BRIEFING shows what came across and how much RP you got back.</li>
+      <li>Veteran Points are gone. Each unspent one became 60,000 RP. The rank 50 reward now pays 60,000 RP.</li>
     </ul>
   </section>
 
   <section id="posting">
-    <div class="head"><h2>A new posting</h2><span class="tag new">New</span></div>
-    <p class="short">Once you own the last skill of any class tree, you can take A NEW POSTING from the bar at the foot of the hub. It&rsquo;s optional, and it can&rsquo;t be undone. You type POST to confirm.</p>
+    <div class="head"><h2>Starting over for more RP</h2><span class="tag new">New</span></div>
+    <p class="short">Once you finish a whole class tree, you can choose to start your trees over for more RP. It&rsquo;s optional and it can&rsquo;t be undone. It&rsquo;s called A NEW POSTING, at the bottom of the first tree page.</p>
     <ul class="points">
-      <li>Every class tree and THE COMPANY are wiped, with no refund. The 4 health and damage skills on THE COMPANY stay.</li>
-      <li>You keep your rank, RP, guns, squad and base. You also keep 1 wiped skill of your choice.</li>
-      <li><b>Each posting adds +30% RP to every deployment after it.</b> Five postings is the most, for +150%.</li>
-      <li>Postings I and III give you an extra Field Skill slot. Posting II makes each class&rsquo;s first skill and both sides of every fork free. From posting IV, THE COMPANY is never wiped. At V, the last skill of each tree costs half.</li>
+      <li>All your skills are wiped, with no refund, except the 4 damage and health skills. You keep your rank, RP, guns, squad and base, plus 1 skill you choose.</li>
+      <li><b>Each time you do it, you earn 30% more RP from then on.</b> You can do it up to 5 times.</li>
+      <li>Each time also gives you a small bonus, like an extra slot or cheaper skills.</li>
     </ul>
   </section>
 
   <section id="look">
-    <div class="head"><h2>The look and the words</h2><span class="tag chg">Changed</span></div>
+    <div class="head"><h2>Text and screens</h2><span class="tag chg">Changed</span></div>
     <ul class="points">
-      <li><b>The tree pages look like the design we drew.</b> A dark map table, and every skill has its own picture.</li>
-      <li>A finished tree says so, even with IN TRAINING skills left on it. Those are taped off now.</li>
-      <li>RELOADING and COOKING no longer hide behind your cards. They sit beside the card strip.</li>
-      <li>The bottom-right corner with your grenades and kit is readable on bright ground now.</li>
-      <li>Long messages wrap instead of running into the command post title.</li>
-      <li><b>We rewrote about 2,200 lines of the game&rsquo;s text in plainer words,</b> so it should make sense the first time you read it. If something still reads oddly, press <kbd>F10</kbd> and tell us.</li>
+      <li><b>I did a pass on all the text in the game.</b> It should make more sense now. If something still reads oddly, press <kbd>F10</kbd> and tell me.</li>
       <li>Commendations are called cards now.</li>
-      <li>The field manual has 8 new notes: being pinned, Spirit, postings, Honours, the Pact, HOLD THE LINE, shock troopers and sergeants. Each one comes up the first time it matters.</li>
+      <li>Every skill has its own picture.</li>
+      <li>RELOADING and COOKING no longer hide behind your cards.</li>
+      <li>Your grenades and kit in the bottom-right corner are easier to read on bright ground.</li>
+      <li>The field manual has 8 new tips. Each one shows up the first time it matters.</li>
     </ul>
   </section>
 
   <section id="known">
     <div class="head"><h2>Known issues</h2></div>
     <ul class="points">
-      <li><b>Nobody outside the team has played this build.</b> It was checked with scripted runs and six-player soaks, one player for each class. Tell us what we missed.</li>
-      <li><b>You carry one kit on <kbd>E</kbd>.</b> If a Rifleman carries Sniper&rsquo;s Veil, Dummy Head or Come On, Then!, he can&rsquo;t use Mad Minute or the rifle grenade. It&rsquo;s the same for the Gunner&rsquo;s Long Burst, the Radioman&rsquo;s flares and the Medic&rsquo;s syrettes. Second Kit is the fix, and it&rsquo;s still IN TRAINING.</li>
-      <li>Some skills are still thin, mostly the Gunner from rank 14 to 33, the Engineer from 30 to 40 and the Medic&rsquo;s Field Surgeon side. Tell us which ones you never notice.</li>
-      <li>Covering Fire, Lads! fires back on nearly every pin, but it rarely lifts the pin.</li>
-      <li>Shout Him Up does much the same as Field Surgeon.</li>
-      <li>Your reports from Playtest 34 aren&rsquo;t in this build. They&rsquo;re next, in Playtest 37.</li>
+      <li><b>Nobody outside the team has played this build yet.</b> Tell me what I missed.</li>
+      <li><b>You can only carry one kit on <kbd>E</kbd>.</b> If you pick a different kit from your tree, you lose your class&rsquo;s main <kbd>E</kbd> ability. For example, a Rifleman with Dummy Head can&rsquo;t use the 6 seconds of fast fire. Second Kit will fix this. It&rsquo;s still taped off.</li>
+      <li>Some skills are hard to notice in a fight. Tell me which ones.</li>
+      <li>Your reports from Playtest 34 aren&rsquo;t in this build. They&rsquo;re coming in Playtest 37.</li>
     </ul>
   </section>
 
   <section id="test" class="ask">
-    <h2>What we&rsquo;d like you to test</h2>
+    <h2>What to test</h2>
     <ul class="points">
-      <li><b>Play each class to its fork.</b> Which side did you pick, and did you feel it in the fight?</li>
-      <li><b>Look at the card at BRIEFING the first time you load.</b> Does the RP you got back look right?</li>
-      <li><b>Try a Field Skill.</b> Wear a skill from another class and see if it earns the slot.</li>
-      <li><b>Tell us the skills you never noticed.</b> That&rsquo;s the list we work from next.</li>
-      <li>If you get a tree finished, have a look at A NEW POSTING. You don&rsquo;t have to take it.</li>
-      <li>Press <kbd>F10</kbd> the moment something looks wrong. It sends the map code for you.</li>
+      <li><b>Play each class until you reach its pick of two skills.</b> Which did you pick, and did you notice it in a fight?</li>
+      <li><b>Check the card at BRIEFING the first time you load.</b> Does the RP you got back look right?</li>
+      <li><b>Tell me the skills you never noticed.</b> That&rsquo;s what I&rsquo;ll work on next.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong.</li>
     </ul>
   </section>
 
