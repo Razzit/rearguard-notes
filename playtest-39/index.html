@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rearguard Playtest 39 Patch Notes</title>
+<meta name="description" content="What&rsquo;s new in the Rearguard playtest 39 build. Kar98 and sniper headshots land again, you can see your progress on the road and at HQ, letters from home, new objective kinds, and enemies that react when you hit them.">
+<meta name="color-scheme" content="dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&family=Barlow+Condensed:wght@500;600&display=swap">
+<link rel="stylesheet" href="../assets/site.css?v=7">
+</head>
+<body>
+
+<header class="hero gutter">
+  <div class="col">
+    <a class="back" href="../">&larr; All patch notes</a>
+    <span class="eyebrow">Rearguard &middot; Notes for the testers</span>
+    <h1>Playtest 39<br>Patch Notes</h1>
+    <div class="stamp" aria-hidden="true">PLAYTEST<br>39</div>
+    <p class="lede">This one is about seeing how far you&rsquo;ve come. You can see your progress on the road, after the run and at HQ. The Kar98 and the other sniper rifles land headshots again.</p>
+    <p class="note"><b>Back up your save before you play.</b> It&rsquo;s at <code>%USERPROFILE%\AppData\LocalLow\Razz\Rearguard\save.json</code>. This build adds new things to it, and Playtest 38 doesn&rsquo;t know them. <b>Everyone in a co-op game needs this build.</b> A Playtest 38 build can&rsquo;t join.</p>
+    <div class="glance">
+      <div><b>3</b><span>New objective kinds in ADVANCE</span></div>
+      <div><b>3</b><span>Events that can happen on the walk-on</span></div>
+      <div><b>1</b><span>Letter or telegram each time you come back to HQ</span></div>
+      <div><b>400</b><span>Extra RP on a new soldier&rsquo;s first after-action</span></div>
+    </div>
+    <p class="hero-cta"><a class="btn" href="#feedback">Send feedback</a><span>Or press <kbd>F10</kbd> in the game. It sends a screenshot and the map code for you.</span></p>
+  </div>
+</header>
+
+<nav class="nav gutter" aria-label="Sections">
+  <div class="col nav-row">
+    <div class="nav-links">
+      <a href="#rifles">Sniper rifles</a>
+      <a href="#field">In the field</a>
+      <a href="#after">After the run</a>
+      <a href="#hq">HQ</a>
+      <a href="#advance">ADVANCE</a>
+      <a href="#hits">Hits</a>
+      <a href="#fixes">Your reports</a>
+      <a href="#known">Known issues</a>
+      <a href="#test">Testing</a>
+    </div>
+    <label class="nav-jump"><span class="visually-hidden">Jump to section</span>
+      <select id="nav-jump">
+        <option value="">Jump to&hellip;</option>
+        <option value="rifles">Sniper rifles</option>
+        <option value="field">In the field</option>
+        <option value="after">After the run</option>
+        <option value="hq">HQ</option>
+        <option value="advance">ADVANCE</option>
+        <option value="hits">Hits</option>
+        <option value="fixes">Your reports</option>
+        <option value="known">Known issues</option>
+        <option value="test">Testing</option>
+      </select>
+    </label>
+    <a class="nav-cta" href="#feedback">Send feedback</a>
+  </div>
+</nav>
+
+<main class="gutter">
+<div class="col">
+
+  <section id="rifles">
+    <div class="head"><h2>Sniper rifles</h2><span class="tag chg">Changed</span></div>
+    <p class="short">One of you said Kar98 headshots had got harder. You were right. Here&rsquo;s what changed.</p>
+    <ul class="points">
+      <li><b>Hits follow the enemy&rsquo;s body.</b> When a man ducks, kneels or flinches, his head goes with him. A shot lands where you see it.</li>
+      <li>The Kar98k and the Lee-Enfield have thinner front posts. They don&rsquo;t hide a head at range any more.</li>
+      <li><b>The five bolt and scoped rifles are dead accurate the moment you&rsquo;re aimed in.</b> Walking while aimed doesn&rsquo;t add spread. Iron sights sway less.</li>
+      <li>Grenades measure their distance from the nearest part of a man, not his middle.</li>
+    </ul>
+  </section>
+
+  <section id="field">
+    <div class="head"><h2>In the field</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>ADVANCE has a road along the top of the screen.</b> Each post sits where it really is on the road, with the lorries at the end. A held post is green with a flag. The one in play pulses. You&rsquo;re the diamond and your mates are the dots.</li>
+      <li>In DEFEND you get one pip per wave up to the relief, then a lorry.</li>
+      <li><b>The enemy left is a row of tally marks.</b> They&rsquo;re struck through in red as men fall. In a big counter-attack one mark can stand for 2 to 4 men.</li>
+      <li><b>Take a post and our flag goes up on it,</b> with a green flare. Beat off a counter-attack and you get a flare too. Lose the post and the flag comes down.</li>
+      <li>The counter-attack clock is a bar on the road now.</li>
+      <li>Messages come one at a time, and a reward is never dropped.</li>
+    </ul>
+  </section>
+
+  <section id="after">
+    <div class="head"><h2>After the run</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>THEN AND NOW.</b> The after-action puts this deployment next to your first.</li>
+      <li>It draws the run. In ADVANCE you see the road post by post, with times and enemies stopped. In DEFEND you see each wave with its grade.</li>
+      <li><b>A stake marks the furthest you&rsquo;ve got on the road.</b> Get past it and you&rsquo;ll see FURTHER THAN LAST TIME.</li>
+      <li>FIGURES breaks your pay into rows. A kill streak pays its top rung only. Objectives and DEFEND waves pay more.</li>
+      <li>A brand new soldier gets 400 RP extra on his first after-action.</li>
+    </ul>
+  </section>
+
+  <section id="hq">
+    <div class="head"><h2>HQ</h2><span class="tag new">New</span></div>
+    <ul class="points">
+      <li><b>The camp round the command post grows as you go.</b> A new save starts with a tent, a brew tin and two men. Tents, lorries, a cookhouse and your hired men come as you rank up and win fronts.</li>
+      <li>The camp keeps count. A TALLY board shows enemies stopped, posts taken and fronts won. A supply dump grows at 100, 500, 1,500, 4,000, 10,000 and 25,000 stopped.</li>
+      <li>Coming back to HQ, the view holds on the camp for a moment. Any key skips it.</li>
+      <li><b>MAIL CALL.</b> One letter or telegram each time you come back. Some ask you to choose. Read them again in the WAR DIARY under RECORDS.</li>
+      <li>Taking a posting doesn&rsquo;t empty the camp any more. THE COMPANY&rsquo;s things stay standing. Its skills are still reset.</li>
+      <li><b>New saves start simpler.</b> BRIEFING shows one front and DEPLOY until rank 3. More opens up as you rank.</li>
+      <li>On BRIEFING the fronts are strung along one road.</li>
+    </ul>
+  </section>
+
+  <section id="advance">
+    <div class="head"><h2>ADVANCE</h2><span class="tag new">New</span></div>
+    <p class="short">These open up once your save has won one ADVANCE.</p>
+    <ul class="points">
+      <li><b>3 new objective kinds.</b> BLOW IT: set charges. AMBUSH: hit a column on the road. RELIEVE: reach a section that&rsquo;s been cut off.</li>
+      <li><b>Something can happen on the walk-on.</b> A STRAFING RUN down the road, a SUPPLY DROP off the road, or men under a WHITE FLAG. Take them within 5 m. Some of them are lying.</li>
+      <li>Each front&rsquo;s last objective has its boss in a tank, about 25 s into the hold.</li>
+      <li>The Ardennes and Henderson Field roads have their own rises, banks and fords now.</li>
+    </ul>
+  </section>
+
+  <section id="hits">
+    <div class="head"><h2>Hits</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li><b>Enemies flinch hard from the side you hit,</b> and stop firing for a moment. Rifles and MGs hit harder than pistols and SMGs.</li>
+      <li>Bigger hit puffs. Dust off the tunic and a red mist, more for a headshot.</li>
+      <li>The dead fall along the line of the shot and drop their rifle. Bodies stay until the walk-on.</li>
+    </ul>
+  </section>
+
+  <section id="fixes">
+    <div class="head"><h2>From your reports</h2><span class="tag chg">Changed</span></div>
+    <ul class="points">
+      <li>The Heavy Gunner has his own look: a bigger helmet, a darker tunic and crossed belts of rounds.</li>
+      <li>One bolt-rifle headshot kills an MG nest&rsquo;s gunner.</li>
+      <li>Counter-attacks come in on a wider front.</li>
+      <li>The rifle grenade has a 50, 100 and 150 m range ladder.</li>
+      <li>The <kbd>Z</kbd> start-now line is easier to see.</li>
+      <li>Hedge banks don&rsquo;t float. Snipers&rsquo; nests can see the wall.</li>
+      <li>The Ambush and Forward Observer cards say what they do more plainly.</li>
+    </ul>
+  </section>
+
+  <section id="known">
+    <div class="head"><h2>Known issues</h2></div>
+    <ul class="points">
+      <li><b>Nobody has played this build yet.</b> Tell me what I missed.</li>
+      <li>The version line on the menu still says 0.38.1.</li>
+      <li>Someone who joins late doesn&rsquo;t see bodies from before they joined.</li>
+      <li>The Ardennes road takes about 7 s to build when the map loads.</li>
+      <li>The letters and the other new words are first drafts.</li>
+    </ul>
+  </section>
+
+  <section id="test" class="ask">
+    <h2>What to test</h2>
+    <ul class="points">
+      <li><b>Take the Kar98 out.</b> Do your headshots land now? Try a man behind a wall and a man who&rsquo;s just been hit.</li>
+      <li><b>Watch the road and the tally marks.</b> Can you tell how far you&rsquo;ve got and how many are left?</li>
+      <li><b>Come back to HQ a few times.</b> Does the camp feel like it&rsquo;s growing? Read your mail.</li>
+      <li>Start a new save and tell me if the start is clearer.</li>
+      <li>Press <kbd>F10</kbd> the moment something looks wrong.</li>
+    </ul>
+  </section>
+
+  <section id="feedback">
+    <div class="head"><h2>Send feedback</h2></div>
+    <p class="short">Found a bug or have a thought? Send it straight to the RearGuard team.</p>
+    <form id="feedback-form" class="fb" novalidate>
+      <input type="hidden" name="build" value="Playtest 39">
+      <div class="fb-trap" aria-hidden="true"><label for="fb-website">Leave this empty</label><input id="fb-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <div class="fb-field">
+        <label for="fb-name">Your name <span class="opt">optional</span></label>
+        <input id="fb-name" name="name" type="text" maxlength="40" autocomplete="nickname" placeholder="Leave blank to send anonymously">
+      </div>
+      <div class="fb-field">
+        <label for="fb-comment">Comment</label>
+        <textarea id="fb-comment" name="comment" rows="6" maxlength="2000" required placeholder="What happened, or what you think. For bugs, say the page, or the map, the objective and the map code."></textarea>
+        <span class="fb-count" id="fb-count">0 / 2000</span>
+      </div>
+      <div class="fb-field">
+        <span class="fb-label">Screenshot <span class="opt">optional</span></span>
+        <label class="fb-drop" id="fb-drop" for="fb-image">
+          <input id="fb-image" type="file" accept="image/png,image/jpeg,image/webp,image/gif">
+          <span><b>Choose an image</b>, drag one here, or paste with Ctrl+V</span>
+          <span class="opt">PNG, JPG, WebP or GIF, up to 8 MB</span>
+        </label>
+        <div class="fb-preview" id="fb-preview" hidden>
+          <img id="fb-preview-img" alt="Screenshot to send">
+          <span id="fb-preview-name"></span>
+          <button type="button" id="fb-remove">Remove</button>
+        </div>
+      </div>
+      <div class="fb-actions">
+        <button type="submit" id="fb-send">Send feedback</button>
+        <p class="fb-status" id="fb-status" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+</div>
+</main>
+
+<footer class="gutter"><div class="col">Rearguard &middot; test build notes &middot; not final balance. Anything here may change after this playtest.</div></footer>
+<script src="../assets/feedback.js?v=3"></script>
+</body>
+</html>
